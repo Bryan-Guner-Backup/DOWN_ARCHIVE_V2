@@ -1,0 +1,1 @@
+export const tableHeaders = ['BIDS', 'NAME', 'THERAPEUTIC AREA', 'PROTOCOL NO./TITLE', 'PHASE', 'SERVICE LIST', 'MODIFIED DATE', 'ACTIONS'];

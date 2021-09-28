@@ -1,0 +1,24 @@
+.LoginLink {
+  margin-left: 1%;
+}
+
+Button.Logout {
+  margin-left: 2%;
+  background-color: #F5222D;
+  color: white;
+  text-transform: none;
+  font-family: Inter, sans-serif;
+  width: 100px;
+}
+Button.Logout:hover {
+  color: #096dd9;
+  background-color: white;
+}
+
+.LoginLink:hover {
+  opacity: 0.8;
+}
+
+.LoginLink img {
+  width: 200px;
+}

@@ -1,0 +1,120 @@
+#filter-wrapper {
+
+    z-index: 2;
+    width: 300px;
+    height: 100%;
+    margin-top: -2%;
+    position: absolute;
+    background: white;
+    padding: 30px 0px 0px 30px;
+
+}
+
+.filter-open { 
+    
+    right: 0px;
+    /* display: block; */
+    animation-name: open;
+    animation-duration: 0.5s;
+
+}
+
+.filter-closed {
+
+    right: -300px;
+    display: none;
+    animation-name: close;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes open {
+
+    from { right: -300px; display: none; }
+    to { right: 0px; display: block; }
+
+}
+
+@keyframes close {
+
+    from { right: 0px; display: block; }
+    to { right: -300px; display: none; }
+
+}
+
+#filter-header-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#filter-header-sub-container {
+
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+
+}
+
+#filter-header-text {
+
+    font-size: 18px;
+    color: #0050B3;
+    font-weight: bold;
+    font-family: Inter;
+
+}
+
+#filter-header-sub-text {
+
+    font-size: 12px;
+    color: #262626;
+    font-family: Inter;
+
+}
+
+#close-icon {
+
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.cat-header {
+
+    font-size: 18px;
+    color: #2C2C2C;
+    font-weight: 600;
+    font-family: Inter;
+
+}
+
+.cat-item {
+
+    font-size: 16px;
+    margin-left: 6px;
+    color: #2C2C2C;
+    font-family: Inter;
+
+}
+
+.filter-break {
+
+    margin-right: 30px;
+    border: 1px solid #D6D6D6;
+
+}
+
+.final-filter-button {
+
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: Inter;
+    margin-bottom: 10px;
+    background: #0050B3;
+    padding: 10px 0px 10px 0px;
+
+}

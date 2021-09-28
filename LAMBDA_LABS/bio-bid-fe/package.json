@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "coverage": "cd bio-bid && yarn && npm run coverage"
+    }
+}

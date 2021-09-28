@@ -1,0 +1,25 @@
+.row-item { text-align: center; }
+
+.table-body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.table-row {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.open-item { width: 70px; height: 35px; }
+.name-item { width: 110px; }
+.thera-item { width: 200px; }
+.proto-item { width: 200px; }
+.phase-item { width: 90px; }
+.service-item { width: 140px; }
+.mod-item { width: 160px; }
+.action-item { width: 100px; }

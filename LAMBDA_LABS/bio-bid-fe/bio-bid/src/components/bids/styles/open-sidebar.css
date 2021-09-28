@@ -1,0 +1,157 @@
+#sidebar-open-wrapper {
+
+    z-index: 2;
+    display: flex;
+    min-height: 100%;
+    position: absolute;
+    height: fit-content;
+    background: #0050B3;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+
+}
+
+.sidebar-open {
+    
+    left: 0px;
+    /* display: block; */
+    animation-name: openDash;
+    animation-duration: 0.5s;
+
+}
+
+.sidebar-closed {
+
+    left: -250px;
+    display: none;
+    animation-name: closeDash;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes openDash {
+
+    from { left: -250px; display: none; }
+    to { left: 0px; display: block; }
+
+}
+
+@keyframes closeDash {
+
+    from { left: 0px; display: block; }
+    to { left: -250px; display: none; }
+
+}
+
+.sidebar-expanded { width: 250px; }
+
+.menu-bar {
+
+    margin: 20px 20px 30px 20px;
+    border: 1.2px solid white;
+
+}
+
+.dash-control-icon {
+
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+.pfp {
+
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    border-radius: 50px;
+    margin-bottom: 25px;
+
+}
+
+.pfp-collapsed { margin-left: calc(50% - 38px); }
+
+#pfp-container {
+
+    width: 100px;
+    height: 30px;
+    padding-left: 50px;
+
+}
+
+.pfp-text-2 {
+
+    width: 100px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    text-align: center;
+    margin-left: calc(60% - 3px);
+
+}
+
+.pfp-text-collapsed { margin-left: 5px; }
+
+.profile-menu-container {
+
+    height: 60px;
+    display: flex;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.selected {
+
+    padding-left: 5px;
+    border-left: 15px solid #C4C4C4;
+
+}
+
+.menu-option-disabled { opacity: 1; }
+
+.profile-menu-icon {
+
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.menu-icon-collapsed { margin-left: 23px; }
+
+.menu-icon-img {
+
+    width: 25px;
+    height: 25px;
+    margin-left: 13px;
+
+}
+
+.menu-icon-img-collapsed { margin-left: 25px; }
+
+.profile-menu-text {
+
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px 0px 20px;
+
+}
+
+/* .profile-menu-text:hover {
+
+    text-decoration: underline;
+
+} */
+
+.menu-text-collapsed { display: none; }

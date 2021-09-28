@@ -1,0 +1,73 @@
+{
+  "name": "bio-bid",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.0.6",
+    "@ant-design/icons-svg": "^4.0.0",
+    "@apollo/react-hooks": "^3.1.5",
+    "@apollo/react-testing": "^3.1.4",
+    "@fullstory/browser": "^1.4.4",
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@okta/okta-auth-js": "^3.1.2",
+    "@okta/okta-react": "^3.0.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.4.7",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.0.0",
+    "jquery": "^3.5.0",
+    "js-search": "^2.0.0",
+    "material-table": "^1.57.2",
+    "moment": "^2.24.0",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.4.1",
+    "styled-components": "^5.0.1",
+    "styled-icons": "^10.2.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage --watchAll=false || true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {},
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**",
+    "!**/database/**",
+    "!**/tests/**",
+    "!**/spec/**",
+    "!**/*.spec.{js,jsx}",
+    "!**/coverage/**"
+  ]
+}
