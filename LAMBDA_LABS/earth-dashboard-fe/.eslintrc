@@ -1,0 +1,67 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "import",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "json-format",
+    "optimize-regex",
+    "jest",
+    "jest-formatting",
+    "testing-library"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "airbnb",
+    "airbnb/hooks",
+
+    // testing
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jest-formatting/recommended",
+    "plugin:testing-library/recommended",
+    "plugin:testing-library/react",
+
+    // must be last
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "rules": {
+    "strict": ["error", "never"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "optimize-regex/optimize-regex": "warn",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "import/no-cycle": "off",
+    "no-plusplus": "off"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "parser": "babel-eslint"
+}
