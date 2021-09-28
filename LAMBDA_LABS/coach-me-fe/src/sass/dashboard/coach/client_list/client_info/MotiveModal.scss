@@ -1,0 +1,89 @@
+@mixin layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.motive-container {
+    background-color: rgba(7, 17, 28, 0.5);
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.motive-box {
+    @include layout();
+    justify-content: space-around;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    border-radius: 20px;
+    background: #ffffff;
+    width: 48%;
+    height: 27.2rem;
+    position: absolute;
+    left: 17%;
+    bottom: 35%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 30px 20px;
+
+    .x {
+        align-self: flex-end;
+
+        cursor: pointer;
+    }
+
+    .label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        color: #1c3048;
+        width: 85%;
+        margin-top: 1rem;
+    }
+    p {
+        width: 85%;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        color: #1c3048;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-decoration-line: underline;
+        color: #6d8eb4;
+        margin: 30px;
+        cursor: pointer;
+    }
+}
+
+.motive-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.motive-box::-webkit-scrollbar-track {
+    background: none;
+    margin: 50px;
+}
+
+/* Handle */
+.motive-box::-webkit-scrollbar-thumb {
+    background: #717d8b63;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.motive-box::-webkit-scrollbar-thumb:hover {
+    background: #1c304869;
+}

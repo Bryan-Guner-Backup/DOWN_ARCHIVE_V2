@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+
+.name-container {
+	cursor: pointer;
+	h1 {
+		font-family: "DM Sans";
+		font-size: 2rem;
+		color: #274160;
+		font-weight: medium;
+		width: 100%;
+		line-height: 2.5em;
+		border-bottom: 2px solid;
+	}
+}
+.name-container:hover {	
+	color: #ffffff;
+	background-color: #355478;
+	border-top: 0.1em solid #ffffff;
+}
+
+.client-card {
+	display: flex;
+	align-items: center;
+	border: 1px solid #c4cfdd;
+	width: 100%;
+	padding: 10%;
+	background-color: #edf2f8;
+	cursor: pointer;
+	    h1 {
+		font-family: "DM Sans";
+		font-size: 1.6rem;
+		color: #274160;
+		font-weight: medium;
+	}
+}
+
+
+.active1 {
+	background-color: #9ab2ce;
+	h1 {
+		color: #ffffff;
+	}
+
+	.active1 {
+		background-color: #9ab2ce;
+
+		h1 {
+			color: #ffffff;
+		}
+	}
+}
