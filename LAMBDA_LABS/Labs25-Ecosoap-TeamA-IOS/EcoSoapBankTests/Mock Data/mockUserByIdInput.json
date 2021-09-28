@@ -1,0 +1,64 @@
+{
+  "data" : {
+    "userById" : {
+      "user" : {
+        "phone" : "111-111-1111",
+        "address" : {
+          "city" : "City 1",
+          "address1" : "Address 1 Line 1",
+          "postalCode" : "11111",
+          "country" : "US",
+          "formattedAddress" : null,
+          "address3" : "Address 1 Line 3",
+          "state" : "State 1",
+          "address2" : "Address 1 Line 2"
+        },
+        "firstName" : "First Name 1",
+        "id" : "UserId1",
+        "middleName" : "Middle Name 1",
+        "title" : "Title 1",
+        "company" : "Company 1",
+        "email" : "Email 1",
+        "skype" : "Skype1",
+        "properties" : [
+          {
+            "id" : "PropertyId1",
+            "phone" : "47AE0180-BB18-48F2-94F3-2A87C00506BF",
+            "shippingAddress" : {
+              "city" : "City 5",
+              "address1" : "Address 5 Line 1",
+              "postalCode" : "55555",
+              "country" : "US",
+              "formattedAddress" : null,
+              "address3" : "Address 5 Line 3",
+              "state" : "State 5",
+              "address2" : "Address 5 Line 2"
+            },
+            "propertyType" : "HOTEL",
+            "collectionType" : "GENERATED_LABEL",
+            "billingAddress" : {
+              "city" : "City 5",
+              "address1" : "Address 5 Line 1",
+              "postalCode" : "55555",
+              "country" : "US",
+              "formattedAddress" : null,
+              "address3" : "Address 5 Line 3",
+              "state" : "State 5",
+              "address2" : "Address 5 Line 2"
+            },
+            "shippingNote" : "Shipping note 1.",
+            "logo" : "https:\/\/test.com\/logo1.png",
+            "notes" : "Notes 1.",
+            "services" : [
+              "SOAP",
+              "LINENS"
+            ],
+            "rooms" : 111,
+            "name" : "Property 1"
+          }
+        ],
+        "lastName" : "Last Name 1"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
+        "state": {
+          "branch": null,
+          "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "LoremSwiftum",
+        "repositoryURL": "https://github.com/lukaskubanek/LoremSwiftum.git",
+        "state": {
+          "branch": null,
+          "revision": "eef89bf8b9937462f9c493789609897763b383e2",
+          "version": "2.2.1"
+        }
+      },
+      {
+        "package": "OktaAuth",
+        "repositoryURL": "https://github.com/SpencerCurtis/OktaAuth.git",
+        "state": {
+          "branch": null,
+          "revision": "cd285574c3ab04a62dd4e43a0a15cd6e8985b635",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect.git",
+        "state": {
+          "branch": null,
+          "revision": "de5c32c15ae169cfcb27397ffb2734dcd0e1e6d5",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
