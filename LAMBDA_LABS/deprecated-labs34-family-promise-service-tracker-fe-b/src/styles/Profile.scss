@@ -1,0 +1,52 @@
+.profile-container {
+  border: rgba(202, 202, 202, 0.65) 1px solid;
+  border-radius: 10px;
+  width: 20%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    @media (max-width: 992px) {
+    }
+  }
+  .avatar-uploader {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1025px) {
+    width: 75%;
+  }
+  @media (max-width: 992px) {
+  }
+}
+
+.sub-header-profile {
+  padding: 0;
+  margin-top: -10px;
+}
+
+.ant-form-item-label label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.save-edit-container {
+  display: flex;
+  justify-content: center;
+}
+.cancel-contain {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cancel-btn:hover {
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+}
