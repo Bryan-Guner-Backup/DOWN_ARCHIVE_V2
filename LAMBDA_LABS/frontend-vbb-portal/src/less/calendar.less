@@ -1,0 +1,278 @@
+@import '~react-big-calendar/lib/css/react-big-calendar.css';
+
+:root {
+  --green: #73c673;
+  --orange: #ffb347;
+  --red: #ff6961;
+}
+
+.calendarWrapperDiv {
+  height: 80vh;
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+}
+
+.rbc-time-view-resources .rbc-time-gutter,
+.rbc-time-view-resources .rbc-time-header-gutter {
+  background-color: #fffff6;
+}
+
+.rbc-current-time-indicator {
+  background-color: red;
+  height: 2px;
+  margin: 0;
+  border: none;
+  /* this extends red line to full width */
+  width: 1400vw;
+  margin-left: -700vw;
+}
+
+.mentor,
+.student,
+.assignedComputers {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.rbc-event-label {
+  background-color: #549bea;
+  display: none;
+}
+
+.rbc-event-content {
+  background-color: #549bea;
+  
+}
+
+.rbc-day-slot .rbc-events-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  padding: 0;
+}
+
+.rbc-day-slot .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  border-color: #ff914d;
+}
+
+.rbc-header {
+  color: #ff914d;
+}
+
+.rbc-toolbar button {
+  border-radius: 15px;
+  background-color: #549bea;
+  color: #ffffff;
+  border-color: #ffffff;
+    
+}
+
+
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus,
+.rbc-toolbar button:active,
+.rbc-toolbar button:hover,
+.rbc-toolbar button:focus,
+.rbc-toolbar button.rbc-active,
+.print-download-button:hover .print-download-icon,
+.print-download-button:focus .print-download-icon {
+  background-color: #ffffff;
+  color: #549bea;
+  border-color: #ffffff;
+  outline: none;
+}
+
+.rbc-day-slot .rbc-event {
+  border-style: none;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  background-color: transparent;
+}
+
+.rbc-time-content {
+  overflow-x: auto;
+}
+
+// .resourceEvent {
+//   background-color: white;
+//   color: black;
+// }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #section-to-print,
+  #section-to-print * {
+    visibility: visible;
+  }
+
+  #section-to-print {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .calendarWrapperDiv {
+    height: 90%;
+    width: 95%;
+  }
+}
+
+.print-download-icon {
+  color: #ffffff;
+}
+
+.calendar-container {
+  flex: 4;
+}
+
+.sidebar-container {
+  flex: 1;
+  margin: 3.2rem 1rem 0 0;
+}
+
+.events-container {
+  width: clamp(20px, 100%, 500px);
+  /* border: 1px solid red; */
+}
+
+.pendings {
+  margin: 0 0 1.2rem 0;
+}
+
+.events {
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.4rem;
+  overflow-y: scroll;
+  flex: 1;
+  height: 22.5vh;
+  padding: 0.5rem;
+}
+
+.event {
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  margin: 1.2rem 0.5rem 1rem 0.5rem;
+  line-height: 1rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.event p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.event h5 {
+  color: white;
+  margin: 0;
+}
+
+.pending-status {
+  background-color: var(--orange);
+}
+
+.checked-in-status {
+  background-color: var(--green);
+}
+
+.no-show {
+  background-color: var(--red);
+}
+
+.no-show-span {
+  font-style: italic;
+  font-size: 0.9rem;
+
+  // Drag and drop feature
+
+  .rbc-addons-dnd .rbc-addons-dnd-row-body {
+    position: relative;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-drag-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .rbc-addons-dnd .rbc-event {
+    /* border:none; */
+    transition: opacity 150ms;
+    background-color: #549bea;
+  }
+  .rbc-addons-dnd .rbc-event:hover .rbc-addons-dnd-resize-ns-icon,
+  .rbc-addons-dnd .rbc-event:hover .rbc-addons-dnd-resize-ew-icon {
+    display: block;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-dragged-event {
+    opacity: 0;
+  }
+  .rbc-addons-dnd.rbc-addons-dnd-is-dragging
+    .rbc-event:not(.rbc-addons-dnd-dragged-event):not(.rbc-addons-dnd-drag-preview) {
+    opacity: 0.5;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resizable {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ns-anchor {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ns-anchor:first-child {
+    top: 0;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ns-anchor:last-child {
+    bottom: 0;
+  }
+  .rbc-addons-dnd
+    .rbc-addons-dnd-resize-ns-anchor
+    .rbc-addons-dnd-resize-ns-icon {
+    display: none;
+    border-top: 3px double;
+    margin: 0 auto;
+    width: 10px;
+    cursor: ns-resize;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ew-anchor {
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ew-anchor:first-child {
+    left: 0;
+  }
+  .rbc-addons-dnd .rbc-addons-dnd-resize-ew-anchor:last-child {
+    right: 0;
+  }
+  .rbc-addons-dnd
+    .rbc-addons-dnd-resize-ew-anchor
+    .rbc-addons-dnd-resize-ew-icon {
+    display: none;
+    border-left: 3px double;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 10px;
+    cursor: ew-resize;
+  }
+}
