@@ -1,0 +1,266 @@
+body {
+  max-width:100%;
+}
+
+.spinner {
+  animation: spinning 1s linear infinite;
+}
+
+.spinnerPlot {
+  animation: spinning 1s linear infinite;
+  width: 75px;
+  height: 75px;
+}
+
+.full_page_spinner {
+  font-size: 5rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cat {
+  margin: auto;
+  padding: 7px;
+  border: 1px solid black;
+}
+
+.LI {
+    margin: auto;
+    padding: 7px;
+    border: 1px solid black;
+}
+
+.UsersButton {
+  height:30px;
+}
+
+.RepoButton {
+  height:30px
+}
+
+.popup:hover{
+    z-index: 10;
+    height: 600px; 
+    width:600px;
+    top:auto;
+    left: auto;
+    transform: ease-out translate(20%), scale(1.1); 
+}
+
+.bg-blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.repoCard{
+  transition: width 2s, height 2s, transform .2s;
+  width: 250px;
+}
+
+.repocard:hover{
+  box-shadow: 2px 0px 2px 0px #0a9aec;
+  width: 253px;
+  height: 30px;
+  margin-top: -9px;
+  padding: 5%;
+}
+
+.searchme {
+  background-color: aqua;
+}
+
+#input {
+  padding: 10px;
+}
+
+#buttons {
+  padding: 5px;
+  height: 41px;
+}
+
+.searchRepos {
+  margin-top: 50px;
+}
+
+.repocard {
+  border-bottom: 2px solid #DCDCDC;
+  margin: 10px 0px 10px 0px;
+  padding: 2%;
+  height: auto;
+  background: white;
+}
+
+.searchRepo {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 1px 10px 0px;
+}
+
+.notStarred {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.star {
+  padding: 5px;
+  background-color: black;
+  color: yellow;
+}
+
+.header {
+  z-index: 1;
+}
+
+.yearlyCommitActivity {
+  color: #003d7a;
+}
+
+.yearlyCodeFrequencyAdd {
+  color: #003d7a;
+}
+
+.yearlyCodeFrequencyDelete {
+  color: #FF8C00;
+}
+
+.allTimeContributors {
+  background: -webkit-linear-gradient(left #e83109, #FF8C00, brown );
+  background: -o-linear-gradient(right, #e83109, #FF8C00, brown);
+  background: -moz-linear-gradient(right, #e83109, #FF8C00,brown);
+  background: linear-gradient(to left, #e83109, brown, gray); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.DailyCommits {
+  color: #003d7a;
+
+}
+
+.IssueActivityOpen {
+  color: #003d7a;
+}
+
+.IssueActivityClosed {
+  color: #FF8C00;
+}
+
+.IssueComments {
+  color: #003d7a;
+}
+
+.repo-message {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo-message h4 {
+  text-align: center;
+}
+
+.spinnerPlot-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.issue-activity-container {
+  height: 50vh;
+}
+
+.search-form {
+  margin: 0 0 10px;
+}
+
+.sort-dropdown {
+  width: 50%;
+  font-size: 14px;
+  color: #0366d6;
+  border: 1px solid #e1e4e8;
+  background-color: #fafbfc;
+  box-shadow: 0px 1px 0px rgba(149,157,165,0.1), inset 0px 2px 0px rgba(255,255,255,0.25);
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#search-button {
+  display: block;
+  padding: 4px 8px;
+}
+
+.horizontal-line {
+  margin-right: 2rem;
+}
+
+#repo-name {
+  width: 75%;
+  font-size: 14px;
+  color: #0366d6;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0px 1px 0px rgba(149,157,165,0.1), inset 0px 2px 0px rgba(255,255,255,0.25);
+  line-height: 20px;
+}
+
+.main-text-color {
+  color: #0366d6;
+  padding-right: 2rem;
+}
+
+.repo-info-background {
+  background-image: url('./images/pexels-negative-space-34069.jpg');
+  background-size: cover;
+  height: 72vh;
+  margin-right: 30px;
+}
+
+#no-opacity {
+  opacity: initial;
+}
+
+.star-position {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .repo-info-background {
+    height: 87vh;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .repo-info-background {
+    height: 78vh;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  .horizontal-line {
+    margin: 15px 0px;
+  }
+
+  .repo-info-background {
+    height: 87vh;
+  }
+}
