@@ -1,0 +1,76 @@
+@blue: #2a5c8d;
+@light-blue: #a0c5dd;
+@white: #ffffff;
+
+.support-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-left: 15rem;
+  margin-right: 3rem;
+}
+
+.support-divider {
+  border-bottom: 1px solid #ff7f0e;
+  width: 200px;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+.faqs {
+  width: 80%;
+}
+
+.support-title {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.faq-title {
+  font-size: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.contact-btn-div {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  .support-header {
+    font-size: 1.4rem;
+  }
+
+  .support-btn {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: @blue;
+  }
+}
+
+.contact-form {
+  margin-left: 1.2rem;
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.send-btn {
+  background: @blue !important;
+  color: @white !important;
+  margin-bottom: 1rem;
+
+  &:visited {
+    background: @blue;
+    color: @white;
+  }
+
+  &:focus {
+    background: @blue;
+    color: @white;
+  }
+}

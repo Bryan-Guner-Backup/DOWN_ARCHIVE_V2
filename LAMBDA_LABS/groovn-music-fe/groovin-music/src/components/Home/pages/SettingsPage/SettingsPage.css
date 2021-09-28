@@ -1,0 +1,27 @@
+.settingsPage-container {
+  background-color: rgb(15, 20, 26);
+  display: flex;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.settingsPage-container .sidebar {
+  width: 20%;
+  text-align: center;
+}
+
+.settingsPage-container .main {
+  width: 80%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .settingsPage-container .sidebar {
+    display: none;
+  }
+
+  .settingsPage-container .main {
+    width: 100%;
+  }
+}

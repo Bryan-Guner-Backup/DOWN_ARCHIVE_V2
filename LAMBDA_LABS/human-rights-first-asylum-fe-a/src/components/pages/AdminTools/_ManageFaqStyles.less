@@ -1,0 +1,78 @@
+@gray: #cacccf;
+@blue: #2a5c8d;
+@light-blue: #a0c5dd;
+@white: #ffffff;
+
+.manage-faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin-left: 15rem;
+  margin-right: 3rem;
+}
+
+.faq-divider {
+  border-bottom: 1px solid #ff7f0e;
+  width: 200px;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+.faq {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.faq-header {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.btn-style {
+  color: @white !important;
+  background-color: @blue;
+
+  &:visited {
+    background: @blue;
+    color: @white;
+  }
+
+  &:focus {
+    background: @blue;
+    color: @white;
+  }
+
+  &:active {
+    background: @blue;
+    color: @white;
+  }
+
+  &:hover {
+    background: @light-blue;
+    color: @white;
+  }
+}
+
+.q-header {
+  font-size: 1rem;
+}
+
+.answer {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.ant-collapse-header {
+  font-size: 1rem;
+}
+
+.add-faq-btn-container {
+  display: flex;
+  justify-content: center;
+}

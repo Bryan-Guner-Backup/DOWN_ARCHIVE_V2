@@ -1,0 +1,106 @@
+@blue: #2a5c8d;
+
+.cases-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 84%;
+  margin-left: 10vw;
+  margin-top: 2rem;
+
+  .h1Styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+    
+  }
+
+  .viz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    overflow-y: hidden;
+    margin: auto;
+    border-top: 1px solid #ff7f0e;
+  }
+}
+/* Chart Container Adjustments */
+
+.case-table-container {
+  width: 100%;
+  overflow-y: hidden;
+  margin: 0 0 2rem 10rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.save-cases-btn {
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.table-search-button {
+  color: white;
+}
+
+.ant-tabs {
+  overflow: unset;
+}
+
+.ant-tabs-tab {
+  font-size: 1.2rem;
+
+  &.ant-tabs-tab-active .ant-tabs-tab-btn {
+    text-shadow: none;
+  }
+  
+  &.ant-tabs-tab-disabled {
+    cursor: default;
+  }
+}
+
+.ant-table-tbody tr td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.ant-table-column-sorters {
+  padding: 0.5rem 1rem;
+  align-items: flex-start;
+}
+
+.anticon-file-text,
+.anticon-file-pdf {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.anticon-file-text {
+  color: @blue;
+}
+
+button.ant-btn {
+  color: @blue;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+button.ant-btn:hover {
+  color: @blue;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0.5rem 0 0;
+}

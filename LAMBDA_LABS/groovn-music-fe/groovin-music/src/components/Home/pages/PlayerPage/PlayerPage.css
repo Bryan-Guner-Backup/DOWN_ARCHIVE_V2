@@ -1,0 +1,59 @@
+.playerPage-container {
+  background-color: #1c2530;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playerPage-container .skip-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skip-track button {
+  margin: 1rem;
+}
+.current-song {
+  margin-top: 50px;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.current-song-img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.test-player {
+  width: 100%;
+  height: 40;
+}
+
+.skip-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .playerPage-container .sidebar {
+    display: none;
+  }
+
+  .playerPage-container .main {
+    width: 100%;
+  }
+}

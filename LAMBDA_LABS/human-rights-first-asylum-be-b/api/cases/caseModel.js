@@ -1,0 +1,82 @@
+const db = require('../../data/db-config');
+const { Parser } = require('json2csv');
+
+const add = async (data) => {
+  return await db('cases').insert(data);
+};
+
+const findAll = async () => {
+  return await db('cases as c')
+    .join('judges as j', 'j.judge_id', 'c.judge')
+    .select('c.*', 'j.name as judge_name');
+};
+
+// * This function takes a moment because of the data attached
+// Update this with case_id instead of case_number once it's all working
+const findById = async (case_number) => {
+  const cases = await db('cases as c')
+    .where({ case_number })
+    .first()
+    .join('judges as j', 'j.judge_id', 'c.judge')
+    .select('c.*', 'j.name as judge_name');
+  return cases;
+};
+
+const findBy = async (filter) => {
+  return db('cases')
+    .where(filter)
+    .join('judges as j', 'j.judge_id', 'c.judge')
+    .select('c.*', 'j.name as judge_name');
+};
+
+const findByStatusUser = async (filter) => {
+  const a = await db('cases')
+    .select('user_id', 'created_at', 'case_url', 'status')
+    .whereIn('status', filter.status)
+    .where('user_id', filter.user_id);
+  return a;
+};
+
+const findByStatusAll = async (filter) => {
+  const a = await db('cases')
+    .select('user_id', 'created_at', 'case_url', 'status')
+    .where(filter);
+  return a;
+};
+
+const writeCSV = async (case_number) => {
+  // *  get only case data
+  const case_data = await findById(case_number);
+
+  // * create fields
+  const case_fields = [];
+  for (let field in case_data) {
+    case_fields.push(field);
+  }
+  const case_opts = { fields: case_fields };
+  // * fill fields with case_data
+  try {
+    const case_parser = new Parser(case_opts);
+    const case_csv = case_parser.parse(case_data);
+    // * return variable with csv data
+
+    return case_csv;
+  } catch (err) {
+    return err.message;
+  }
+};
+
+const update = async (data) => {
+  return await db('cases').where({ case_id: data.case_id }).update(data);
+};
+
+module.exports = {
+  add,
+  findAll,
+  findById,
+  findBy,
+  findByStatusUser,
+  findByStatusAll,
+  writeCSV,
+  update,
+};

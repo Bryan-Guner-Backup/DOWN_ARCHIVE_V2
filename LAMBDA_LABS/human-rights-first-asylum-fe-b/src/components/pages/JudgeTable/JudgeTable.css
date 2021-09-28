@@ -1,0 +1,68 @@
+/* judgeTable styles */
+
+.close {
+  text-align: center;
+  padding: 1%;
+  margin: auto 2% auto auto;
+  transform: scale(1.2);
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.judgeTableLink {
+  color: #215589;
+}
+
+.judgeTableCard {
+  display: flex;
+}
+
+.judgeTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 90vh;
+  height: 100%;
+  margin: 8rem 4rem 4rem 0;
+}
+
+.judgeTableGridContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+.judgeTableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+/* judgeTable drawer styles */
+
+.judgeTableDrawer {
+  width: 300;
+  margin-top: 18%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.judgeTableDrawer p {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.judgeTableSearchInput {
+  margin: 5% 10% 10% 5%;
+}
+

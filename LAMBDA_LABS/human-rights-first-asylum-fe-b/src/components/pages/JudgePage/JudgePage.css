@@ -1,0 +1,87 @@
+/* judgePage styles */
+
+.close {
+  text-align: center;
+  padding: 1%;
+  margin: auto 2% auto auto;
+  transform: scale(1.2);
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.judgePageLink {
+  color: #215589;
+}
+
+.judgePageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.imgBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 8rem 1rem 1rem 2rem;
+}
+
+h1 {
+  color: #215589;
+}
+
+.judgePageCard {
+  display: flex;
+}
+
+.judgePageTable {
+  display: 'flex';
+  flex-direction: column;
+  justify-content: 'center';
+  width: 100%;
+  min-height: 30vh;
+  height: 100%;
+  margin: 8rem 4rem 4rem 0;
+}
+
+.judgePageGridContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+.judgePagePlotDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 5% 0 0 0;
+}
+
+/* judgePage drawer styles */
+
+.judgePageDrawer {
+  width: 300;
+  margin-top: 18%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.judgePageDrawer p {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.judgePageSearchInput {
+  margin: 5% 10% 10% 5%;
+}

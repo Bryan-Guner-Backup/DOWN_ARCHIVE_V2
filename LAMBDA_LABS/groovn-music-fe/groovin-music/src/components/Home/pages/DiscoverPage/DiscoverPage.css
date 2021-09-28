@@ -1,0 +1,67 @@
+.discoverPage-container {
+  background-color: rgb(15, 20, 26);
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.discover-main {
+}
+
+.playlist-list {
+  margin: 30px;
+  width: 60vw;
+  height: 90vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.playlist {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playlist img {
+  width: 20%;
+}
+
+.playlist-list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.name-auther {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(37, 37, 37);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5d5d5d;
+}
+
+@media only screen and (max-width: 600px) {
+  .discoverPage-container .sidebar {
+    display: none;
+  }
+
+  .discoverPage-container .main {
+    width: 100%;
+  }
+}

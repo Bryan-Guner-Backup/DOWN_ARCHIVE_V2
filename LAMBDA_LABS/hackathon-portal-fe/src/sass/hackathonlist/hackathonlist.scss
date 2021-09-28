@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import '../variables/variables.scss';
+
+.search-container {
+    width: 65%;
+    display: flex;
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 10px 0 10px 3px;
+    font-size: 25px;
+    @include phone-only{
+        width:95%;
+        margin:0;
+    }
+    img { 
+        margin-left: 10px;
+    }
+    input {
+        margin-left: 10px;
+
+    }
+    
+  }
+.searchBar {
+        width: 100%;
+        border-radius: 4px;
+        height: 25px;
+        margin: auto;
+        border: 1px solid #F5F5F5;
+        background-color: #F5F5F5;
+        color: #858585;
+        font-family: Muli;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+}
+.search-icon {
+    padding: 10px;
+    color: #90A0B7;
+    min-width: 25px;
+    font-size: 14px;
+    text-align: center;
+  }
+.filter {
+    width: 65%;
+    margin: 1px auto;
+    margin-bottom: 5%;
+    // text-align: left;
+    display: flex;
+    align-items: center;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #90A0B7;
+    cursor: pointer;
+        p{
+            display: none;
+            margin: 1px;
+            color: #311B92;
+            font-weight: bold;
+            line-height: 18px;
+        }
+
+        .dropdown{
+            display: none;
+        }
+        .showDropdown {
+            display: block;
+            position: absolute;
+            background-color: #fff;
+            margin-top: 130px;
+            height: 208px;
+            min-width: 255px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 4px;
+            padding: 12px 12px;
+            z-index: 1;
+            .dropdown-content{
+                display:flex;
+                flex-direction:column;
+
+                .filter-label {
+                    color: #232323;
+                    position: relative;
+                    padding-left: 35px;
+                    // margin-bottom: 12px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    user-select: none;
+                    font-size: 16px;
+                    margin: 9px 0px;
+                    display:flex;
+                    justify-content: flex-start;
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                }
+                .checkmark {
+                        position: absolute;
+                        top: 1px;
+                        left: 1px;
+                        height: 17px;
+                        width: 17px;
+                        background-color: #fff;
+                        border:2px solid #232323;
+                        border-radius: 4px;
+                }
+
+                .filter-label input:checked ~ .checkmark {
+                    border:2px solid #311B92;
+                    background: #311B92;
+                  }
+
+                  .checkmark:after {    
+                    content: "";
+                    position: absolute;
+                    display: none;
+                  }
+
+                  .filter-label input:checked ~ .checkmark:after {
+                    display: block;
+                  }
+
+                  .filter-label .checkmark:after {
+                    left: 4px;
+                    top: 0px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                  }
+            }
+
+        }
+
+}
+
+.hackathonHeaders {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    letter-spacing: 0.1px;
+    @include phone-only {
+        margin:0;
+        margin-bottom: 20px;;
+    }
+}
+.fullList {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    @include tablet-only {
+        margin: 15% 2.5% 0px 2.5%;
+    }
+    @include phone-only {
+        padding-top: 0;
+        margin: 0 auto;
+    }
+
+    #hackathons-head {
+        width: 65%;
+        color: #232323;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        @include phone-only {
+            margin:0;
+            margin-top: 130px;
+        }
+    }
+}
+.cardParent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content {
+    padding: 6%;
+    @include phone-only {
+        padding: 0;
+    }
+    a{
+        span, p{
+            text-align: left;
+        }
+    }
+}
+.hackathonInfo {
+    font-family: Muli;
+    text-align: left; 
+    color: black;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+

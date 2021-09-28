@@ -1,0 +1,20 @@
+@import '../variables/variables.scss';
+
+.pendingContainer {
+    @include tablet-only {
+        width:90%;
+    }
+    h1{
+        margin-top:30px;
+    }
+    .backButton {
+        padding:0;
+    }
+    .pendingProjectCard {
+        margin-left:0;
+        @include phone-only {
+            height: 150px;
+            width:80%;
+        }
+    }
+}

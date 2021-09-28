@@ -1,0 +1,67 @@
+.members-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto 0;
+
+  .dashboard-btn {
+    align-self: flex-start !important;
+  }
+}
+
+.initials {
+  display: inline-block;
+  background-color: $tertiary;
+  color: #fff;
+  padding: 6px;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+}
+
+.household-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.category-item {
+  display: flex;
+  margin: 2em 3em;
+  border-left: 0.25em solid #ff9f1c;
+  padding-left: 0.25em;
+}
+
+.category-item h3 {
+  margin-right: 1em;
+}
+
+.category-list {
+  margin-top: 60px;
+}
+
+#header-cat {
+  text-align: center;
+}
+
+.add-category-btn {
+  padding: 7px 68px;
+  background-color: #ff9f1c;
+  color: #fff;
+  margin: 15px 0px 15px;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: rgb(230, 144, 25);
+  }
+}
+
+div.add-btn-center {
+  text-align: center;
+}

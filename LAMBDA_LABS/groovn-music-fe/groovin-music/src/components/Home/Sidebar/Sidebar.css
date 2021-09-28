@@ -1,0 +1,32 @@
+div input {
+  width: 60%;
+  margin: 12px auto;
+  opacity: 0.6;
+  height: 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 15px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.navLink:hover {
+  color: #3a506b;
+}

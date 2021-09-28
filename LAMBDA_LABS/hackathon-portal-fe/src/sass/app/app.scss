@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 92px);
+}
+
+// body {
+//     margin: 0;
+//     padding: 0;
+//     // height: calc(100% - 92px);
+//     position: relative;
+//     height: 100%;
+
+// }
+
+* {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.App{
+    height: 100%;
+
+    .main-container {
+        height: 100%;
+        position: relative;
+
+        .all-but-nav{
+            height:100%;
+            margin-top: 92px;
+        }
+    }
+}
+.hamburger-shown {
+    height: 100vh;
+    overflow: hidden;
+}

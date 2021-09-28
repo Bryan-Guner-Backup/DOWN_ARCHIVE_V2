@@ -1,0 +1,174 @@
+/*
+RecentlyPlayed Component
+Playlist Component
+*/
+.homepage-item-container {
+  border-top: 0.5rem solid #5bc0be;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.homepage-item {
+  width: 23%;
+  margin: 4px auto;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .homepage-item {
+    width: 48%;
+  }
+}
+
+/* Recently Played component */
+
+.homepage-item img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.homepage-item img:hover {
+  opacity: 0.4;
+}
+
+.homepage-item h4,
+.homepage-item h5 {
+  margin: 2px auto;
+}
+
+/* playlist component */
+
+.box {
+  height: 170px;
+  background: rgb(18, 125, 136);
+  background: radial-gradient(
+    circle,
+    rgba(18, 125, 136, 1) 42%,
+    rgba(39, 24, 69, 1) 91%
+  );
+}
+
+.box:hover {
+  opacity: 0.5;
+}
+
+.box h3 {
+  margin-top: 70px;
+}
+
+/* AlbumOfWeek component */
+
+.album-of-week {
+  margin: 3rem 0 10rem 0;
+  width: 100%;
+  height: 500px;
+}
+.album-container {
+  border-top: 0.5rem solid #5bc0be;
+  padding-top: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-container .album-image {
+  align-self: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  max-width: 500px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.album-text {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  padding-left: 4rem;
+  color: white;
+}
+
+.section-title {
+  padding-left: 5rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.see-all {
+  font-size: 25px;
+  color: white;
+  margin-left: 5rem;
+}
+
+.see-all:hover {
+  color: #3a506b;
+}
+
+@media (max-width: 1000px) {
+  .album-container {
+    position: relative;
+  }
+
+  .album-container .album-image {
+    position: absolute;
+    background-size: cover;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .album-image::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0,
+      rgb(15, 20, 26) 80%
+    );
+    height: 100%;
+    width: 100%;
+    content: '';
+  }
+
+  .album-text {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .album-of-week {
+    height: 300px;
+  }
+  .album-container .album-image {
+    height: 100%;
+  }
+
+  .album-text {
+    margin-left: 10px;
+    text-align: left;
+    top: -25px;
+    font-size: 12px;
+  }
+}

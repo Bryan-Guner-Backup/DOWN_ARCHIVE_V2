@@ -1,0 +1,68 @@
+{
+  "name": "homerun-be",
+  "repository": "https://github.com/Lambda-School-Labs/homerun-be.git",
+  "author": "[Brandon] <desselle.brandon2@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "eslintIgnore": [
+    "*.spec.ts",
+    "*.test.js"
+  ],
+  "eslintConfig": {
+    "env": {
+      "browser": false,
+      "node": true
+    }
+  },
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
+    "test": "cross-env NODE_ENV=test jest --watchAll --coverage",
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "action-migrate": "cross-env NODE_ENV=test knex migrate:latest",
+    "action-seed": "cross-env NODE_ENV=test knex seed:run",
+    "action-coverage": "cross-env NODE_ENV=test jest --coverage --detectOpenHandles --forceExit"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__tests__/**"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dayjs": "^1.8.25",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "google-auth-library": "^6.0.5",
+    "grant-express": "^4.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.15",
+    "morgan": "~1.9.1",
+    "nanoid": "^3.1.10",
+    "nodemailer": "^6.4.4",
+    "pg": "^7.18.1",
+    "prettier": "^2.0.5",
+    "purecrypt": "^1.0.4"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
