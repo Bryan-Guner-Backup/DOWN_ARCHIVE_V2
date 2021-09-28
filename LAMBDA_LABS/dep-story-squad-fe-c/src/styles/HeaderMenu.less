@@ -1,0 +1,36 @@
+.storysquad-header {
+  .header-menu {
+    background: @white;
+    width: 250px;
+    height: 22vh;
+    position: absolute;
+    top: 5px;
+    right: -100%;
+    z-index: 10;
+    transition: all 0.3s ease;
+
+    button {
+      width: 100%;
+      height: 33.33%;
+      border: none;
+      padding: 5px 0 5px 20%;
+      text-align: left;
+      cursor: pointer;
+      transition: background, padding 0.5s ease;
+
+      &:hover {
+        background: @red;
+        color: @white;
+        padding-left: 30%;
+      }
+
+      &:disabled {
+        cursor: initial;
+      }
+    }
+  }
+
+  .header-menu.open {
+    right: 45px;
+  }
+}

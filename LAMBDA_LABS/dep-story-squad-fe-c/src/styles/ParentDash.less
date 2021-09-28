@@ -1,0 +1,166 @@
+.Content {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background: @white;
+}
+
+.Layout {
+  background: @white;
+}
+
+.dashCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  margin: 24px;
+  height: 176px;
+  width: 343px;
+  background: @cyan;
+  border: 0.5px solid @txt-lite;
+  box-sizing: border-box;
+  border-radius: 14px;
+  font-size: 36px;
+  .icon {
+    margin-right: 10px;
+  }
+  h2 {
+    font-family: @secondary;
+    font-size: 36px;
+    color: black;
+  }
+  .submitBtn {
+    font-size: 25px;
+    background: @btn-blue;
+    border-radius: 14px;
+    color: white;
+    width: 70%;
+    font-family: @primary;
+  }
+}
+
+.Child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  button,
+  h2 {
+    margin: 0 auto;
+    outline: none;
+  }
+  button {
+    height: 36px;
+  }
+  .cancel {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+
+.parent-layout {
+  background: @white;
+  height: '100vh';
+}
+
+.parent-header {
+  background: @white;
+  width: '100%';
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    color: @dark-blue;
+  }
+}
+
+.contentCard {
+  background: @cyan;
+  border-radius: 14px;
+  width: 674px;
+  height: 364px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  outline: none;
+  // Media Query for signupForm
+  .minMQ(@desktop, {width: 80vw;});
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 45%;
+    height: 100%;
+    .minMQ(@desktop, {width: 60vw;});
+  }
+  input {
+    padding: 8px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .submitBtn {
+    background: @btn-blue;
+    border-radius: 14px;
+    color: white;
+  }
+  .dysBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .dysLbl {
+    margin-right: 10px;
+  }
+  .cancel {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+  .logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 45%;
+    height: 100%;
+    h3 {
+      font-size: 30px;
+      color: @black;
+    }
+    button {
+      margin: 1vh 0;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40vh;
+  h2 {
+    font-size: 36px;
+    color: black;
+    font-family: @secondary;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.parentDash {
+  position: 'absolute';
+  height: '100%';
+}

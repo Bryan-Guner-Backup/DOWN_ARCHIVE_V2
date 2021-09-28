@@ -1,0 +1,13 @@
+// Media Query Mixin
+.MQ(@maxWidth; @rules) {
+  @media only screen and (min-width: @maxWidth) {
+    @rules();
+  }
+}
+
+// For desktop to mobile development
+.minMQ(@maxWidth; @rules) {
+  @media only screen and (max-width: @maxWidth) {
+    @rules();
+  }
+}
