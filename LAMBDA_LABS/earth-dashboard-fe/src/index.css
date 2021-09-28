@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.fade-enter {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #587170 #A4B7B6;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: #A4B7B6;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #587170;
+    border-radius: 20px;
+    border: 3px solid #A4B7B6;
+}
