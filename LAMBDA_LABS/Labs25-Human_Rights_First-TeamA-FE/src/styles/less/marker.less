@@ -1,0 +1,77 @@
+@import 'variables';
+
+.marker {
+  position: absolute;
+  height: 40px;
+  width: 30px;
+  left: -10px;
+  top: -30px;
+}
+
+.title-container {
+  .flexDisplay(row, space-between, center);
+}
+
+.evidence {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ant-popover {
+  letter-spacing: 0.5px;
+  width: 70%;
+
+  @media @medium {
+    width: 50%;
+  }
+
+  @media @large {
+    width: 40%;
+  }
+
+  @media @xlarge {
+    width: 30%;
+  }
+
+  .ant-popover-title {
+    text-align: center;
+
+    .title-container {
+      .flexDisplay(row, space-between, center);
+      div {
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin: 0px 10px;
+      }
+    }
+
+    div {
+      color: @backgroundColor;
+    }
+  }
+}
+.ant-popover-inner-content {
+  font-size: 1.05rem;
+
+  h3 {
+    color: @backgroundColor;
+    letter-spacing: 0.5px;
+  }
+
+  .evidence a {
+    color: @backgroundColor;
+    letter-spacing: 0.5px;
+  }
+}
+
+.close-container {
+  width: 100%;
+  .flexDisplay(row, center, center);
+  margin-top: 2%;
+  .close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
