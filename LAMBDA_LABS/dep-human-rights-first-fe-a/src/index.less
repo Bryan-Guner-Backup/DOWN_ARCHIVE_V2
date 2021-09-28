@@ -1,0 +1,105 @@
+/* Import UIkit default theme (or uikit.less with only core styles) */
+@import "node_modules/uikit/src/less/uikit.theme.less";
+
+/* Your custom code goes here, e.g. mixins, variables. */
+@global-color: #333;
+@global-emphasis-color: #7f9bb3;
+@global-muted-color: #7f9bb3;
+@global-link-color: #215589;
+@global-link-hover-color: #2b6eb2;
+@global-background: #ffffff;
+@global-muted-background: #f8f8f8;
+@global-primary-background: #003767;
+@global-secondary-background: #BC5423;
+@global-danger-background: #a80903;
+@global-border: #afafaf;
+@global-inverse-color: #fff;
+
+//-------------------------------------
+*:focus {
+  outline: none !important;
+}
+
+footer {
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  background: @global-background;
+
+  .uk-button {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  .uk-button-muted {
+    background: @global-muted-color;
+    border: 1px solid @global-muted-color;
+    color: @global-inverse-color;
+
+    &:hover {
+      background: #7899b7;
+    }
+  }
+
+  .uk-button-text {
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  span {
+    color: @global-border;
+  }
+
+  .toggle-container {
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .uk-button-toggle {
+    padding: 0;
+    border-radius: 50% 50% 0 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -20px;
+    background: @global-background;
+    color: @global-link-color;
+    cursor: pointer;
+  }
+
+  .uk-container-expand {
+    padding: 0 5px 5px 5px;
+  }
+}
+
+.mapboxgl-map {
+  position: relative;
+  max-width: 100%;
+  height: 800px;
+}
+
+.map-toolbar {
+
+  nav,
+  ul,
+  li,
+  a {
+    min-height: 40px !important;
+    max-height: 40px;
+    line-height: 40px;
+  }
+}
+
+.twitter-btn {
+  background-color: #00acee;
+  color: white;
+  border-radius: 8px;
+}
+
+.share-btn {
+  outline: none;
+  margin-left: 8px;
+}
