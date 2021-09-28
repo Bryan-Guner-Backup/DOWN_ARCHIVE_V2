@@ -1,0 +1,64 @@
+{
+	"name": "betterreads-backend",
+	"version": "1.0.0",
+	"description": "🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.",
+	"main": "index.js",
+	"scripts": {
+		"coverage": "cross-env NODE_ENV=staging jest --coverage --watchAll=false --detectOpenHandles --forceExit || true",
+		"test": "cross-env NODE_ENV=staging jest --watch --runInBand --detectOpenHandles",
+		"server": "nodemon index.js",
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lambda-School-Labs/betterreads-backend.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lambda-School-Labs/betterreads-backend/issues"
+	},
+	"homepage": "https://github.com/Lambda-School-Labs/betterreads-backend#readme",
+	"devDependencies": {
+		"cross-env": "^7.0.0",
+		"faker": "^4.1.0",
+		"jest": "^25.1.0",
+		"nodemon": "^2.0.2",
+		"supertest": "^4.0.2"
+	},
+	"dependencies": {
+		"@sendgrid/mail": "^7.1.0",
+		"axios": "^0.19.2",
+		"bcryptjs": "^2.4.3",
+		"connect-session-knex": "^1.5.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.0",
+		"helmet": "^3.22.0",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.20.10",
+		"knex-cleaner": "^1.3.0",
+		"mailgun-js": "^0.22.0",
+		"passport": "^0.4.1",
+		"passport-facebook": "^3.0.0",
+		"passport-google-oauth20": "^2.0.0",
+		"passport-okta-oauth": "0.0.1",
+		"pg": "^7.18.1"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"collectCoverageFrom": [
+			"**/*.{js,jsx}",
+			"!**node_modules/**",
+			"!**/vendor/**",
+			"!**/test/**",
+			"!**/coverage/**",
+			"!**/database/migrations/**",
+			"!**/database/seeds/**",
+			"!**/models/all-user-data.js",
+			"!**/config/**",
+			"!**/index.js"
+		]
+	}
+}
