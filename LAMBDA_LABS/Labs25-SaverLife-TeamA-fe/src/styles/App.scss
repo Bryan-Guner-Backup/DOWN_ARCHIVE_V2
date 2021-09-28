@@ -1,0 +1,560 @@
+$primary: #c01089;
+
+@import url(//db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black);
+@import url(//db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium);
+@import '~bootstrap/scss/bootstrap';
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir Medium'
+}
+
+.main-svg {
+    background: none;
+}
+
+.gtitle {
+    display: none;
+}
+
+button {
+    font-family: 'Circular Std Black';
+}
+
+.pageContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-in-widget {
+    margin-top: 15vh;
+}
+
+// Light-Dark Mode //
+
+.light-mode .logoDM {
+    display: none;
+}
+
+.light-mode, .light-mode .headerText {
+    background-color: #ffffff;
+    color: black;  
+}
+
+.light-mode h2, .light-mode h4, .light-mode h5, .light-mode h6 {
+    color: black;
+}
+
+.light-mode .navBar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2.5px rgba(0, 10, 10, 0.25);
+}
+
+.light-mode .progressBarContainer {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2.5px rgba(0, 10, 10, 0.25);
+}
+
+.light-mode profile {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2.5px rgba(0, 10, 10, 0.25);
+}
+
+.light-mode .legendtitletext, .light-mode .legendtext, .light-mode .annotation-text, .light-mode .gtitle, .light-mode .xtitle, .light-mode .ytitle, .light-mode .ytick text, .light-mode .xtick text {
+    fill: black !important;
+}
+
+.light-mode .xlines-above, .light-mode .ylines-above, .light-mode .ticks, .light-mode .legendundefined, .light-mode .legendpie {
+    stroke: black !important;
+}
+
+.light-mode .dashboardHeader {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .15);
+}
+
+.light-mode .subContent {
+    background-color: #ffffff;
+}
+
+.light-mode .subContentHeaders {
+    background-color: lightgray
+}
+
+.dark-mode .logoLM {
+    display: none;
+}
+
+.dark-mode, .dark-mode .headerText {
+    background-color: #1a1919;
+    color: #ffffff;  
+}
+
+.dark-mode .budgetComparison {
+    background-color: #1a1919;
+}
+
+.dark-mode h2, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #ffffff
+}
+
+.dark-mode .borderBox {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, .9);
+}
+
+.dark-mode .navBar {
+    background-color: black;
+    box-shadow: 0px 0px 2.5px rgba(255, 255, 255, .9);
+}
+
+.dark-mode .progressBarContainer {
+    background-color: black;
+    box-shadow: 0px 0px 2.5px rgba(255, 255, 255, .9);
+}
+
+.dark-mode .profile {
+    background-color: #1a1919;
+    box-shadow: 0px 0px 2.5px rgba(255, 255, 255, .9);
+}
+
+.dark-mode .legendtitletext, .dark-mode .legendtext, .dark-mode .annotation-text, .dark-mode .gtitle, .dark-mode .xtitle, .dark-mode .ytitle, .dark-mode .ytick text, .dark-mode .xtick text {
+    fill: #ffffff !important;
+}
+
+.dark-mode .xlines-above, .dark-mode .ylines-above, .dark-mode .ticks, .dark-mode .legendundefined, .dark-mode .legendpie {
+    stroke: #ffffff !important;
+}
+
+.dark-mode .dashboardHeader {
+    background-color: #1a1919;
+    box-shadow: 0px 0px 2.5px rgba(255, 255, 255, .9);
+}
+
+.dark-mode .subContent {
+    background-color: #1a1919;
+}
+
+.dark-mode .subContentHeaders {
+    background-color: black
+}
+
+.dark-mode .MuiTableCell-head, .dark-mode .MuiTableCell-body {
+    color: white;  
+}
+
+.lightSwitchContainer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 10%;
+    top: 80px;
+}
+
+.bulbIcon {
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+
+// NavBar Styles //
+
+.navContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.navBar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.logoDM {
+    width: 160px;
+}
+
+.navBarList {
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem a {
+    font-weight: 500;
+    color: #ecb7db;
+}
+
+.navItem a:hover {
+    color: #c01089;
+    text-decoration: none;
+    padding-bottom: 18px;
+    border-bottom: 2.5px solid #c01089;
+}
+
+.navItemActive a {
+    color: #c01089;
+    padding-bottom: 18px;
+    border-bottom: 2.5px solid #c01089;
+}
+
+.navIcon {
+    display: none;
+}
+
+//Progress Bar Styles//
+
+.progressBarContainer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    z-index: 2;
+}
+
+.progressBar {
+    width: 80%;
+    margin: 12.5px 10%;
+    height: 35px;
+    color: #ecb7db;
+}
+
+// Main Content //
+
+.contentContainer {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 115px;
+    margin-bottom: 80px;
+}
+
+.spinner-div {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 45vh;
+}
+
+.borderBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px 0px 10px 0px;
+}
+
+.budget {
+    margin-top: 20px;
+}
+
+.dashboardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 25px 0px 10px 0px;
+    margin-top: -20px;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.tableContainer {
+    margin-top: 85px;
+}
+
+.headerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.headerText .tooltipHeader {
+    margin-left: .5vw;
+}
+
+.spendingChart, .netIncomeChart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.netIncomeChart {
+    margin-top: 50px;
+}
+
+.donutChart {
+    margin-top: 50px;
+}
+
+.chartTitle1 {
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+.chartTitle2 {
+    margin-top: 50xp;
+    margin-bottom: -80px;
+}
+
+.budgetComparison {
+    width: 100%;
+    overflow: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h6 {
+    margin-bottom: 0px;
+    
+}
+
+.individualBar {
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+.budgetBar {
+    height: 30px;
+    margin-top: 3px;
+}
+
+.progressHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.progressP {
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+
+.progressButton {
+    margin: 10px 0,
+}
+
+/* My Account Page */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    width: 60%;
+    height: 500px;
+    padding: 20px 0 0 0;
+    margin-top: -5px;
+    justify-content: space-between;
+}
+
+.saveButton {
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #c01089;
+    border: 0;
+    color: #ffffff;
+    border: 1px solid #c01089;
+}
+
+.saveButton:hover {
+    background-color: #ffffff;
+    border: 1px solid #c01089;
+    color: #c01089;
+}
+
+.logOutButton {
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #c01089;
+    border: 0;
+    color: #ffffff;
+    border: 1px solid #c01089;
+}
+
+.logOutButton:hover {
+    background-color: #ffffff;
+    border: 1px solid #c01089;
+    color: #c01089;
+}
+
+.editButton {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #c01089;
+    color: #c01089;
+    background-color: #ffffff;
+}
+
+.editButton:hover {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #c01089;
+}
+
+.userInfoContainer {
+    text-align: center;
+}
+
+.userInfoEditingContainer input {
+    margin: 5px auto;
+}
+
+.passwords input {
+    margin: 5px auto;
+}
+
+.profileAvatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+    border: 3px solid rgba(0, 0, 0, .25);
+    margin-bottom: 20px;
+}
+
+.isNotActive {
+    display: none;
+}
+
+// media querie //
+
+@media (max-width: 1000px) {
+    .navItem a {
+        font-size: .75rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 800px) {
+    .navBarList {
+        width: 100%;
+        margin-right: 30px;
+        justify-content: space-evenly;
+    }
+    
+    .navItem a {
+        font-size: 0px;
+    }
+    
+    .navIcon {
+        display: inline;
+        
+    }
+    
+    .navIcon a span {
+        color: #ecb7db;
+    }
+    
+    .navItemActive a {
+        border-bottom: 0;
+        border-top: 2px solid #c01089;
+        padding-top: 17px;
+    }
+    
+    .navItemActive a span {
+        color: #c01089;
+    }
+    
+    .navContainer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .progressBarContainer {
+        position: fixed;
+        top: 0;
+    }
+
+}
+
+@media (min-width: 801px) {
+    .navContainer {
+        top: 0;
+    }
+}
+
+@media (max-width: 650px) {
+
+    p {
+        font-size: .75rem;
+    }
+
+    .lightSwitchContainer {
+        right: 5%;
+    }
+
+    .bulbIcon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .budgetComparisonContainer {
+        margin-top: 55px;
+    }
+
+    .progressHeader {
+        flex-direction: column;
+    }
+
+    .progressButton {
+        font-size: .75rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: .5rem;
+    }
+
+    h6 {
+        font-size: .75rem;
+    } 
+}
