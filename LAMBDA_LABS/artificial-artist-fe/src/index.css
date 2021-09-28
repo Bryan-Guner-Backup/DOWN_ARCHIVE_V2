@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Gill Sans Ultra";
+  src: url(/fonts/GillSansUltraBold.ttf);
+}
+
+@font-face {
+  font-family: "Gibson Bold";
+  src: url(/fonts/gibson-bold.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 342px;
+  margin-bottom: 32px;
+}
+
+.navbar-brand {
+  padding: flex;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.188rem;
+}
+
+.navbar-brand:hover {
+  color: #665ef1;
+  text-decoration: underline;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px 18px;
+  background-color: #a8a8a8;
+  text-align: center;
+  margin: 4px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+}
+
+.nav-links a:hover {
+  background-color: #665ef1;
+  color: white;
+}
