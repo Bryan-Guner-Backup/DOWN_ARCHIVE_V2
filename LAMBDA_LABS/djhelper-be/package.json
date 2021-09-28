@@ -1,0 +1,71 @@
+{
+  "name": "djhelper-be",
+  "version": "1.0.0",
+  "description": "DJ Helper Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --watch --verbose --runInBand",
+    "coverage": "cross-env DB_ENV=testing jest --coverage --detectOpenHandles --forceExit || true"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**node_modules/**",
+      "!**/vendor/**",
+      "!**/__tests__/**",
+      "!**/coverage/**",
+      "!**/data/migrations/**",
+      "!**/data/seeds/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lambda-School-Labs/djhelper-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lambda-School-Labs/djhelper-be/issues"
+  },
+  "homepage": "https://github.com/Lambda-School-Labs/djhelper-be#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "helmet": "^3.21.3",
+    "https": "^1.0.0",
+    "js": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "knex-cleaner": "^1.3.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "pg": "^8.3.2",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "i": "^0.3.6",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "npm": "^6.14.5",
+    "prettier": "^1.19.1",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
