@@ -1,0 +1,65 @@
+.bigBoyContainer {
+    display: flex;
+    flex-flow: row wrap;
+
+    .close-icon {
+        font-size: 2rem;
+    }
+}
+
+.navbar {
+    background-color: white;
+    position: absolute;
+    padding: 5px 5px 0px 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 5px 0 0 5px;
+}
+
+.menu-bars {
+    font-size: 1.4rem;
+    background: none;
+}
+
+.nav-content {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 50px;
+        padding-right: 20px;
+    }
+}
+
+.nav-menu {
+    background-color: whitesmoke;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: -100%;
+    transition: 850ms;
+    flex-direction: column;
+    top: 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.navbar-toggle {
+    background-color: whitesmoke;
+    list-style: none;
+}

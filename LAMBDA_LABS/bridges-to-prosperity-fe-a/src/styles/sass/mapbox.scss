@@ -1,0 +1,241 @@
+.mapbox-react {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  .fullScreenControl {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 0;
+  }
+
+  .navigationControl {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 0;
+  }
+
+  .detailsContainer {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 40%;
+    color: whitesmoke;
+
+    .detailsContainer-card {
+      min-height: 100%;
+    }
+
+    .closeArea {
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px;
+      text-align: right;
+      cursor: default;
+    }
+
+    .close_button {
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .bridgeImgDiv-container {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+  }
+
+  .desktop {
+    .search-bar {
+      position: absolute;
+      left: 10;
+      top: 10;
+      margin: 9px 0 0 10px;
+      z-index: 0;
+      display: none;
+    }
+
+    .check-box {
+      position: absolute;
+      margin: 8px 0 0 50px;
+      background-color: white;
+      z-index: 1;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+
+      .check-box-section {
+        height: 28px;
+        padding: 10px 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .checkbox-list {
+          display: flex;
+        }
+      }
+    }
+
+    .mapboxgl-ctrl-geocoder {
+      width: 1000px;
+    }
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 5px 0 0 5px;
+  }
+
+  @media only screen and (max-width: 1350px) {
+    width: 100%;
+
+    .toggle {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 5px;
+      background-color: white;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin: 5px 0 0 5px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .desktop {
+      .search-bar {
+        position: absolute;
+        left: 10;
+        top: 10;
+        z-index: 0;
+        margin: 45px 0 0 0;
+      }
+
+      .check-box {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: medium;
+        color: black;
+        margin: 100px 0 0 0;
+        width: 100px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+
+        .check-box-section {
+          width: 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          font-size: 0.8rem;
+
+          .restricted {
+            margin: 5px 0;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlays {
+  border: 3px solid #161345;
+  // box-shadow: 0px 2px 30px 0px #13113e;
+}
+
+.map_container {
+  background-image: URL('../imgs/itote-rubombora-8PF8fl6e6yE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#card_content {
+  background-color: #161345;
+  cursor: default;
+}
+
+.graphDiv {
+  background-color: white;
+  width: 100%;
+}
+
+.no-bridge-image {
+  padding: 0.5rem;
+  text-align: center;
+  color: #009149;
+  font-family: 'bridge-font-bd';
+}
+
+#card_media {
+  min-height: 200px;
+  width: 100%;
+}
+
+#bridge_name_intro {
+  font-size: medium;
+  margin-right: 2px;
+}
+
+.bottom_info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+
+  hr {
+    width: 100%;
+    border-top: solid rgba(120, 120, 120, 100);
+  }
+
+  .bottom_info_projectInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.bottom_info_cols {
+  width: 100%;
+  padding: 0 5%;
+
+
+  h1 {
+    color: #161345;
+    font-size: 1.4rem;
+  }
+
+  .bottomInfoTags {
+    font-size: .9rem;
+    font-weight: bold;
+  }
+}
+
+.bottomInfoTags {
+  font-size: 0.75rem;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1800px) {
+  .bottom_info_cols p {
+    font-size: 1rem;
+  }
+}
