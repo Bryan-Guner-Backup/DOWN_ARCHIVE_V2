@@ -1,0 +1,489 @@
+/* override for okta login widget */
+#root {
+  height: 100%;
+}
+
+#sign-in-widget {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+#okta-sign-in.auth-container.main-container {
+  overflow: hidden;
+}
+
+.ant-layout-content {
+// min-height: 100vh; //commented this out as it have a scroll bar to all pages even when one wasnt necessary
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  
+
+  .ypd {
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.ant-layout{
+  height: 100%;
+}
+/* PAGE specific styles */
+
+/* Admin Dashboard */
+.adminDashboardContent .ant-layout-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* RenderMemberScanner */
+.errorText,
+.regularText {
+  margin-bottom: 0rem;
+}
+
+.qrReader {
+  section {
+    section {
+      border-radius: 40px;
+    }
+  }
+}
+
+.scannerTitle {
+  color: #0081c6;
+  font-size: 72px;
+  outline: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  margin-bottom: 0;
+}
+
+/* ManualMemberInput */
+.manualMemberInput {
+  justify-content: center;
+  div,
+  .ant-form-inline,
+  .ant-form-item-with-help {
+    margin-bottom: 3px;
+  }
+
+  .scannerBtn {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+.memberIDInput {
+  margin-top: 10px;
+  margin-left: 16px;
+  height: 50px;
+  width: 190px;
+  font-size: 1.4rem;
+}
+
+/* eof PAGE specific styles */
+
+/* COMPONENT specific styles */
+
+/* Select Button */
+.dropdownSelected {
+  margin: 20px;
+  font-size: 2rem;
+}
+/* eof Select Button */
+
+/* eof COMPONENT specific styles */
+
+.emojiBtn {
+  height: 100px;
+  width: 100px;
+  color: #000000;
+  font-size: 4rem;
+  opacity: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.emojiBtn:hover {
+  height: 115px;
+  width: 110px;
+  color: #000000;
+  font-size: 5rem;
+  opacity: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.emojiBtn:focus {
+  height: 115px;
+  width: 110px;
+  color: #000000;
+  font-size: 5rem;
+  opacity: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.emojiConfirmBtn {
+  height: 90px;
+  width: 120px;
+  color: #ffffff;
+  font-size: 2rem;
+  opacity: 100%;
+}
+
+
+
+
+.ydp-selection-dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  li {
+    padding: 2vh 1vh;
+    text-align: center;
+    svg {
+      margin-right: 1vh;
+      font-size: larger;
+    }
+    font-size: 2rem;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+  }
+
+  li:active {
+    background-color: rgba(214, 214, 214, 0.603);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+  }
+}
+
+//fadein
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//bgCircles
+.circleA {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -3s;
+  z-index: -100;
+}
+.circleB {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -2.75s;
+  z-index: -100;
+}
+.circleC {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -2.5s;
+  z-index: -100;
+}
+.circleD {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -2.25s;
+  z-index: -100;
+}
+.circleE {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -2s;
+  z-index: -100;
+}
+.circleF {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -1.75s;
+  z-index: -100;
+}
+.circleG {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -1.5s;
+  z-index: -100;
+}
+.circleH {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -1.25s;
+  z-index: -100;
+}
+.circleI {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -1s;
+  z-index: -100;
+}
+.circleJ {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -0.75s;
+  z-index: -100;
+}
+.circleK {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -0.5s;
+  z-index: -100;
+}
+.circleL {
+  border-radius: 50%;
+  background-color: rgb(0, 140, 255);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  animation-delay: -0.25s;
+  z-index: -100;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 50%;
+  margin-top: -85px;
+  z-index: 100;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+//Navbar toggle styles
+.mainhamburger {
+  width: 230px;
+  height: 101%;
+ 
+  li {
+    padding: 1.5vh;
+    svg {
+      margin-right: 1vh;
+      font-size: larger;
+    }
+    font-size: 1.2rem;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+  }
+
+  li:active {
+    background-color: rgba(214, 214, 214, 0.603);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+  }
+}
+
+.menu-container{
+    display: none;
+  }
+
+@media (max-width:1000px){
+ 
+ .menu-container{
+   display: block;
+ } 
+ .navSider{
+   display: none;
+   
+ }
+ .navSider.active{
+  display: block;
+  animation: show_in 0.6s;
+ }
+
+ @keyframes show_in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+}
