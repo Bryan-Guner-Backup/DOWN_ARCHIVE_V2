@@ -1,0 +1,111 @@
+{
+  "name": "labs-spa-starter",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@craco/craco": "^5.6.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@okta/okta-react": "^3.0.2",
+    "@okta/okta-signin-widget": "^4.1.2",
+    "antd": "^4.4.3",
+    "axios": "^0.19.2",
+    "craco-less": "^1.17.0",
+    "deck.gl": "^8.2.5",
+    "google-map-react": "^2.0.8",
+    "mapbox-gl": "^1.11.1",
+    "markerclustererplus": "^2.1.4",
+    "moment": "^2.27.0",
+    "parse-url": "^5.0.2",
+    "plotly.js": "^1.54.6",
+    "react": "^16.13.1",
+    "react-collapsible": "^2.8.0",
+    "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
+    "react-google-maps": "^9.4.5",
+    "react-loader-spinner": "^3.1.14",
+    "react-map-gl": "^5.2.7",
+    "react-map-gl-geocoder": "^2.0.11",
+    "react-mapbox-gl": "^4.8.6",
+    "react-mapbox-gl-geocoder": "^1.1.0",
+    "react-moment": "^0.9.7",
+    "react-plotly.js": "^2.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-tabs": "^3.1.1",
+    "react-twitter-embed": "^3.0.3",
+    "swr": "^0.3.3",
+    "twitter-url-parser": "0.0.1",
+    "url-parse": "^1.4.7",
+    "use-supercluster": "^0.2.8",
+    "vertical-timeline-component-for-react": "^1.0.7"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "coverage": "npm test -- --coverage --watchAll=false",
+    "lint": "eslint 'src/**/*.{js,jsx}' --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
+    "storybook": "start-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier-eslint --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/stories/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/user-event": "^7.2.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "jest-canvas-mock": "^2.2.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-prop-type-error": "^1.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
