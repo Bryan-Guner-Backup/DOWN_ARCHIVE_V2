@@ -1,0 +1,26 @@
+@import "../../../index.scss";
+
+.saved-card {
+    margin: 10px auto;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3 {
+        width: 33%;
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 5px 10px;
+        color: $carpalGreen;
+        border: 2px solid $carpalGreen;
+        background-color: $carpalWhite;
+        text-transform: none;
+    }
+
+    &:hover {
+        background-color: $carpalLightGreen;
+    }
+}

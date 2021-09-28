@@ -1,0 +1,90 @@
+@import "../../../index.scss";
+
+.incoming-request-card,
+.outgoing-request-card {
+    max-width: 800px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    &.selected {
+        background-color: $carpalLightGreen;
+    }
+    .incoming-request-overview,
+    .outgoing-request-overview {
+        .request-card-upper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .profilePic {
+                width: 100px;
+                height: auto;
+                padding-right: 20px;
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin: 10px 10px;
+                @include respond-to("tablet") {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .request-card-lower {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: space-between;
+            button {
+                border-color: $carpalGreen;
+                color: $carpalGreen;
+                background-color: $carpalWhite;
+                font-size: 1.5rem;
+                padding: 5px 10px;
+                margin: 2px 5px;
+                &:hover {
+                    color: $carpalBlack;
+                    background-color: $carpalLightGreen;
+                }
+                &:active {
+                    background-color: $carpalWhite;
+                    color: $carpalGreen;
+                    border: 1px solid $carpalWhite;
+                }
+            }
+        }
+    }
+
+    .request-card-details {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0px 0px 0px;
+        align-items: center;
+        @include respond-to("tablet") {
+            align-items: flex-start;
+        }
+        .flexContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+
+            h2 {
+                font-size: 1.2rem;
+                padding: 8px 10px;
+                @include respond-to("tablet") {
+                    font-size: 1.8rem;
+                }
+            }
+            .bubble {
+                background: $carpalGrey;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                font-size: 1.2rem;
+                text-transform: lowercase;
+                padding: 5px;
+                margin: 5px auto 10px;
+            }
+        }
+    }
+}

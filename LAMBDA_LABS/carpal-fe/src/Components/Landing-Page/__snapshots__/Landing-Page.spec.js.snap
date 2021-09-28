@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`what should be on the screen at all time render snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="landing-page main-container"
+      >
+        <section
+          class="hero"
+        >
+          <video
+            autoplay=""
+            class="slider"
+            loop=""
+          >
+            <source
+              src="CarPal.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <a
+            class="overlaybutton btn"
+            href="/Signup"
+          >
+            Sign Up
+          </a>
+        </section>
+        <section
+          class="main"
+        >
+          <div
+            class="intro"
+          >
+            <h1
+              class="landing-header"
+              data-testid="welcomeh1"
+            >
+              Welcome to CarPal
+            </h1>
+            <p
+              data-testid="firstptag"
+            >
+              The future of networking and commuting at the same time. With Carpal you will be able to join a community of drivers and riders who are looking to save money, lessen their impact on the enviorment, and gain a friend along the way.
+            </p>
+          </div>
+          <section
+            class="features"
+          >
+            <div
+              class="flex-container features-box"
+              id="first"
+            >
+              <div
+                class="flex-three-quarters"
+              >
+                <h2
+                  data-testid="h2tag1"
+                >
+                  Features
+                </h2>
+                <img
+                  alt="CarPal cutie"
+                  class="allimg hide-tablet"
+                  role="image"
+                  src="yellow-cutie.png"
+                />
+                <p>
+                  With this awesome app, these are just a few of the features you will get such as SMS messaging, friends list, gamification (user stats and point system) and even driver's real-time location, but wait there's more and its just five clicks away front becoming a Carpaller.
+                </p>
+              </div>
+              <div
+                class="flex-quarter"
+              >
+                <img
+                  alt="CarPal cutie"
+                  class="allimg show-tablet"
+                  role="image"
+                  src="yellow-cutie.png"
+                />
+              </div>
+            </div>
+            <div
+              class="flex-container features-box"
+              id="second"
+            >
+              <div
+                class="flex-three-quarters"
+              >
+                <h2
+                  data-testid="h2tag2"
+                >
+                  Drivers
+                </h2>
+                <img
+                  alt="CarPal cutie"
+                  class="allimg hide-tablet"
+                  role="image"
+                  src="driver-blue.png"
+                />
+                <p>
+                  Are you a current driver who loves to drive or even hates to drive, well guess what you in luck. The Carpal developer kept you in mind when building this app I might even add that they made it just for you.
+                </p>
+              </div>
+              <div
+                class="flex-quarter"
+              >
+                <img
+                  alt="CarPal cutie"
+                  class="allimg show-tablet"
+                  src="driver-blue.png"
+                />
+              </div>
+            </div>
+            <div
+              class="flex-container features-box"
+              id="third"
+            >
+              <div
+                class="flex-three-quarters"
+              >
+                <h2
+                  data-testid="h2tag3"
+                >
+                  Riders
+                </h2>
+                <img
+                  alt="CarPal cutie"
+                  class="allimg hide-tablet"
+                  role="image"
+                  src="shake&bake.png"
+                />
+                <p>
+                  As a rider you gain many great features and here are just a few of those. Request a ride to your destination, customize the type of driver you are interested in meet, and rate each Carpal experience to make sure our community stays the best in the business.
+                </p>
+              </div>
+              <div
+                class="flex-quarter"
+              >
+                <img
+                  alt="CarPal Cutie"
+                  class="allimg show-tablet"
+                  src="shake&bake.png"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section
+          class="sign-up"
+        >
+          <h2>
+            Ready to goooooooo?
+          </h2>
+          <a
+            class="btn"
+            href="/Signup"
+          >
+            Sign Up
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="landing-page main-container"
+    >
+      <section
+        class="hero"
+      >
+        <video
+          autoplay=""
+          class="slider"
+          loop=""
+        >
+          <source
+            src="CarPal.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <a
+          class="overlaybutton btn"
+          href="/Signup"
+        >
+          Sign Up
+        </a>
+      </section>
+      <section
+        class="main"
+      >
+        <div
+          class="intro"
+        >
+          <h1
+            class="landing-header"
+            data-testid="welcomeh1"
+          >
+            Welcome to CarPal
+          </h1>
+          <p
+            data-testid="firstptag"
+          >
+            The future of networking and commuting at the same time. With Carpal you will be able to join a community of drivers and riders who are looking to save money, lessen their impact on the enviorment, and gain a friend along the way.
+          </p>
+        </div>
+        <section
+          class="features"
+        >
+          <div
+            class="flex-container features-box"
+            id="first"
+          >
+            <div
+              class="flex-three-quarters"
+            >
+              <h2
+                data-testid="h2tag1"
+              >
+                Features
+              </h2>
+              <img
+                alt="CarPal cutie"
+                class="allimg hide-tablet"
+                role="image"
+                src="yellow-cutie.png"
+              />
+              <p>
+                With this awesome app, these are just a few of the features you will get such as SMS messaging, friends list, gamification (user stats and point system) and even driver's real-time location, but wait there's more and its just five clicks away front becoming a Carpaller.
+              </p>
+            </div>
+            <div
+              class="flex-quarter"
+            >
+              <img
+                alt="CarPal cutie"
+                class="allimg show-tablet"
+                role="image"
+                src="yellow-cutie.png"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-container features-box"
+            id="second"
+          >
+            <div
+              class="flex-three-quarters"
+            >
+              <h2
+                data-testid="h2tag2"
+              >
+                Drivers
+              </h2>
+              <img
+                alt="CarPal cutie"
+                class="allimg hide-tablet"
+                role="image"
+                src="driver-blue.png"
+              />
+              <p>
+                Are you a current driver who loves to drive or even hates to drive, well guess what you in luck. The Carpal developer kept you in mind when building this app I might even add that they made it just for you.
+              </p>
+            </div>
+            <div
+              class="flex-quarter"
+            >
+              <img
+                alt="CarPal cutie"
+                class="allimg show-tablet"
+                src="driver-blue.png"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-container features-box"
+            id="third"
+          >
+            <div
+              class="flex-three-quarters"
+            >
+              <h2
+                data-testid="h2tag3"
+              >
+                Riders
+              </h2>
+              <img
+                alt="CarPal cutie"
+                class="allimg hide-tablet"
+                role="image"
+                src="shake&bake.png"
+              />
+              <p>
+                As a rider you gain many great features and here are just a few of those. Request a ride to your destination, customize the type of driver you are interested in meet, and rate each Carpal experience to make sure our community stays the best in the business.
+              </p>
+            </div>
+            <div
+              class="flex-quarter"
+            >
+              <img
+                alt="CarPal Cutie"
+                class="allimg show-tablet"
+                src="shake&bake.png"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+      <section
+        class="sign-up"
+      >
+        <h2>
+          Ready to goooooooo?
+        </h2>
+        <a
+          class="btn"
+          href="/Signup"
+        >
+          Sign Up
+        </a>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

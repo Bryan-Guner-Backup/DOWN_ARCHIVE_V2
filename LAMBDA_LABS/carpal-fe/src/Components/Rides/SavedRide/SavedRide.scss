@@ -1,0 +1,14 @@
+@import "../../../index.scss";
+
+.saved-rides {
+    .my-saved {
+        padding: 40px 5%;
+        width: 100%;
+
+        @include respond-to("mobile") {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}

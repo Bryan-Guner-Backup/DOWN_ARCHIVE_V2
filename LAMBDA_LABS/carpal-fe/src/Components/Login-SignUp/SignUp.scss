@@ -1,0 +1,50 @@
+@import "../../index.scss";
+////////////////////body of component
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0px auto 70px;
+    //desktop media breakpoint
+    @include respond-to("desktop") {
+        flex-direction: row;
+    }
+    //////////////////form container
+    .formik-container {
+        margin: 20px;
+    }
+    ////////////////// signup form title
+    .signup-p {
+        color: $carpalDarkGrey;
+        font-size: 3rem;
+    }
+    .module-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+
+        @include respond-to("desktop") {
+            justify-content: center;
+            align-items: center;
+            background-position: cover;
+            height: 300px;
+        }
+        .module-cuties {
+            max-width: 300px;
+        }
+        ////// New to the website? signup/login p tag
+        .module-p {
+            color: $carpalDarkGrey;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+    }
+}
