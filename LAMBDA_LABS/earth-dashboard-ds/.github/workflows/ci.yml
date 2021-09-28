@@ -1,0 +1,56 @@
+# The name of the workflow
+name: build
+
+# What conditions trigger the workflow
+#  In this case, all pushes and pull requests
+on: [push, pull_request]
+
+# The jobs that will be run, usually in parallel
+jobs:
+  # A job to generate and publish code coverage
+  coverage:
+    name: Test and publish test coverage
+    # The OS on which the job will run
+    runs-on: ubuntu-latest
+
+    # The steps for the job, executed in sequence
+    steps:
+
+      # A GitHub action for checking out the current branch
+      - uses: actions/checkout@master
+
+      - name: Set up Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.8
+      
+      - name: Install pipenv
+        run:
+          pip install pipenv
+          
+      - name: Install pipfile
+        run:   
+          pipenv install
+          
+      - name: Install pytest
+        run:
+          pip install pytest
+
+      - name: Install coverage
+        run:
+          pip install coverage==4.3
+          
+      - name: Install test reporter
+        run:
+          pip install codeclimate-test-reporter
+
+      - name: Run tests
+        run:
+          coverage run tests.py
+          
+      - name: Run test reporter
+        env:
+        # An environment variable, the value is a GitHub repo secret
+          CODECLIMATE_REPO_TOKEN: ${{ secrets.CodeClimateReporterId }}
+        run:
+          codeclimate-test-reporter
