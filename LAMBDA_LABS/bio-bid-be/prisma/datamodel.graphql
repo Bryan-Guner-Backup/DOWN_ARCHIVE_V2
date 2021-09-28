@@ -1,0 +1,106 @@
+type Company {
+  id: ID! @id
+  maintainer: String
+  name: String! @unique
+  email: String
+  phases: [Phase]! @scalarList(strategy: RELATION)
+  logoURL: String
+  website: String
+  linkedin: String
+  overview: String
+  headquarters: String
+  companySize: CompanySize
+  services: [Service]! @relation(onDelete: CASCADE)
+  regions: [Region]!
+  therapeutics: [Therapeutic]!
+  studies: [Study!]
+  bids: [Bid!]
+  claims: [Claim!]! @relation(onDelete: CASCADE)
+}
+
+type Claim {
+  id: ID! @id
+  user: String!
+  email: String!
+  name: String!
+  company: Company! @relation(link: INLINE)
+  pending: Boolean! @default(value: true)
+  approved: Boolean! @default(value: false)
+}
+
+type ServiceItem {
+  id: ID! @id
+  name: String! @unique
+  services: [Service!]! @relation(onDelete: CASCADE)
+}
+
+type Service {
+  id: ID! @id
+  info: ServiceItem! @relation(link: INLINE)
+  company: Company! @relation(link: INLINE)
+  specialties: [Specialty] @relation(onDelete: CASCADE)
+}
+
+type SpecialtyItem {
+  id: ID! @id
+  name: String! @unique
+}
+
+type Specialty {
+  id: ID! @id
+  info: SpecialtyItem! @relation(link: INLINE)
+  service: Service @relation(link: INLINE)
+  sub_specialties: [Specialty] @relation(onDelete: CASCADE)
+}
+
+type Region {
+  id: ID! @id
+  name: String! @unique
+  companies: [Company]! @relation(link: TABLE)
+}
+
+type Therapeutic {
+  id: ID! @id
+  name: String! @unique
+  companies: [Company]! @relation(link: TABLE)
+}
+
+enum CompanySize { # https://developer.linkedin.com/docs/reference/company-size-codes
+  A # Self-employed
+  B # 1-10 employees
+  C # 11-50 employees
+  D # 51-200 employees
+  E # 201-500 employees
+  F # 501-1000 employees
+  G # 1001-5000 employees
+  H # 5001-10,000 employees
+  I # 10,001+ employees
+}
+
+enum Phase {
+  I
+  II
+  III
+  IV
+}
+
+type Bid {
+  id: ID! @id
+  company: Company! @relation(link: INLINE)
+  bid_amount: Float!
+  is_approved: Boolean! @default(value: false)
+  study: Study! @relation(link: INLINE)
+}
+
+type Study {
+  id: ID! @id
+  name: String! @unique
+  area: String!
+  protocol_number: String!
+  title: String!
+  phase: Int!
+  services: Int!
+  modified_date: DateTime!
+  status: String!
+  company: Company! @relation(link: INLINE)
+}
