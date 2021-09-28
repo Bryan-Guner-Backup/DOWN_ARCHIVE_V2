@@ -1,0 +1,78 @@
+.login-page {
+    height: calc(100vh - 75px);
+    background-image: linear-gradient(140deg,  rgba(193, 58, 67, 1) , rgba(193, 58, 67, 0.9), rgba(193, 58, 67, 0.1));
+    display: flex;
+    align-items: center;
+
+    .form-wrap {
+        width: 50%;
+        height: 80%;
+        margin-left: 30px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .form-inputs {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    height: 40px;
+                    margin-bottom: 30px;
+                    border: 1px solid rgba(193, 58, 67, 1);
+                    border-radius: 5px;
+                    outline: none;
+                    background: white;
+                    font-size: 1.5rem;
+                    padding-left: 5px;
+                }
+
+                .buttons-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 40px 30px 40px;
+
+                    .log-in-btn {
+                        color: black;
+                        border: 1px solid transparent;
+                        font-size: 1.7rem;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                    .sign-up-btn {
+                        color: #C4C4C4;
+                        border: 1px solid transparent;
+                        font-size: 1.7rem;
+                        cursor: pointer;
+                        outline: none;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .submit-login {
+                width: 120px;
+                height: 35px;
+                color: white;
+                background: #EC3A44;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                font-size: 1.3rem;
+                margin: 0 auto;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

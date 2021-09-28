@@ -1,0 +1,36 @@
+
+.button(@background: #ffffff, @backgroundHover: blue, @width: 50px, @height: 40px, @borderRadius: 6px, @borderRadiusHover: 6px,
+@fontColor: @backgroundHover, @fontColorHover: @background, @fontSize: 1.2rem, @margin: 0 0 0 0, @padding: 1.5%,
+@border: 1px solid @backgroundHover, @borderHover: 1px solid @background, ) {
+  border: @border;
+  background-color: @background;
+  color: @fontColor;
+  width: @width;
+  height: @height;
+  border-radius: @borderRadius;
+  font-size: @fontSize;
+  margin: @margin;
+  padding: @padding;
+
+  &:hover {
+    border: @borderHover;
+    border-radius: @borderRadiusHover;
+    background: @backgroundHover;
+    color: @fontColorHover;
+    cursor: pointer;
+  }
+}
+
+.flex(@border: 1px solid black, @color: black, @display: flex, @flexDirection: row, @flexWrap: wrap, 
+@justifyContent: space-evenly, @alignItems: center, @width: 100%, @margin: 0, @padding: 0, ){
+  border: @border;
+  color: @color;
+  display: @display;
+  flex-direction: @flexDirection;
+  flex-wrap: @flexWrap;
+  justify-content: @justifyContent;
+  align-items: @alignItems;
+  width: @width;
+  margin: @margin;
+  padding: @padding;
+}

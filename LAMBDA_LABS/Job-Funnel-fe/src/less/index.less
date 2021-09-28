@@ -1,0 +1,368 @@
+// fonts
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+@import "./Global/reset.less";
+@import "./Global/variables.less";
+@import "./Global/global.less";
+
+// #region colors
+@quickhire-main: #ec3944;
+@quickhire-secondary: #ffffff;
+// Standard Colors
+@quickhire-grey: #fafafa;
+@quickhire-background: #ffffff;
+@quickhire-footer: #3073ab;
+@quickhire-message: #fafafa;
+@footer-text: #ffffff;
+@navigation-button: #ffffff;
+@navigation-text: #ac2a38;
+@card-button: white;
+@card-button-text: black;
+@input-labels: black;
+@header-button: white;
+@header-text: #ac2a38;
+@header-logo: #ac2a38;
+@card-border: #ac2a38;
+@side-navigation-background: #ac2a38;
+@profile-button-background: #ac2a38;
+@profile-button-text: #ffffff;
+@card-border: #d1d5da;
+@button-border: #d3d3d3;
+@edit-profile-input: #d3d3d3;
+@profile-border: #d3d3d3;
+// Hover Colors
+@profile-button-hover: #ffffff;
+@profile-button-text-hover: #ac2a38;
+@navigation-button-hover: #ac2a38;
+@navigation-text-hover: white;
+@card-button-hover: #ac2a38;
+@card-button-text-hover: white;
+@header-button-hover: #ac2a38;
+@header-text-hover: white;
+// #endregion
+
+@main-font: "Lato";
+
+//Dark Mode Colors
+@darkmode-header: #1f1f1f;
+@darkmode-background: #171717;
+@darkmode-text: white;
+@darkmode-card-text: black;
+@darkmode-red: #8e2329;
+
+//Loading
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  z-index: 8888;
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: @quickhire-main;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@import "./Global/mixins.less";
+
+@import "./ComponentStyles/Header.less";
+@import "./ComponentStyles/Footer.less";
+@import "./ComponentStyles/LandingPage.less";
+@import "./ComponentStyles/SavedJobs.less";
+@import "./ComponentStyles/AboutUs.less";
+@import "./ComponentStyles//RightNav.less";
+@import "./ComponentStyles//DarkMode.less";
+@import "./ComponentStyles/Dashboard.less";
+@import "./ComponentStyles/JobDetails.less";
+
+@import "./ComponentStyles/Account/Login.less";
+@import "./ComponentStyles/Account/Profile.less";
+@import "./ComponentStyles/Account/Register.less";
+
+// less-watch-compiler src/less public/css index.less
+
+.jobButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.accordion-item {
+  width: 45vw;
+}
+
+.accordion-item--opened {
+  width: 45vw;
+}
+
+.accordion-item__line {
+  /* display: block; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  flex-direction: column;
+  position: relative;
+  width: 45vw;
+  height: auto;
+  margin: 10px;
+  padding: 15px 20px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    .accordion-item__title {
+      font-size: 1.6rem;
+      margin: 0;
+      font-weight: 700;
+      color: #121212;
+      display: flex;
+      margin-top: 2px;
+    }
+  }
+  .card-text {
+    width: 100%;
+  }
+
+  .accordion-item__icon {
+    width: 3.2em;
+    height: 3.2em;
+    transition: transform 0.3s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0.6;
+    text-align: center;
+  }
+}
+
+.accordion-item__inner {
+  max-height: 0;
+  overflow: hidden;
+  text-transform: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition-duration: 0.5s;
+  transition-property: max-height;
+  z-index: 1;
+  margin: 10px;
+  position: relative;
+  width: 45vw;
+
+  background-color: white;
+
+  .accordion-item__content {
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition-timing-function: linear, ease;
+    transition-duration: 0.1s;
+    transition: opacity, transform;
+    transition-delay: 0.5s;
+    padding: 0 1.2rem 1.2rem;
+    border: 1px solid #c4c4c4;
+
+    .accordion-item__paragraph {
+      margin: 0;
+      font-size: 1.2rem;
+      text-align: justify;
+      color: #333;
+      /* font-weight: 300; */
+      line-height: 1.3;
+    }
+  }
+}
+
+.accordion-list__item + .accordion-list__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.accordion-item--opened .accordion-item__icon {
+  transform: rotate(180deg);
+}
+
+.accordion-item--opened .accordion-item__inner {
+  max-height: 300rem;
+  transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition-duration: 0.5s;
+  transition-property: max-height;
+  width: 45vw;
+}
+
+.accordion-item--opened .accordion-item__content {
+  opacity: 1;
+  transform: translateY(0);
+  width: 45vw;
+  background: #ffffff;
+  transition-delay: 0.2s;
+  border: 1px solid #c4c4c4;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: opacity, transform;
+}
+
+.icon-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  z-index: 8888;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Slab", serif;
+  margin: 3vh auto;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+
+  h2 {
+    font-size: 22px;
+    width: 70%;
+    text-align: center;
+  }
+
+  span {
+    color: #ec3944;
+    font-weight: bold;
+  }
+
+  .modal-buttons {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      border: none;
+      background-color: #ec3944;
+      font-size: 16px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.more {
+  margin-left: 30px;
+  font-size: 17px;
+  border-radius: 4px;
+  font-family: "Roboto Slab", serif;
+  background-color: #010a3b;
+  width: 25%;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background-color: none;
+    color: grey;
+    border: none;
+  }
+}
+
+.logo-quickhire {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: #010a3b;
+    font-size: 32px;
+    font-family: "Lato";
+    font-weight: bold;
+    margin-left: 5px;
+  }
+}
