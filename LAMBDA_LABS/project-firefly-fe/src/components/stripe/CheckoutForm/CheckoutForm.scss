@@ -1,0 +1,151 @@
+.payment-heading {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900; 
+    text-align: center; 
+    font-size: 3.4rem; 
+    color: $purple;  
+    margin: 3rem 0; 
+    letter-spacing: 7px;
+}
+
+.checkout {
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 auto; 
+    width: 70%;
+    max-width: 450px;  
+    background: $white; 
+    padding: 2rem 3rem; 
+    box-shadow: 0px 20px 30px -20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px; 
+
+    .input-headings {
+        color: $green; 
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700; 
+        line-height: 1.5;  
+
+        .user-inputs {
+            width: 95%; 
+            border: none; 
+            margin: 1rem, 0.2rem; 
+            padding: 1rem 1rem; 
+            font-size: 1.2rem; 
+            background: #E2F5D6; 
+            font-family: 'Nunito', sasdfans-serif;
+            font-weight: 700; 
+            border-radius: 10px; 
+        }
+    }
+
+    .select-plan {
+        color: #5aaf2b;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 2rem 0 .5rem 0; 
+    }
+
+    .assurance {
+        font-family: 'Nunito', sans-serif; 
+        font-weight: bold; 
+    }
+
+    .sub-container {
+        display: flex; 
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: 40px;  
+        border: none; 
+        margin: 1rem, 0.2rem; 
+        padding: 1rem 1rem; 
+        font-size: 1.2rem; 
+        background: #E2F5D6; 
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700; 
+        border-radius: 10px; 
+        margin: 1rem 0; 
+
+        .sub-radio {
+            width: 25px; 
+            height: 25px; 
+            text-decoration: none;
+            border: none;
+            margin-right: 1rem;  
+        }
+    }
+    
+    .cc-container {
+        display: flex; 
+        justify-content: space-evenly;
+
+        .cc {
+            width: 75px; 
+            margin: 1.5rem 0; 
+        }
+    }
+
+    .select-membership {
+        height: 125px; 
+        width: 95%; 
+        border: none; 
+        padding: 1rem 1rem; 
+        font-size: 1rem; 
+        background: #E2F5D6; 
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700; 
+        border-radius: 10px; 
+        margin-top: 3rem; 
+
+        .top-membership {
+            display: flex; 
+            justify-content: space-between;
+            margin: 0 1.5rem 1.5rem;
+            line-height: 4;  
+            border-bottom: 1px solid black; 
+            // width: 
+        }
+
+        .total {
+            text-align: right;
+            margin-right: 1.5rem; 
+        }
+    }
+
+    .checkout-btn-container {
+        display: flex; 
+        margin-top: 1.5rem; 
+
+        @media (max-width: 600px) {
+            display: flex; 
+            flex-direction: column;
+            margin: 0 auto; 
+            width: 100%; 
+        }
+       
+
+        .legal {
+            width: 46%;
+            font-family: 'Nunito', sans-serif; 
+            font-weight: 600; 
+            line-height: 1.1;
+
+            @media (max-width: 600px) {
+                width: 100%; 
+                margin: 1rem auto; 
+            }
+        }
+
+        .checkout-btn {
+            @include button-preset(54%); 
+
+            @media (max-width: 600px) {
+                width: 75%; 
+                margin: 0 auto; 
+            }
+        }
+    }
+
+}

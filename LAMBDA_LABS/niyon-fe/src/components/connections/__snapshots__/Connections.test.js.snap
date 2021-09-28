@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Connections /> component testing should match snapshot tests 1`] = `
+<div
+  className="connections"
+  data-test="connections"
+>
+  <div
+    data-test="second-wrapper"
+  >
+    <WithStyles(ForwardRef(Paper))
+      className="paper"
+      data-test="paper"
+      elevation={1}
+    >
+      <h1
+        className="container-header"
+        data-test="my-connections"
+      >
+        My Connections (
+        1
+        )
+      </h1>
+      <div>
+        <SwipeTabsConnections />
+      </div>
+    </WithStyles(ForwardRef(Paper))>
+  </div>
+</div>
+`;

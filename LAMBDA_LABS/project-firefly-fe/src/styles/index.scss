@@ -1,0 +1,15 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './mixins.scss';
+@import './global.scss';
+@import './header.scss'; // may also be a nav bar
+
+
+
+//pages
+@import '../components/tutorial/Tutorial.scss';
+@import '../components/profile/profile.scss';
+@import '../components/accountInfo/AccountInfo.scss';
+@import '../components/stripe/CheckoutForm/CheckoutForm.scss';
+@import '../components/signin/Signin.scss';
+@import '../components/signup/Signup.scss';

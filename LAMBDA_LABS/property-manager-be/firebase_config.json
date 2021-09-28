@@ -1,0 +1,5 @@
+{
+  "databaseurl": "https://property-management-lambda.firebaseio.com",
+  "projectid": "property-management-lambda",
+  "storagebucket": "property-management-lambda.appspot.com"
+}

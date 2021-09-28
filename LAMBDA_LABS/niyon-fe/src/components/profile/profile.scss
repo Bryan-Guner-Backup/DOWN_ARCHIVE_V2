@@ -1,0 +1,68 @@
+.profile {
+  margin: 75px auto 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    border: 1px solid lightgrey;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: lighten(#3f51b5, 10%);
+    color: white;
+    font-size: 1.8rem;
+  }
+
+  .text-field {
+    margin-bottom: 10px;
+  }
+}
+
+.profile-header {
+  font-size: 1.5rem;
+}
+
+.MuiOutlinedInput-input {
+  font-size: 1.8rem !important;
+}
+
+.MuiFormLabel-root {
+  font-size: 1.8rem !important;
+}
+
+.css-yt9ioa-option {
+  font-size: 1.4rem !important;
+}
+
+.css-1uccc91-singleValue {
+  font-size: 1.4rem !important;
+}
+
+.css-1wa3eu0-placeholder {
+  font-size: 1.4rem !important;
+}
+
+.MuiTypography-h6 {
+  font-size: 1.8rem !important;
+}
+
+.css-9gakcf-option {
+  font-size: 1.4rem !important;
+}
+
+.css-1n7v3ny-option {
+  font-size: 1.4rem !important;
+}

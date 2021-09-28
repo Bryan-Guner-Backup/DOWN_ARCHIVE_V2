@@ -1,0 +1,79 @@
+{
+  "name": "nutrition-tracker-fe-pt7",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.0.0-rc.2",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "bootstrap-validator": "^0.11.9",
+    "bootswatch": "^4.5.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "graphql": "^15.0.0",
+    "jquery": "^3.5.1",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "progressbar.js": "^1.1.0",
+    "rc-slider": "^9.3.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.2.2",
+    "react-bootstrap-slider": "^3.0.0",
+    "react-datepicker": "^3.1.3",
+    "react-dom": "^16.13.1",
+    "react-github-calendar": "^1.0.4",
+    "react-google-charts": "^3.0.15",
+    "react-hook-form": "^5.7.2",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-tabs-redux": "^4.0.0",
+    "react-tooltip": "^4.2.6",
+    "redux-persist": "^6.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "npm run build && serve -s build",
+    "test": "react-scripts test",
+    "cypress:open": "cypress open",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md)\"",
+    "cypress:coverage:run": "cypress run || true",
+    "start:coverage": "react-scripts -r @cypress/instrument-cra start",
+    "cypress:coverage": "start-server-and-test start:coverage http://localhost:3000 cypress:coverage:run || true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.8.1",
+    "@cypress/instrument-cra": "^1.1.1",
+    "cypress": "^4.8.0",
+    "redux-logger": "^3.0.6",
+    "start-server-and-test": "^1.11.0"
+  }
+}

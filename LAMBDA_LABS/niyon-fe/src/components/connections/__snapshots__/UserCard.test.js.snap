@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserCard /> component should pass snapshot testing 1`] = `
+<UserCard
+  endpoint="response"
+  value={
+    Object {
+      "bio": "Learning code now.",
+      "email": "testReqest@aol.com",
+      "first_name": "test-fn",
+      "id": 142,
+      "job_title": "Full Stack Web Developer",
+      "job_title_id": 2,
+      "last_name": "test-ln",
+      "location": "test-1, test-2",
+      "location_id": 2,
+      "techs": undefined,
+      "user_type": "test-request-Mentor",
+    }
+  }
+>
+  <WithStyles(ForwardRef(Card))
+    className="userCard"
+  >
+    <ForwardRef(Card)
+      className="userCard"
+      classes={
+        Object {
+          "root": "MuiCard-root",
+        }
+      }
+    >
+      <WithStyles(ForwardRef(Paper))
+        className="MuiCard-root userCard"
+        elevation={1}
+      >
+        <ForwardRef(Paper)
+          className="MuiCard-root userCard"
+          classes={
+            Object {
+              "elevation0": "MuiPaper-elevation0",
+              "elevation1": "MuiPaper-elevation1",
+              "elevation10": "MuiPaper-elevation10",
+              "elevation11": "MuiPaper-elevation11",
+              "elevation12": "MuiPaper-elevation12",
+              "elevation13": "MuiPaper-elevation13",
+              "elevation14": "MuiPaper-elevation14",
+              "elevation15": "MuiPaper-elevation15",
+              "elevation16": "MuiPaper-elevation16",
+              "elevation17": "MuiPaper-elevation17",
+              "elevation18": "MuiPaper-elevation18",
+              "elevation19": "MuiPaper-elevation19",
+              "elevation2": "MuiPaper-elevation2",
+              "elevation20": "MuiPaper-elevation20",
+              "elevation21": "MuiPaper-elevation21",
+              "elevation22": "MuiPaper-elevation22",
+              "elevation23": "MuiPaper-elevation23",
+              "elevation24": "MuiPaper-elevation24",
+              "elevation3": "MuiPaper-elevation3",
+              "elevation4": "MuiPaper-elevation4",
+              "elevation5": "MuiPaper-elevation5",
+              "elevation6": "MuiPaper-elevation6",
+              "elevation7": "MuiPaper-elevation7",
+              "elevation8": "MuiPaper-elevation8",
+              "elevation9": "MuiPaper-elevation9",
+              "outlined": "MuiPaper-outlined",
+              "root": "MuiPaper-root",
+              "rounded": "MuiPaper-rounded",
+            }
+          }
+          elevation={1}
+        >
+          <div
+            className="MuiPaper-root MuiCard-root userCard MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              className="avatar"
+            >
+              <WithStyles(ForwardRef(Avatar))
+                src="/broken-image.jpg"
+              >
+                <ForwardRef(Avatar)
+                  classes={
+                    Object {
+                      "circle": "MuiAvatar-circle",
+                      "colorDefault": "MuiAvatar-colorDefault",
+                      "fallback": "MuiAvatar-fallback",
+                      "img": "MuiAvatar-img",
+                      "root": "MuiAvatar-root",
+                      "rounded": "MuiAvatar-rounded",
+                      "square": "MuiAvatar-square",
+                    }
+                  }
+                  src="/broken-image.jpg"
+                >
+                  <div
+                    className="MuiAvatar-root MuiAvatar-circle"
+                  >
+                    <img
+                      className="MuiAvatar-img"
+                      src="/broken-image.jpg"
+                    />
+                  </div>
+                </ForwardRef(Avatar)>
+              </WithStyles(ForwardRef(Avatar))>
+            </div>
+            <div
+              className="makeStyles-root-1"
+            >
+              <WithStyles(ForwardRef(Typography))
+                gutterBottom={true}
+                variant="h4"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  gutterBottom={true}
+                  variant="h4"
+                >
+                  <h4
+                    className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom"
+                  >
+                    test-fn
+                     
+                    test-ln
+                  </h4>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+              <WithStyles(ForwardRef(Typography))
+                gutterBottom={true}
+                variant="h6"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  gutterBottom={true}
+                  variant="h6"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    <p>
+                      test-1, test-2
+                    </p>
+                  </h6>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+              <WithStyles(ForwardRef(Typography))
+                gutterBottom={true}
+                variant="h6"
+              >
+                <ForwardRef(Typography)
+                  classes={
+                    Object {
+                      "alignCenter": "MuiTypography-alignCenter",
+                      "alignJustify": "MuiTypography-alignJustify",
+                      "alignLeft": "MuiTypography-alignLeft",
+                      "alignRight": "MuiTypography-alignRight",
+                      "body1": "MuiTypography-body1",
+                      "body2": "MuiTypography-body2",
+                      "button": "MuiTypography-button",
+                      "caption": "MuiTypography-caption",
+                      "colorError": "MuiTypography-colorError",
+                      "colorInherit": "MuiTypography-colorInherit",
+                      "colorPrimary": "MuiTypography-colorPrimary",
+                      "colorSecondary": "MuiTypography-colorSecondary",
+                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                      "displayBlock": "MuiTypography-displayBlock",
+                      "displayInline": "MuiTypography-displayInline",
+                      "gutterBottom": "MuiTypography-gutterBottom",
+                      "h1": "MuiTypography-h1",
+                      "h2": "MuiTypography-h2",
+                      "h3": "MuiTypography-h3",
+                      "h4": "MuiTypography-h4",
+                      "h5": "MuiTypography-h5",
+                      "h6": "MuiTypography-h6",
+                      "noWrap": "MuiTypography-noWrap",
+                      "overline": "MuiTypography-overline",
+                      "paragraph": "MuiTypography-paragraph",
+                      "root": "MuiTypography-root",
+                      "srOnly": "MuiTypography-srOnly",
+                      "subtitle1": "MuiTypography-subtitle1",
+                      "subtitle2": "MuiTypography-subtitle2",
+                    }
+                  }
+                  gutterBottom={true}
+                  variant="h6"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+                  >
+                    <p>
+                      Full Stack Web Developer
+                    </p>
+                  </h6>
+                </ForwardRef(Typography)>
+              </WithStyles(ForwardRef(Typography))>
+            </div>
+            <div
+              className="addIcon"
+            >
+              <ForwardRef
+                className="iconSize"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "green",
+                  }
+                }
+              >
+                <WithStyles(ForwardRef(SvgIcon))
+                  className="iconSize"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "color": "green",
+                    }
+                  }
+                >
+                  <ForwardRef(SvgIcon)
+                    className="iconSize"
+                    classes={
+                      Object {
+                        "colorAction": "MuiSvgIcon-colorAction",
+                        "colorDisabled": "MuiSvgIcon-colorDisabled",
+                        "colorError": "MuiSvgIcon-colorError",
+                        "colorPrimary": "MuiSvgIcon-colorPrimary",
+                        "colorSecondary": "MuiSvgIcon-colorSecondary",
+                        "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                        "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                        "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                        "root": "MuiSvgIcon-root",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "color": "green",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="MuiSvgIcon-root iconSize"
+                      focusable="false"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "color": "green",
+                        }
+                      }
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                      />
+                    </svg>
+                  </ForwardRef(SvgIcon)>
+                </WithStyles(ForwardRef(SvgIcon))>
+              </ForwardRef>
+              <ForwardRef(Popper)
+                anchorEl={null}
+                open={false}
+              />
+            </div>
+          </div>
+        </ForwardRef(Paper)>
+      </WithStyles(ForwardRef(Paper))>
+    </ForwardRef(Card)>
+  </WithStyles(ForwardRef(Card))>
+</UserCard>
+`;

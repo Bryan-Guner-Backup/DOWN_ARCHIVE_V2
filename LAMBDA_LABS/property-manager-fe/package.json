@@ -1,0 +1,104 @@
+{
+  "name": "propman",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.40",
+    "@reach/portal": "^0.6.2",
+    "@reach/router": "^1.3.3",
+    "@sentry/browser": "^5.9.1",
+    "axios": "^0.19.0",
+    "chart.js": "^2.9.3",
+    "clsx": "^1.0.4",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.14.2",
+    "formik": "^2.0.3",
+    "material-table": "^1.57.2",
+    "node-sass": "^4.13.1",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "reach-router": "0.0.0",
+    "react": "^16.11.0",
+    "react-alice-carousel": "^1.17.2",
+    "react-animated-slider": "^2.0.0",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.11.0",
+    "react-focus-on": "^3.3.0",
+    "react-icons": "^3.8.0",
+    "react-redux": "^7.2.0",
+    "react-redux-firebase": "^3.4.0",
+    "react-responsive-carousel": "^3.1.51",
+    "react-responsive-tabs": "^3.3.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "react-socks": "^2.1.0",
+    "react-spring": "^9.0.0-beta.34",
+    "react-table": "^6.10.3",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.0.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage --watchAll=false",
+    "local:test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "coverage": "CI=true npm run test || true"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.1.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "redux-mock-store": "^1.5.4",
+    "stylelint": "^11.1.1"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "!**/coverage/**",
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__test__/**",
+      "!**/*.spec.{js,jsx}"
+    ]
+  }
+}

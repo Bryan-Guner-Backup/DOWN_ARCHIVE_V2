@@ -1,0 +1,14 @@
+{
+        "bio": "testing",
+        "email": "june9@example.com",
+        "first_name": "Test",
+        "id": 52,
+        "job": "Android Developer",
+        "job_title_id": 6,
+        "last_name": "User",
+        "location": "Ovo, Nigeria",
+        "location_id": 14,
+        "techs": [2, 3],
+        "user_type": "Mentor"
+}
+

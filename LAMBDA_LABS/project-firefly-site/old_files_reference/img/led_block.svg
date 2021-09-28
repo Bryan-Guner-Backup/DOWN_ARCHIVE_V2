@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="76px" viewBox="0 0 85 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>LEDBlock Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="56.3022823%" gradientTransform="translate(0.500000,0.500000),scale(0.883117,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#7166FF" offset="0%"></stop>
+            <stop stop-color="#5B4EFF" offset="100%"></stop>
+        </radialGradient>
+        <path d="M60.864419,67.6165428 C59.0741291,68.1274507 57.1767606,68.1284326 55.3859429,67.619378 C46.7496529,65.1644421 39.622877,63.9369741 34.0056153,63.9369741 C28.583278,63.9369741 21.754372,65.0807315 13.5188974,67.3682463 L12.7426996,67.586047 C7.42914138,69.0920066 1.90082991,66.005338 0.39487031,60.6917799 C-0.111490315,58.9051605 -0.110369046,57.0128361 0.398108491,55.226818 C2.80774487,46.7630142 4.01256306,39.6959219 4.01256306,34.0255411 C4.01256306,28.5225334 2.8778206,21.7040509 0.608335672,13.5700938 L0.385163822,12.7788306 C-1.12876793,7.46753445 1.94960418,1.934594 7.26090036,0.420662245 C9.04854455,-0.0888878156 10.9428314,-0.0900902419 12.731121,0.417189942 C21.4194955,2.88180202 28.5109936,4.11410806 34.0056153,4.11410806 C39.3627026,4.11410806 46.237725,2.94272094 54.6306824,0.59994669 L55.3978608,0.383742601 C59.4211773,-0.760795223 63.5702638,0.729056819 66.0032264,3.82726273 L66.0023623,2.99665822 C72.7876842,10.7818383 77,21.6488939 77,33.6718388 C77,45.6948982 72.7876039,56.5620463 66.0021684,64.3472418 L66.0035145,64.1540877 C64.7457224,65.7681259 62.9828063,67.0120034 60.864419,67.6165428 Z" id="path-2"></path>
+        <filter x="-9.1%" y="-7.4%" width="118.2%" height="120.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Canvas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-28.000000, -156.000000)" id="ToolBar">
+            <g>
+                <g id="LEDBlock-Copy" transform="translate(32.000000, 158.000000)">
+                    <g id="Combined-Shape-Copy-32">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="LED" transform="translate(20.000000, 11.000000)" fill="#FFFFFF">
+                        <path d="M18.5,11.0241026 C23.8362468,11.0241026 28.1792543,15.3640861 28.324942,20.7741055 L28.3287179,21.0548716 L28.3287179,31.0856406 L8.67128205,31.0856406 L8.67128205,21.0548716 L8.67505805,20.7741055 C8.82074568,15.3640861 13.1637532,11.0241026 18.5,11.0241026 Z M14.1252416,15.0823934 C12.8385023,15.8397284 11.9508287,16.7783914 11.462221,17.8983825 C10.9736132,19.0183736 10.8840713,20.3196928 11.1935951,21.80234 L11.1935951,21.80234 L13.58799,22.8903083 C13.2784661,21.4076611 13.3680081,20.106342 13.8566158,18.9863509 C14.3452235,17.8663598 15.2328971,16.9276968 16.5196365,16.1703618 L16.5196365,16.1703618 Z" id="Combined-Shape"></path>
+                        <rect id="Rectangle" x="5.86307692" y="32.4897436" width="25.2738462" height="2.80820513"></rect>
+                        <rect id="Rectangle" x="21.3082051" y="35.2979487" width="2.80820513" height="8.42461538"></rect>
+                        <rect id="Rectangle-Copy-2" x="12.8835897" y="35.2979487" width="2.80820513" height="10.5307692"></rect>
+                        <polygon id="Rectangle" transform="translate(11.840000, 4.107949) rotate(-30.000000) translate(-11.840000, -4.107949) " points="10.4358974 0.948717949 13.2441026 0.948717949 13.2441026 7.26717949 10.4358974 7.26717949"></polygon>
+                        <polygon id="Rectangle-Copy-5" transform="translate(25.122051, 4.107949) scale(-1, 1) rotate(-30.000000) translate(-25.122051, -4.107949) " points="23.7179487 0.948717949 26.5261538 0.948717949 26.5261538 7.26717949 23.7179487 7.26717949"></polygon>
+                        <polygon id="Rectangle-Copy-7" transform="translate(4.250256, 12.646410) rotate(-60.000000) translate(-4.250256, -12.646410) " points="2.84615385 9.48717949 5.65435897 9.48717949 5.65435897 15.805641 2.84615385 15.805641"></polygon>
+                        <polygon id="Rectangle-Copy-8" transform="translate(32.711795, 12.646410) scale(-1, 1) rotate(-60.000000) translate(-32.711795, -12.646410) " points="31.3076923 9.48717949 34.1158974 9.48717949 34.1158974 15.805641 31.3076923 15.805641"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

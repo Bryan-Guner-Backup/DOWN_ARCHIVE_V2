@@ -1,0 +1,10 @@
+{
+  "*.js": [
+    "npm run lint"
+  ],
+  "**/*.+(js|json)": [
+    "npm run format",
+    "git add",
+    "npm run test -- --bail --findRelatedTests --passWithNoTests"
+  ]
+}

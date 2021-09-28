@@ -1,0 +1,39 @@
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.lighten {
+  background: rgba(0255, 255, 255, 0.2);
+  padding: 0.5rem;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #2F669C;
+}
+
+.info-title {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  height: 40px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  height: 90%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px lightslategray;
+  background: #00adb5;
+}
+
+.info-img {
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+// Import your files here:
+
+//variables
+
+@import "variables";
+@import "mixins";
+
+//reset
+
+@import "reset";
+
+//standard style
+
+@import "global";
+@import "header";
+@import "footer"; 
+
+//pages
+
+@import "home-page";
+@import "team-page";
+@import "how-firefly-works-page";
+

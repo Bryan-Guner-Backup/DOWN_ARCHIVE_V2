@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Registration /> component testing should pass snaps shot testing 1`] = `
+<div
+  className="formWrap"
+>
+  <Header />
+  <form
+    className="formRegister"
+    onSubmit={[Function]}
+  >
+    <input
+      name="email"
+      placeholder="Email"
+      type="email"
+    />
+    <input
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+    <input
+      name="password2"
+      placeholder="Repeat Password"
+      type="password"
+    />
+    <select
+      name="user_type"
+    >
+      <option
+        value="Mentor"
+      >
+        Mentor
+      </option>
+      <option
+        value=" Mentee"
+      >
+        Mentee
+      </option>
+    </select>
+    <button
+      type="submit"
+    >
+      Register
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Marketing /> component testing should pass snapshot testing correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+  data-test="navbar-container"
+>
+  <WithStyles(CssBaseline) />
+  <WithStyles(ForwardRef(AppBar))
+    className="makeStyles-appBar-3"
+    position="fixed"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <div
+        className="logo"
+      />
+      <div
+        className="title-and-button"
+      >
+        <WithStyles(ForwardRef(Typography))
+          noWrap={true}
+          variant="h6"
+        >
+          Niyon
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(IconButton))
+          aria-label="Open drawer"
+          className="makeStyles-menuButton-4"
+          color="inherit"
+          edge="start"
+          onClick={[Function]}
+        >
+          <MenuIcon />
+        </WithStyles(ForwardRef(IconButton))>
+      </div>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <nav
+    className="makeStyles-drawer-2"
+  >
+    <Hidden
+      implementation="css"
+      smUp={true}
+    >
+      <WithStyles(ForwardRef(Drawer))
+        ModalProps={
+          Object {
+            "keepMounted": true,
+          }
+        }
+        anchor="left"
+        classes={
+          Object {
+            "paper": "makeStyles-drawerPaper-6",
+          }
+        }
+        onClose={[Function]}
+        open={false}
+        variant="temporary"
+      >
+        <WithStyles(ForwardRef(IconButton))
+          className="makeStyles-closeMenuButton-8"
+          onClick={[Function]}
+        >
+          <CloseIcon />
+        </WithStyles(ForwardRef(IconButton))>
+        <div>
+          <WithStyles(ForwardRef(List))
+            className="makeStyles-list-11"
+          >
+            <Link
+              to="/"
+            >
+              <WithStyles(ForwardRef(Button))
+                className="makeStyles-menulink-12"
+              >
+                Home
+              </WithStyles(ForwardRef(Button))>
+            </Link>
+            <Link
+              to="/about"
+            >
+              <WithStyles(ForwardRef(Button))
+                className="makeStyles-menulink-12"
+              >
+                 About
+              </WithStyles(ForwardRef(Button))>
+            </Link>
+          </WithStyles(ForwardRef(List))>
+        </div>
+      </WithStyles(ForwardRef(Drawer))>
+    </Hidden>
+    <Hidden
+      implementation="css"
+      xsDown={true}
+    >
+      <WithStyles(ForwardRef(Drawer))
+        className="makeStyles-drawer-2"
+        classes={
+          Object {
+            "paper": "makeStyles-drawerPaper-6",
+          }
+        }
+        variant="permanent"
+      >
+        <div
+          className="makeStyles-toolbar-5"
+        />
+        <div>
+          <WithStyles(ForwardRef(List))
+            className="makeStyles-list-11"
+          >
+            <Link
+              to="/"
+            >
+              <WithStyles(ForwardRef(Button))
+                className="makeStyles-menulink-12"
+              >
+                Home
+              </WithStyles(ForwardRef(Button))>
+            </Link>
+            <Link
+              to="/about"
+            >
+              <WithStyles(ForwardRef(Button))
+                className="makeStyles-menulink-12"
+              >
+                 About
+              </WithStyles(ForwardRef(Button))>
+            </Link>
+          </WithStyles(ForwardRef(List))>
+        </div>
+      </WithStyles(ForwardRef(Drawer))>
+    </Hidden>
+  </nav>
+</div>
+`;

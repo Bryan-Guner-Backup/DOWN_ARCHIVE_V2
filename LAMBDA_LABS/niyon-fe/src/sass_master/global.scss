@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+}
+
+.dark-mode {
+  .userCard {
+    background-color: #555555 !important;
+    box-shadow: 1px 1px 3px rgb(214, 214, 214);
+  }
+
+  .css-yk16xz-control {
+    background-color: #555555 !important;
+    color: white !important;
+  }
+
+  .select__menu {
+    background-color: #555555 !important;
+  }
+
+  .css-1n7v3ny-option {
+    background-color: #2f31a8 !important;
+  }
+
+  .css-1pahdxg-control {
+    background-color: #555555 !important;
+    color: white !important;
+  }
+
+  .css-1uccc91-singleValue {
+    color: white !important;
+  }
+
+  .MuiFormLabel-root {
+    background-color: #303030 !important;
+  }
+}
+
+.MuiFormLabel-root {
+  padding: 0 10px !important;
+  display: block !important;
+  background-color: white !important;
+}
+
+.MuiOutlinedInput-inputMultiline {
+  padding-top: 10px !important;
+}
+
+.MuiCardHeader-root:first-child {
+  padding-top: 65px !important;
+}

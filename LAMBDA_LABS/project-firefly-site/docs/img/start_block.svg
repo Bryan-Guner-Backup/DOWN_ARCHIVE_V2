@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="76px" viewBox="0 0 85 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>StartBlock</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="56.3022823%" gradientTransform="translate(0.500000,0.500000),scale(0.883117,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FBB36A" offset="0%"></stop>
+            <stop stop-color="#F99128" offset="100%"></stop>
+        </radialGradient>
+        <path d="M66.0016421,3.82009069 L66.001742,3.1168478 C72.7874465,10.9020279 77,21.7690835 77,33.7920284 C77,45.8150877 72.7873663,56.6822359 66.0015481,64.4674314 L66.0020377,64.161174 C64.7446307,65.7718323 62.9837675,67.0130183 60.8684492,67.616717 C59.078148,68.1276578 57.1807585,68.1286631 55.389917,67.6196196 C46.7527575,65.1645226 39.6252963,63.9369741 34.0075335,63.9369741 C28.5847125,63.9369741 21.7551513,65.0808065 13.5188499,67.3684713 L12.7425743,67.5862876 C7.42900159,69.0921985 1.90071776,66.0054788 0.394806807,60.691906 C-0.111543133,58.9052617 -0.110398659,57.0129151 0.398112003,55.2268846 C2.80789694,46.7630512 4.01278941,39.6959367 4.01278941,34.0255411 C4.01278941,28.5225194 2.87797718,21.7040164 0.608352739,13.570032 L0.385164503,12.7787669 C-1.12884902,7.46749245 1.94943918,1.93450331 7.26071365,0.420489785 C9.04836981,-0.0890932967 10.9426783,-0.0903191638 12.7309925,0.416949794 C21.4202431,2.88172197 28.5124234,4.11410806 34.0075335,4.11410806 C39.3650967,4.11410806 46.2407791,2.94264496 54.6345806,0.599718758 L55.4018366,0.383501704 C59.4221188,-0.760131839 63.5679558,0.726639705 66.0016421,3.82009069 Z" id="path-2"></path>
+        <filter x="-9.1%" y="-7.4%" width="118.2%" height="120.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StyleGuide" transform="translate(-2367.000000, -742.000000)">
+            <g id="Group-20" transform="translate(2286.000000, 667.000000)">
+                <g id="Group-16" transform="translate(85.000000, 41.000000)">
+                    <g id="StartBlock" transform="translate(0.000000, 36.000000)">
+                        <g id="Combined-Shape-Copy-26">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="play-circle-solid" transform="translate(19.000000, 17.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M17.5,0 C7.83266129,0 0,7.83266129 0,17.5 C0,27.1673387 7.83266129,35 17.5,35 C27.1673387,35 35,27.1673387 35,17.5 C35,7.83266129 27.1673387,0 17.5,0 Z M25.6643145,19.1935484 L13.2449597,26.3205645 C12.1300403,26.9415323 10.7258065,26.1441532 10.7258065,24.8387097 L10.7258065,10.1612903 C10.7258065,8.86290323 12.1229839,8.05846774 13.2449597,8.67943548 L25.6643145,16.2298387 C26.8215726,16.8790323 26.8215726,18.5514113 25.6643145,19.1935484 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,317 @@
+.sign-in-page-container {
+  font-family: 'Nunito', sans-serif;
+  background-color: $offwhite;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  height: 100vh;
+
+  .sign-in-header {
+    color: $purple;
+    font-size: 3.4rem;
+    font-weight: 900;
+    letter-spacing: 7px;
+    text-align: center;
+    margin-bottom: 3.4rem;
+    padding-top: 3.4rem;
+  }
+
+  .sign-in-forms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .sign-in-or {
+      color: $purple;
+      margin: 0 2rem;
+      font-size: 3.4rem;
+      font-weight: 900;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .sign-in-email, .sign-in-automatic {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $white;
+      border-radius: $border-radius;
+      box-shadow: 0 20px 30px -20px rgba(0,0,0,.3);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      // max-height: 600px;
+      // height: 100%;
+      height: 400px;
+
+      @media (max-width: 800px) {
+        max-height: 1000px;
+        height: 100%;
+      }
+    }
+
+    .sign-in-automatic:not(.mobile) {
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .sign-in-email {
+      margin-left: 5%;
+
+      @media (max-width: 800px) {
+        margin: 0 5% 5%;
+      }
+
+      .form-input-container {
+        max-width: 370px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        margin: 0 15px;
+        
+        .form-input-label{
+          display: flex;
+          flex-direction: column;
+          color: $green;
+          width: 100%;
+          margin-top: 1.5rem;
+          
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .password-container {
+            position: relative;
+
+            .password-toggle {
+              position: absolute;
+              right: -5%;
+              bottom: 22%;
+              display: inline-block;
+              max-height: 50%;
+              filter: contrast(0.1);
+            }
+          }
+          
+          .form-input {
+            font-size: 1.2rem;
+            font-weight: 900;
+            background-color: $lightgreen;
+            border-radius: $form-border-radius;
+            border: none;
+            margin-top: 5px;
+            padding: 0 15px;
+            width: 100%;
+            //probably don't do below as hardcoded?
+            height: 44px;
+            display: inline-block;
+          }
+        }
+      }
+
+      .form-input-error {
+        text-align: center;
+        color: $red;
+        margin-top: 0.2rem;
+      }
+
+      //Checkbox CSS
+      .checkbox-persist {
+        align-self: flex-start;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+        .checkbox-label {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 22px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .checkbox-label input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .checkbox-label:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a green background */
+        .checkbox-label input:checked ~ .checkmark {
+          background-color: #4aa810;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .checkbox-label input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .checkbox-label .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        // actual checkbox label
+        .checkbox-question {
+          font-size: 1rem;
+          margin-top: 5px;
+          cursor: pointer;
+        }
+      }
+
+      .sign-in-button {
+        margin: 2rem 0 0;
+        background-color: $primary-button;
+        color: $lightgreen;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 3px 0 0 #3e8c0d;
+        border-radius: $form-border-radius;
+        border: none;
+        max-width: 352px;
+        width: 100%;
+        height: 44px;
+      }
+
+      .sign-in-redirect {
+        color: $links;
+        margin-top: 2rem;
+      }
+    }
+
+    .sign-in-automatic {
+      // height: 100%;
+      margin-right: 5%;
+
+      &.mobile {
+        display: none;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        max-height: 200px;
+        height: 100%;
+        padding: 0;
+        margin-top: 2rem;
+
+        @media (max-width: 800px) {
+          display: flex;
+        }
+      }
+
+      .firebase-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        &.mobile {
+
+          @media (max-width: 800px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            button {
+              width: 35%;
+              margin: 0;
+              height: 50px;
+              border-radius: 10%;
+            }
+          }
+        }
+
+        .social-sign-in {
+          margin: 2rem 0;
+          font-weight: 700;
+          cursor: pointer;
+          border-radius: $form-border-radius;
+          border: none;
+          max-width: 352px;
+          width: 70%;
+          font-size: 0.9rem;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media (max-width: 800px) {
+            width: 80%;
+            max-width: 280px;
+            font-size: 0.8rem;
+          }
+
+          .button-img {
+            max-height: 80%;
+            max-width: 25%;
+            //float: left;
+            border-radius: 25%;
+          }
+        }
+
+        .google {
+          background-color: $white;
+          color: #757575;
+          border: .5px solid #d6d6d6;
+          box-shadow: 0 3px hsla(0,0%,43.9%,.3)
+        }
+
+        .facebook {
+          background-color: #3b5998;
+          color: $white;
+          box-shadow: 0 3px hsla(0,0%,43.9%,.3)
+        }
+      }
+
+      .nerd-firefly {
+        height: 224px;
+        transform: translate3d(65px, 0px, 0px) rotate(-10deg)
+      }
+    }
+  }
+}

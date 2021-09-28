@@ -1,0 +1,61 @@
+.container {
+  background-image: url("/lambda_logo2.jpg");
+  background-position: center;
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid lightgrey;
+  height: 150px;
+  width: 90%;
+  border-radius: 10px;
+  margin: 20% auto 0px auto;
+  padding-top: 10px;
+
+  h1 {
+    padding-top: 175px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 3.4rem;
+    text-decoration: underline;
+  }
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 32px;
+  width: 250px;
+  padding-bottom: 10px;
+
+  h2 {
+    margin-top: 10px;
+    font-size: 2.6rem;
+  }
+
+  p {
+    color: #484848;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+}
+
+.personImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.img2 {
+  width: 160px;
+  height: auto;
+}

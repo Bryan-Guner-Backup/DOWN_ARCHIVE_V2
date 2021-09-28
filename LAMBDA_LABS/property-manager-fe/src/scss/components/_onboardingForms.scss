@@ -1,0 +1,42 @@
+.main-form-page-wrapper {
+    margin: 14% auto;
+    background: url('../../assets/svg/small_town.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    background-position: center;
+    background-size: contain;
+}
+
+.main-wrapper {
+    padding-top: 5vh;
+}
+
+.form-wrapper {
+    background-color: rgba(255,255,255,.95);
+    margin: auto 20px;
+    padding: 20px;
+    min-width: 33vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: -5px 7px 10px rgba(0,0,0,.2);
+    
+    .form-element {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        padding-top: .8rem;
+        min-height: 11vh;
+        font-size: 2.3rem;
+    }
+
+}
+
+.login {
+    padding-top: 10%;
+}

@@ -1,0 +1,33 @@
+.root {
+    background-image: url("../assets/backgroundTiling.png");
+    margin: 0;
+    @keyframes animatedBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -512px 0;
+      }
+    }
+    //Galaxy S5
+    @media (max-width: 450px) {
+      height: 130vh;
+      width: 130vw;
+    }
+    //Pixel2 XL/ iPhone X
+    @media (max-width: 380px) {
+      height: 135vh;
+      width: 135vw;
+    }
+    //iPhone 5/SE/6/7/8
+    @media (max-width: 330px) {
+      height: 148vh;
+      width: 150vw;
+    }
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    //animations
+    animation: animatedBackground 6s linear infinite;
+    z-index: -1;
+    min-height: 100vh;
+  }

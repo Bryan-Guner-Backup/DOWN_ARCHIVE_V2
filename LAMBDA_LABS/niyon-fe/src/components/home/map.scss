@@ -1,0 +1,47 @@
+.marker {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-38px);
+    margin-left: -33px;
+}
+
+.map {
+    margin-top: 50px;
+}
+
+h5 {
+    font-weight: bold;
+    color: green;
+    font-size: small;
+}
+
+.chatIcon {
+    color: yellowgreen;
+    transform: scale(2) !important;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.chatDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: -60px;
+    justify-content: flex-end;
+}
+
+h3 {
+    font-weight: bold;
+    color: green;
+    font-size: x-large;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}

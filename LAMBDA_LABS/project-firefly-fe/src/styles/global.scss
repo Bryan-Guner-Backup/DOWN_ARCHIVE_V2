@@ -1,0 +1,19 @@
+html {
+    background: #f6f5ff;
+}
+
+.loading {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #5B4Eff;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 5rem;
+    font-weight: 900;
+
+    @media (max-width: 800px) {
+        font-size: 2.4rem;
+    }
+}

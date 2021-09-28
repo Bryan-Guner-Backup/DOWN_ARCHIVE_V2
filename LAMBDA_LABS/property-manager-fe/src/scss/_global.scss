@@ -1,0 +1,90 @@
+//---------------------------------------
+//             Global Styles
+//---------------------------------------
+
+body {
+  font-family: $primary-font;
+  font-weight: 300;
+  color: #2d3b4f;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div {
+  overflow: visible;
+}
+//font families
+p,
+b,
+strong,
+mark,
+small,
+del,
+ins,
+sub,
+sup {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+//font sizes
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    color: #2d3b4f;
+  }
+}
+
+form {
+  overflow: visible;
+}
+
+textarea {
+  resize: none;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}

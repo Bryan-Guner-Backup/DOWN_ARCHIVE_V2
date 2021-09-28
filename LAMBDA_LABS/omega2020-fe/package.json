@@ -1,0 +1,71 @@
+{
+  "name": "omega2020",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.9.0",
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.55",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "auth0": "^2.20.0",
+    "axios": "^0.19.1",
+    "chai": "^4.2.0",
+    "components": "^0.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "expect": "^26.1.0",
+    "material-ui": "^0.20.2",
+    "msw": "^0.19.5",
+    "node": "^14.4.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-ga": "^2.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-to-print": "^2.9.0",
+    "reactstrap": "^8.2.0",
+    "styled": "^1.0.0",
+    "styled-components": "^5.1.1",
+    "use-undo": "^1.0.3",
+    "whatwg-fetch": "^3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "CI=true yarn test --coverage --watchAll=false || true"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__tests__/**"
+    ]
+  },
+  "proxy": "http://flask-env2.us-east-2.elasticbeanstalk.com:80",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jest-dom": "^4.0.0",
+    "prettier": "2.0.5",
+    "react-test-renderer": "^16.12.0",
+    "react-testing-library": "^8.0.1"
+  }
+}

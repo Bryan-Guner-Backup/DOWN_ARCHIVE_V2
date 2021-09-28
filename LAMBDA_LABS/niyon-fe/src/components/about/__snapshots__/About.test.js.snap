@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<About /> component testing should pass the snap shot test 1`] = `
+<div>
+  <Navbar />
+  <div
+    className="container"
+    data-test="aboutUs-container"
+  >
+    <h1>
+      Meet the Crew
+    </h1>
+    <PersonCard />
+  </div>
+</div>
+`;

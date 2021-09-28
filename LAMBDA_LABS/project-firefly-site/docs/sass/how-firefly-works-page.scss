@@ -1,0 +1,383 @@
+.how_firefly_works_container {
+  .mission_statement {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 2%;
+    // margin: 120px 0 50px 0;
+    margin-bottom: 50px;
+
+    @include mobileM {
+      flex-direction: column-reverse;
+      margin: 0 5% 50px;
+    }
+      @media (max-width: 800px) {
+        flex-direction: column;
+        align-items:center;
+        .img-tim-fix {
+          width:100%;
+          margin-top:60px;
+        }
+      }
+    .text {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      // word-spacing: 2px;
+      margin-right: 10px;
+      @include mobileM {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+      @media (max-width: 800px) {
+      width: 75%;
+      }
+
+      h1 {
+        color: #4AA810;
+        font-size: 2.88rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+
+        @include mobileM {
+          font-size: 3rem;
+          margin-top: 1rem;
+        }
+      }
+      
+      p {
+        font-size: 2rem;
+        width: 95%;
+          
+        text-align: justify;
+        margin-bottom: 2rem;
+
+        @include mobileM {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .button_badges_container-how {
+    padding-top: 2.5%;
+    display:flex;
+
+    button {
+     @include button(0,0) 
+    }
+
+    button:active {
+      margin: 3px 0 -3px 0;
+    }
+
+    .badges {
+      display: flex;
+      cursor: pointer;
+      width: 300px;
+      padding-top: 5px;
+
+      // .ios {
+      //   width: 43%;
+      //   margin-left: 3%;
+      // }
+
+      // .android {
+      //   width: 53%;
+      // }
+    }
+  }
+
+  .firefly_tutorial_container {
+    margin-top: 10%;
+
+    .text_container {
+      background: #5B4EFF;
+      color: white;
+      font-size: 2.1rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      p {
+        padding: 5% 17%;
+        font-size: 2.4rem;
+        text-align: center;
+
+        @include mobileM {
+          font-size: 1.6rem;
+        }
+      }
+
+      img {
+        width: 11%;
+        position: absolute;
+        transform: rotate(-10deg);
+        bottom: -13%;
+        right: 10%;
+
+        @include mobileM {
+          width: 18%;
+          bottom: -24%;
+          right: 8%;
+        }
+      }
+    }
+
+    .tutorial_divs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10%;
+
+      @include mobileM {
+        margin-top: 5%
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: #4AA810;
+        font-weight: bold;
+
+        @include mobileM {
+          text-align: center;
+          font-size: 3rem;
+        }
+      }
+
+      .content_container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        // margin-bottom: 15%;
+
+        @include mobileM {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .content {
+      
+            
+          h2 {
+            color: black;
+            font-size: 1.92rem;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 0 25px 0;
+
+            @include mobileM {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }        
+    }
+
+    .tut_div1, .tut_div2, .tut_div3 {
+
+      @include mobileM {
+        padding: 0 5%;
+      }
+
+      h1 {
+        margin:5% 0 5%;
+      }
+
+      .content_container {
+
+        .content {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+
+          @include mobileM {
+            width: 100%;
+            flex-direction: column-reverse;
+          }
+
+          img {
+            width: 100%;
+
+            @include mobileM {
+              margin-bottom: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .tut_div1 {
+
+      .content_container {
+
+        .content2 {
+          padding: 0;
+          margin-left: 7%;
+
+          @include mobileM {
+            margin-left: 0;
+          }
+
+          .block_container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            
+            @include mobileM {
+              justify-content: center;
+            }
+              
+            .img3 {
+              align-self: flex-end;
+            }
+          }
+        }
+
+        .content3 {
+          
+          .img4 {
+
+            width: 55%;
+          }
+        }
+      }
+    }
+
+    .tut_div2 {
+      background: #F7F6FF;
+
+    }  
+  }
+
+  .testimony_button_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0 55px 0;
+
+    @include mobileM {
+      position: relative;
+    }
+
+    .testimony_image{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+      width: 450px;
+
+      img {
+        height: 75px;
+        transform: rotate(-7deg);
+
+        @include mobileM {
+          position: absolute;
+          left: 2%;
+          bottom: 90%;
+        }
+      }
+    }
+
+    .testimonial_button {
+      @include button(0,0)
+    }
+  }
+  
+  .all-testimonies {
+    margin: 50px 100px 0px 100px;
+        @media (max-width: 500px) {
+          margin: 0 0 100px 0;
+          padding: 0;
+        }
+    .testimony_container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .testimony {
+        // width: 80%;
+        display: flex;
+        flex-direction: row;
+        // flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+        margin: 15px;
+        .user_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1.1rem;
+          .user_name,
+          .title {
+            margin: 0;
+          }
+          .user_name {
+            font-weight: 700;
+          }
+        }
+        .testimony_text {
+          padding-left: 15px;
+          font-size: 2rem;
+          line-height: 1.2;
+        }
+        @media (max-width: 750px) {
+          // height: 100vh;
+          width: 100%;
+
+          flex-direction: column;
+          padding: 5%;
+
+          img {
+            width: 50%;
+            position: initial;
+          }
+          .testimony_text {
+              word-spacing: 10px;
+              // font-size: 1.2rem;
+              width: 95%;
+              padding: 3.5%;
+            }
+            .user_info {
+              width: 100%;
+              font-size: 2.1rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 10px;
+              .user_name {
+                margin: 0;
+                font-weight: bold;
+                margin-bottom: -5px;
+                text-align: center;
+                @media (max-width: 510px) {
+                  font-size: 2.2rem;
+                }
+              }
+              .title {
+                margin: 0;
+                @media (max-width: 510px) {
+                  font-size: 1em;
+                  text-align: center;
+                }
+              }
+              img {
+                margin: 0;
+              }
+            }
+            .testimony_text {
+              margin: 0;
+              // text-align: justify;
+              @media (max-width: 510px) {
+                font-size: 1.72rem;
+                letter-spacing: normal;
+                word-spacing: 2px;
+              }
+            }
+          }
+        }
+    }
+  }
+}

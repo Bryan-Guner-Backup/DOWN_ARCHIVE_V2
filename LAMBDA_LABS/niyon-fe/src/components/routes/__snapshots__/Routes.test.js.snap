@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Routes /> should pass snapshot testing 1`] = `
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    path="/about"
+  />
+  <Route
+    component={[Function]}
+    path="/registration"
+  />
+  <Route
+    component={[Function]}
+    path="/login"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/home"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/profile"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/search"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/news"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/roomselect"
+  />
+  <PrivateRoute
+    component={[Function]}
+    isAuthenticated={false}
+    path="/chatroom/:id/:roomName/:roomId"
+  />
+</Switch>
+`;

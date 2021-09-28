@@ -1,0 +1,262 @@
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: "Nunito", sans-serif;
+
+  .mission-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    max-width: 1024px; 
+
+    @include mobile {
+        margin: 0 auto; 
+        margin-top: -3rem; 
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .mission-left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+
+      @include mobile {
+          width: 75%; 
+          margin-top: 3rem; 
+      }
+
+      h1 {
+        margin: 0; 
+        color: #4aa80f;
+        font-size: 3.5rem;
+        font-weight: 900; 
+      }
+
+      .latin {
+        margin: 0; 
+        margin-top: 2rem; 
+      }
+
+      p {
+        margin-top: 2rem; 
+        font-size: 2rem;
+
+        em {
+            font-style: italic;
+        }
+
+        @include mobile {
+          margin-left: 0; 
+        }
+
+        @include mobile {
+          margin: 0 auto; 
+          margin-top: 2rem; 
+        }
+      }
+
+      button{
+        @include button(5rem, 0)
+      }
+    }
+
+    .mission-right {
+      width: 50%;
+
+      @include mobile {
+          width: 100%; 
+          margin: 0 auto; 
+      }
+
+      img {
+        width: 100%; 
+        
+        @include mobile {
+          margin: 3rem 0; 
+        }
+      }
+    }
+  }
+
+  .icon-container {
+    margin-top: 8rem;
+
+    @include tablet {
+      margin: 0 auto; 
+    }
+
+    h2 {
+      color: #4aa810;
+      font-size: 3.5rem;
+      font-weight: 900; 
+
+      @include tablet {
+      }
+
+      @include mobile {
+          text-align: center; 
+      }
+    }
+
+    .icon-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      @include mobile {
+        flex-direction: column-reverse; 
+        }
+
+      .icon {
+        width: 30%;
+        font-size: 2rem;
+
+        @include mobile {
+            width: 75%; 
+            margin-top: 3rem; 
+        }
+
+        p {
+            font-size: 2rem; 
+        }
+      }
+    }
+  }
+
+  .how-it-works-wrapper {
+    background: #5b4eff;
+    padding: 0.5rem 0rem;
+    margin-top: 6rem; 
+    display: flex; 
+    flex-direction: column; 
+    padding-bottom: 6rem; 
+
+    h2 {
+        margin-top: 3rem; 
+        color: white;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .hiw-row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem; 
+
+      @include mobile {
+          flex-direction: column;
+          width: 100%;  
+      }
+
+      .hiw-video {
+        width: 45%;
+        border-radius: 1.5rem; 
+
+        @include mobile {
+            margin: 0 auto; 
+            width: 75%;
+        }
+      }
+
+      .hiw-text-container {
+        width: 45%; 
+
+        @include mobile {
+            margin: 0 auto; 
+            width: 75%;
+        }
+
+        .hiw-text {
+            font-size: 2rem;
+            color: white;  
+
+            @include mobile {
+                margin-top: 3rem; 
+            }
+        }
+      }
+    }
+    .hiw-image {
+      width: 75px; 
+      height: 75px;  
+      position: relative;
+      transform: rotate(-10deg);
+      left: 85%;
+      top: 90%; 
+
+      @include mobile {
+        left: 80%; 
+      }
+    }
+  }
+
+  .testimonials {
+    display: flex; 
+    flex-direction: column; 
+    width: 75%; 
+    margin: 0 auto; 
+
+    .testimonial {
+        display: flex; 
+        align-items: center; 
+        margin-top: 3rem; 
+        font-size: 4rem; 
+
+        @include mobile {
+          flex-direction: column;
+        }
+
+        .profile-info {
+
+            h4 {
+                text-align: center; 
+                font-size: 1.8rem; 
+                color: black; 
+                font-weight: 900; 
+            }
+
+            h5 {
+                text-align: center; 
+                font-size: 1.8rem; 
+                color: black; 
+            }
+        }
+
+        p {
+          font-size: 2rem; 
+          margin-left: 2rem; 
+
+          @include mobile {
+            margin-top: 3rem; 
+            text-align: center;
+          }
+        }
+
+    }
+  }
+
+  .onboarding {
+
+    .cta-btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem; 
+
+        img {
+            width: 75px;
+            height: 75px;
+            position: relative;
+            transform: rotate(-10deg);
+            left: 30%;
+        }
+
+        .join {
+            @include button(0, 5rem)
+        }
+    }
+  }
+}
+  

@@ -1,0 +1,22 @@
+.userCard {
+  .MuiTypography-h6 {
+    p {
+      font-size: 1.1rem !important;
+    }
+  }
+}
+
+.MuiTab-wrapper {
+  font-size: 1.4rem !important;
+}
+
+.MuiCard-root {
+  max-width: 95% !important;
+  margin: 0 auto;
+  margin-top: 0 !important;
+  margin-bottom: 25px !important;
+}
+
+.userCard:last-child {
+  margin-bottom: 45px !important;
+}

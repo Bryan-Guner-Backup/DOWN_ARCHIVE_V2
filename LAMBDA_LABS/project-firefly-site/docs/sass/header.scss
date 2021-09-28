@@ -1,0 +1,85 @@
+header { 
+  //overall navbar
+  .navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    white-space: nowrap;
+    //left side of navigation
+    a {
+      img {
+        width: 250px; 
+        height: auto; 
+      }
+    }
+    //right side of navigation
+    nav {
+      @include flex(row, center, space-between);
+      flex-wrap: nowrap;
+      width: 50%; 
+      font-weight: 900;
+      
+      a {
+        text-decoration: none; 
+        color: $nav-font; 
+        font-size: 16px; 
+      }
+      //buttons
+      .sign-in {
+        border: 1px solid $pretty-purple;
+        padding: 5.5px 15.5px;
+        border-radius: 5px;
+      }
+
+      .sign-up {
+        border: 1px solid $pretty-purple;
+        color: $sea-shell; 
+        background: $pretty-purple; 
+        padding: 5.5px 15.5px;
+        border-radius: 5px;
+      }
+    }
+  }
+  
+  @include tablet {
+    a { 
+      img { 
+        width: 30%;
+      }
+    }
+    nav {
+      width: 60%;
+      a {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  @include mobile {
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      //left side of navigation
+      a {
+        img {
+          width: 100%; 
+        }
+      }
+      //right side of navigation
+      nav {
+        @include flex(column, center, center);
+        width: 40%; 
+        a{
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  @include mobileM { 
+    
+  }
+}

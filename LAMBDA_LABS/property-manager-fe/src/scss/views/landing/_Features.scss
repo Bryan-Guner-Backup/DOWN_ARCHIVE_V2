@@ -1,0 +1,29 @@
+.featuresBlock {
+    height: auto;
+    width: 100%;
+    min-width: 100vw;
+    font-family: 'Roboto', 'sans-serif';
+
+    p {
+        width: 90%;
+    }
+    .featuer-slide-show {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .featureName {
+        border: 5px solid black;
+    }
+}
+
+// LANDING PAGE TABLET RESPONSIVENESS
+
+@media (max-width: 1024px) {
+    .featuresBlock {
+        height: $nav-vh-calc;
+        .featuer-slide-show {
+            display:none;
+        }
+    }
+}

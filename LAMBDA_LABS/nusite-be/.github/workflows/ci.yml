@@ -1,0 +1,29 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  coverage:
+    name: create test coverage for code climate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: "12"
+      - run: npm install
+      - uses: paambaati/codeclimate-action@v2.4.0
+        env:
+          CI: true
+          CC_TEST_REPORTER_ID: ${{ secrets.CodeClimateReporterId }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          GOOGLE_ID: ${{ secrets.GOOGLE_ID }}
+          GOOGLE_SECRET: ${{ secrets.GOOGLE_SECRET}}
+          LINKEDIN_ID: ${{ secrets.LINKEDIN_ID }}
+          LINKEDIN_SECRET: ${{ secrets.LINKEDIN_SECRET }}
+          FACEBOOK_ID: ${{ secrets.FACEBOOK_ID }}
+          FACEBOOK_SECRET: ${{ secrets.FACEBOOK_SECRET }}
+        with:
+          coverageCommand: npm run coverage
+          debug: true

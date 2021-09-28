@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  },
+  {
+    "id": 2,
+    "type": "message",
+    "text": "Testing inbox",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692623.000500",
+    "event_timestamp": "1594692623.000500"
+  },
+  {
+    "id": 3,
+    "type": "message",
+    "text": "New message for inbox",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692637.000700",
+    "event_timestamp": "1594692637.000700"
+  },
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  },
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  },
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  },
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  },
+  {
+    "id": 1,
+    "type": "message",
+    "text": "New message",
+    "slack_user_id": null,
+    "team": "T014X2Z6M6Z",
+    "channel": "C014RMZFEMU",
+    "timestamp": "1594692545.000300",
+    "event_timestamp": "1594692545.000300"
+  }
+]

@@ -1,0 +1,30 @@
+// PLEASE NOTE:
+// !!!Do not @import new stylesheets in here!!!
+// Leverage the scaffolding as most of our new
+// sass files will fall under views or components.
+// Please import into your stylesheet's respective
+// folder index files.
+
+// Reset
+@import './reset';
+
+// Variables
+@import './variables';
+
+// Mixins
+@import './mixins';
+
+// Globals
+@import './global';
+
+// Animations
+@import './animation';
+
+// Helpers
+@import './helpers';
+
+// Components
+@import './components';
+
+// Views
+@import './views';

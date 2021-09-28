@@ -1,0 +1,36 @@
+// Variables
+
+// Color Vars
+$pretty-purple: #5b4eff;
+$sea-shell: #F1F1F1;
+$ebony-clay: #23293B;
+$shuttle-gray: #5E6164;
+$firefly-green: #4aa810;
+$dark-firefly: #3e8c0d;
+$light-green: #e2f5d6;
+
+// Color Pointers
+
+// Nav
+$nav-bg: $sea-shell; 
+$nav-font: $pretty-purple; 
+
+// Body
+$header-font-color: $firefly-green;
+$main-font-color: $ebony-clay;
+$drop-shadow-color: $dark-firefly;
+$button-color: $light-green;
+
+//Footer
+$footer-background: $pretty-purple;
+$footer-font-color: $sea-shell;
+$copyright-color: $firefly-green;
+
+//Font Types
+$header-font-type: 'Nunito', sans-serif;
+$main-font-type: 'Nunito', sans-serif;
+
+// Breakpoint Vars
+$mobileM: (max-width: 500px);
+$mobile: (max-width: 812px);
+$tablet: (max-width: 1112px); 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="82px" viewBox="0 0 84 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>SchoolSuppliesIconNoBackground</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Marketing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11″-iPad-Pro" transform="translate(-116.000000, -964.000000)">
+            <g id="SchoolSuppliesIconNoBackground" transform="translate(116.000000, 964.000000)">
+                <g id="Group-18">
+                    <g id="Group-11" transform="translate(72.000000, 0.000000)">
+                        <path d="M3,4 L6,4 C9.3137085,4 12,6.6862915 12,10 L12,23 L12,23 L3,23 L3,4 Z" id="Rectangle" fill="#A099FF"></path>
+                        <rect id="Rectangle" fill="#5B4EFF" x="0" y="0" width="10" height="64" rx="5"></rect>
+                        <rect id="Rectangle" fill="#382EB8" x="0" y="32" width="10" height="3"></rect>
+                    </g>
+                    <g id="Group-12">
+                        <rect id="Rectangle" fill="#EE4466" x="0" y="0" width="17" height="61" rx="2"></rect>
+                        <rect id="Rectangle" fill="#DC143C" x="8" y="6" width="9" height="2"></rect>
+                        <rect id="Rectangle-Copy-8" fill="#DC143C" x="8" y="18" width="9" height="2"></rect>
+                        <rect id="Rectangle-Copy-10" fill="#DC143C" x="8" y="30" width="9" height="2"></rect>
+                        <rect id="Rectangle-Copy-12" fill="#DC143C" x="8" y="42" width="9" height="2"></rect>
+                        <rect id="Rectangle-Copy-7" fill="#DC143C" x="10" y="12" width="7" height="2"></rect>
+                        <rect id="Rectangle-Copy-9" fill="#DC143C" x="10" y="24" width="7" height="2"></rect>
+                        <rect id="Rectangle-Copy-11" fill="#DC143C" x="10" y="36" width="7" height="2"></rect>
+                        <rect id="Rectangle-Copy-13" fill="#DC143C" x="10" y="48" width="7" height="2"></rect>
+                    </g>
+                    <g id="Group-13" transform="translate(20.000000, 0.000000)">
+                        <rect id="Rectangle" fill="#DFC106" x="0" y="13" width="12" height="44"></rect>
+                        <polygon id="Triangle" fill="#FEF7CD" points="6 0 12 13 0 13"></polygon>
+                        <polygon id="Triangle-Copy" fill="#7C6B03" points="6 0 8.30769231 5 3.69230769 5"></polygon>
+                    </g>
+                    <g id="Group-16" transform="translate(34.000000, 9.000000)">
+                        <rect id="Rectangle" fill="#E3E5E8" x="13" y="14" width="10" height="29"></rect>
+                        <g id="Group-15" transform="translate(15.000000, 23.000000)" fill="#C7CBD1">
+                            <circle id="Oval" cx="3" cy="3" r="3"></circle>
+                            <rect id="Rectangle" x="2" y="5" width="2" height="15"></rect>
+                        </g>
+                        <g id="Group-14" fill="#737C8C">
+                            <path d="M9.5,-3.55271368e-15 C14.7467051,-3.55271368e-15 19,4.92486775 19,11 C19,17.0751322 13.2650194,24 9.5,22 C5.73498064,20 0,17.0751322 0,11 C0,4.92486775 4.25329488,-3.55271368e-15 9.5,-3.55271368e-15 Z M9.5,6.17566819 C7.01471863,6.17566819 5,8.37905669 5,11.0970741 C5,13.8150916 7.71656978,15.123679 9.5,16.0184801 C11.2834302,16.9132812 14,13.8150916 14,11.0970741 C14,8.37905669 11.9852814,6.17566819 9.5,6.17566819 Z" id="Combined-Shape"></path>
+                        </g>
+                        <g id="Group-14-Copy" transform="translate(26.500000, 11.500000) scale(-1, 1) translate(-26.500000, -11.500000) translate(17.000000, 0.000000)" fill="#737C8C">
+                            <path d="M9.5,-3.55271368e-15 C14.7467051,-3.55271368e-15 19,4.92486775 19,11 C19,17.0751322 13.2650194,24 9.5,22 C5.73498064,20 0,17.0751322 0,11 C0,4.92486775 4.25329488,-3.55271368e-15 9.5,-3.55271368e-15 Z M9.5,6.17566819 C7.01471863,6.17566819 5,8.37905669 5,11.0970741 C5,13.8150916 7.71656978,15.123679 9.5,16.0184801 C11.2834302,16.9132812 14,13.8150916 14,11.0970741 C14,8.37905669 11.9852814,6.17566819 9.5,6.17566819 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                    <g id="Group-17" transform="translate(0.000000, 49.000000)">
+                        <path d="M0,0 L82,0 L82,26 C82,29.8659932 78.8659932,33 75,33 L7,33 C3.13400675,33 4.73447626e-16,29.8659932 0,26 L0,0 L0,0 Z" id="Rectangle" fill="#4AA810"></path>
+                        <rect id="Rectangle" fill="#3E8C0D" x="0" y="7" width="82" height="6"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

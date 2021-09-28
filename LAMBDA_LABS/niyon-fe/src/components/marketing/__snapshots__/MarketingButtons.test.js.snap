@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Marketing container testing should pass snapshot testing correctly 1`] = `
+<div
+  className="marketing-container"
+  data-test="marketing-container"
+>
+  <div
+    className="container"
+    data-test="marketing-second-container"
+  >
+    <h3
+      data-test="container-title"
+    >
+      Connect with Mentors in your area!
+    </h3>
+  </div>
+  <div
+    className="makeStyles-buttons-2"
+    data-test="buttons-container"
+  >
+    <Link
+      to="/registration"
+    >
+      <WithStyles(ForwardRef(Button))
+        className="makeStyles-button-3"
+        color="primary"
+        variant="contained"
+      >
+        Sign Up
+      </WithStyles(ForwardRef(Button))>
+    </Link>
+    <Link
+      to="/login"
+    >
+      <WithStyles(ForwardRef(Button))
+        className="makeStyles-button-3"
+        color="secondary"
+        variant="contained"
+      >
+        Login
+      </WithStyles(ForwardRef(Button))>
+    </Link>
+  </div>
+</div>
+`;
