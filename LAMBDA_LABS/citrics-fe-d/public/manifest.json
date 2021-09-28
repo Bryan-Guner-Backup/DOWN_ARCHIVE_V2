@@ -1,0 +1,15 @@
+{
+  "short_name": "Citrics",
+  "name": "Citrics: A Nomad's Guide to the City",
+  "icons": [
+    {
+      "src": "citrics-orange-icon.svg",
+      "sizes": "303x303",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
