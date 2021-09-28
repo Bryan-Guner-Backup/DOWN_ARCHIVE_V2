@@ -1,0 +1,118 @@
+mutation AddProfilePic($image:Upload, $id:ID) {
+  updateUser(image: $image where: {id:$id }) {
+    id
+    profileImage
+  }
+}
+
+query fetchUserID($oktaId: String) {
+  user(where: {oktaId: $oktaId }) {
+    id
+    firstName
+    lastName
+    profileImage
+    saved {
+      id
+      title
+      description
+      start
+      end
+      ticketPrice
+      locations{
+        id
+        name
+        streetAddress
+        streetAddress2
+        city
+        state
+        zipcode
+        latitude
+        longitude
+      }
+      eventImages {
+        id
+        url
+      }
+      creator {
+        id
+        firstName
+        lastName
+        profileImage
+      }
+    }
+    rsvps {
+      id
+      title
+      description
+      start
+      end
+      ticketPrice
+      locations {
+        id
+        name
+        streetAddress
+        streetAddress2
+        city
+        state
+        zipcode
+        latitude
+        longitude
+      }
+      eventImages {
+        id
+        url
+      }
+      creator {
+        id
+        firstName
+        lastName
+        profileImage
+      }
+    }
+    createdEvents {
+      id
+      title
+      description
+      start
+      end
+      ticketPrice
+      locations {
+        id
+        name
+        streetAddress
+        streetAddress2
+        city
+        state
+        zipcode
+        latitude
+        longitude
+      }
+      eventImages {
+        id
+        url
+      }
+      creator {
+        id
+        firstName
+        lastName
+        profileImage
+      }
+    }
+  }
+}
+
+mutation UpdateUserInfo($profileImage:String, $firstName:String, $lastName:String, $id:ID!) {
+  updateUser(data:{profileImage:$profileImage, firstName:$firstName, lastName:$lastName }, where:{id:$id}) {
+    id
+    profileImage
+    firstName
+    lastName
+  }
+}
+
+mutation UpdateProfileImage($profileImage:String, $id:ID!) {
+  updateUser(data:{profileImage:$profileImage}, where:{id:$id}) {
+    id
+    profileImage
+  }
+}
