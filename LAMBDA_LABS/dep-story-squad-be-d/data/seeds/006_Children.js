@@ -1,0 +1,17 @@
+const faker = require('faker');
+const bc = require('bcryptjs');
+
+const children = [...new Array(8)].map((i, idx) => ({
+  Name: `${faker.name.firstName()}`,
+  PIN: `${bc.hashSync(`000${idx}`, process.env.BCRYPT_ROUNDS || 6)}`,
+  ParentID: `${Math.floor((idx + 2) / 2)}`,
+  AvatarID: `${faker.random.number({ min: 1, max: 5 })}`,
+  GradeLevelID: `${faker.random.number({ min: 1, max: 6 })}`,
+  CohortID: 1,
+  IsDyslexic: `${faker.random.boolean()}`,
+}));
+
+exports.seed = function (knex) {
+  // Inserts seed entries
+  return knex('Children').insert(children);
+};
