@@ -1,0 +1,166 @@
+/* Whole profile container*/
+/*------------------------------------------------------*/
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 400px) {
+    .profile-container h2 {
+        font-size: 20px;
+    }
+  }
+
+.profile-height {
+    height: 1100px;
+}
+
+.onboarding-height {
+    height: 950px;
+}
+
+.onboarding-input {
+    width: 300px;
+}
+
+/* User Information Section */
+/*------------------------------------------------------*/
+.user-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-information{
+    padding-top: 85px;
+    text-align: center;
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 20px 80%;
+    width: 16%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.see-more a {
+    text-decoration: none;
+    display: flex;
+    margin: 50px;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.user-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+    border: solid rgb(110, 164, 235);
+    border-radius: 25px;
+    width: auto;
+}
+
+.user-info h3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    color: white;
+}
+
+
+/* Progress Graph*/
+/*------------------------------------------------------*/
+.progress-graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 100px;
+    background-color: lightgrey;
+}
+
+.graph-form {
+    flex-direction: row;
+    max-width: 100%;
+    width: 80%;
+}
+
+.graph-form input {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    color: #c5ecfd;
+    margin: 0;
+    padding: 0px;
+    margin-right: 10px;
+    width: 80%;
+}
+
+.graph-form button {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+/* Calories Graph */
+/*------------------------------------------------------*/
+.calories-graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: lightgrey;
+}
+
+.weekly-workout {
+    width: 100%;}
+/* Workout Form */
+/*------------------------------------------------------*/
+
+.form-group label {
+    color: white
+}
+
+.status-forum div h2 {
+    padding-top: 100px;
+}
+
+.status-forum div button {
+    font-size: 13px;
+}
+
+.status-forum {
+    height: 1100px;
+}
+
+.see-more-info {
+    background-color: rgb(76, 92, 150);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border: 1px solid
+}

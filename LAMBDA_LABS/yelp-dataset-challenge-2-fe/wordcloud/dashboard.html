@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Yelp Insights Dashboard</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="css/jquery.auto-complete.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashstyle.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logo"></a>      
+        </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+                <div id="selections" class="row">
+                    <div class="col-md-6">
+                        <input id="var-select" class="form-control" placeholder="search for a business">
+                    </div>
+                </div>
+                <div class="row" id="stats">
+                    <div class="col-md-3" id="stats-area1">
+                        <h3>Oregano's Pizza Bistro</h3>
+                        <p id="address">1008 E Camelback Rd</p>
+                        <p id="state">Phoenix, Arizona</p>
+                    </div>
+                    <div class="col-md-3" id="stats-area2">
+                        <h3>Average Stars</h3>
+                        <p>3.5</p>
+                    </div>  
+                    <div class="col-md-3" id="stats-area3">
+                        <h3>Total Reviews</h3>
+                        <p>563</p>
+                    </div> 
+                    <div class="col-md-3" id="stats-area4">
+                        <h3>Categories</h3>
+                        <p>Restaurants, Pizza, Sandwiches, Italian</p>
+                    </div>  
+                </div>
+                <div class="row" id="chartstop">
+                    <div class="col-md-8" id="chart-area1"></div>
+                    <div class="col-md-4" id="chart-area3"></div>  
+                    <div class="col-md-4" id="chart-area2"></div> 
+                </div>
+                <div class="row" id="chartsbottom"> 
+                    <div class="col-md-4" id="chart-area4"></div>  
+                    <div class="col-md-4" id="chart-area5"></div>
+                    <div class="col-md-4" id="chart-area6"></div>
+                </div>  
+                </div>
+            </div>
+
+<!-- External JS Libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/jquery.auto-complete.js"></script>
+<script src="js/map.js"></script>
+<script src="js/autocomp.js"></script>
+
+<!-- Custom JS -->
+<script src="js/lineChart.js"></script>
+<script src="js/lineChart2.js"></script>
+<script src="js/bellcurve.js"></script>
+<script src="js/posnegbarchart.js"></script>
+<script src="js/histogram.js"></script>
+<script src="js/table.js"></script>
+<script src="https://cdn.jsdelivr.net/jstat/latest/jstat.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

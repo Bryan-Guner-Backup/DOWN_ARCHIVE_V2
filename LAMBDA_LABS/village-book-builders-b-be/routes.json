@@ -1,0 +1,13 @@
+{
+	"/api/*": "/664/$1",
+	"/libraries*": "/664/libraries$1",
+	"/headmasters*": "/664/headmasters$1",
+	"/villages*": "/664/villages$1",
+	"/schools*": "/664/schools$1",
+	"/mentors*": "/664/mentors$1",
+	"/teachers*": "/664/teachers$1",
+	"/programs*": "/664/programs$1",
+	"/mentees*": "/664/mentees$1",
+	"/users*": "/664/users$1",
+	"/sessions*": "/664/sessions$1"
+}

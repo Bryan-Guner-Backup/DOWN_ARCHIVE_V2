@@ -1,0 +1,28 @@
+.dashContainer {
+  width: 100%;
+  min-height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.user {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #FFC857;
+  text-shadow: 2px 2px black;
+  margin-bottom: 25px;
+}
+
+.logout {
+  margin-left: 1%;
+  width: 15%;
+  height: 30px;
+  background-color: #FFC857;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px;
+  box-shadow: 3px 3px black;
+  background-color: rgb(221, 169, 64);
+  box-shadow: 4px 5px black;
+}

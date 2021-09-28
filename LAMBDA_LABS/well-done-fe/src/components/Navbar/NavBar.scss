@@ -1,0 +1,134 @@
+@import 'src/colors';
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  @include navbar-bg;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  height: 10%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-right {
+  // font-family: open sans,helvetica neue,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: right;
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 100%;
+  padding-right: 1rem;
+  align-items: center;
+}
+.nav-left {
+  padding-left: 2rem;
+  width: 50%;
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+}
+.active {
+  color: pink;
+}
+.logo {
+  margin: 21px 0px 29px 0px;
+  width: 15%;
+  height: auto;
+}
+.margin-left {
+  margin-left: 24px;
+  color: #222;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  text-align: center;
+  width: 180px;
+  top: 43px;
+  z-index: 5;
+  background-color: $wellDoneBlue;
+  color: black;
+  right: 3px;
+  border-top: 1px solid $wellDoneBlue;
+  margin-top: 8%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.item-container {
+  padding-left: 1rem;
+  height: 100%;
+  text-align: left;
+  padding-bottom: 8px;
+}
+.margin-left-droplet {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 10%;
+  height: 50px;
+}
+
+.set-link {
+  position: relative;
+  top: 1px;
+  left: -4px;
+  color: white;
+  padding: 5px;
+  margin-left: 5px;
+}
+.set-link-logout {
+  position: relative;
+  top: -12px;
+  right: 7px;
+  color: black;
+}
+.navSvg {
+  margin: 10px 1px;
+  margin-left: 3px;
+  padding: 5px;
+  color: white;
+}
+.tab-nav {
+  color: white;
+  margin-bottom: 3px;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+svg.drop-svg {
+  position: absolute;
+  top: 8px;
+  height: 60%;
+}
+.each-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 6;
+  margin-bottom: 5px;
+}
+.logout-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-right: -6px;
+  color: white;
+}

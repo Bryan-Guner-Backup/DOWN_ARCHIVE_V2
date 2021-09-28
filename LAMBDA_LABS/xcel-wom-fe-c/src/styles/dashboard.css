@@ -1,0 +1,30 @@
+.dash-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-container h2{
+    font-size: 2.3rem;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.dash-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dash-content h3{
+    font-size: 1.7rem;
+}
+
+.dash-newWO, .dash-approvedWO{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px);
+}
+

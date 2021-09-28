@@ -1,0 +1,212 @@
+@import 'src/colors';
+
+.monitorsPageContainer {
+  margin: 0 auto;
+}
+.monitorContainer {
+  display: flex;
+  padding-top: 5rem;
+  background: #d5d6e9;
+  border: none;
+
+  @media screen and(max-width:800px) {
+    width: 100%;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  width: 70%;
+
+  @media screen and(max-width:800px) {
+    width: 100%;
+  }
+}
+
+.percentContainer {
+  min-width: 25%;
+  min-height: 100%;
+  display: block;
+
+  @media screen and(max-width:800px) {
+    display: none;
+  }
+}
+
+.pieChart {
+  max-width: 80%;
+  min-width: 60%;
+}
+.statusContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  height: 300px;
+
+  @media screen and(max-width:800px) {
+    width: 100%;
+  }
+}
+.monitorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+  text-align: center;
+  background: #fff;
+  width: 20rem;
+  line-height: 10px;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+  }
+
+  .monitorHeader {
+    background: #090c9b;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.1rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    h2 {
+      color: #fff;
+      font-size: 2.1rem;
+    }
+  }
+
+  p {
+    margin-top: -2rem;
+    color: #292929;
+    font-size: 2rem;
+  }
+}
+
+.functioningCard {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 10rem;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+  }
+
+  .functionalHeader {
+    display: flex;
+    justify-content: center;
+    background: #23d322;
+    margin-bottom: 1rem;
+    height: 4rem;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    h2 {
+      font-size: 2.1rem;
+      color: #fff;
+    }
+  }
+  .percent {
+    margin: -0.2rem;
+    font-size: 2rem;
+    color: #292929;
+  }
+  .outOf {
+    font-weight: 300;
+    color: #292929;
+  }
+}
+
+.nonfunctioningCard {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 10rem;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+  }
+
+  .nonFuncHeader {
+    display: flex;
+    justify-content: center;
+    background: #fa0707;
+    color: #fff;
+    margin-bottom: 1rem;
+    height: 4rem;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    h2 {
+      font-size: 2.1rem;
+      color: #fff;
+    }
+  }
+  .percent {
+    margin: -0.2rem;
+    font-size: 2rem;
+    color: #292929;
+  }
+  .outOf {
+    font-weight: 300;
+    color: #292929;
+  }
+}
+
+.noDataCard {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 10rem;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+
+  .noDataHeader {
+    display: flex;
+    justify-content: center;
+    background: #ffad34;
+    color: #fff;
+    margin-bottom: 1rem;
+    height: 4rem;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    h2 {
+      font-size: 2.1rem;
+      color: #fff;
+    }
+  }
+  .percent {
+    margin: -0.2rem;
+    font-size: 2rem;
+    color: #292929;
+  }
+  .outOf {
+    font-weight: 300;
+    color: #292929;
+  }
+}
+.sensorTable {
+  width: 100%;
+}

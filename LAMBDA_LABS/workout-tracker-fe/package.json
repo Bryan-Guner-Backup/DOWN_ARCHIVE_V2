@@ -1,0 +1,27 @@
+{
+  "name": "workout-tracker-fe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lambda-School-Labs/workout-tracker-fe.git",
+  "author": "Rod <rod.bromberg@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "deploy": "^1.0.3",
+<<<<<<< HEAD
+    "formik": "^2.1.3",
+    "immutability-helper": "^3.0.1",
+=======
+>>>>>>> master
+    "mdbreact": "^4.22.1",
+    "netlify": "^2.4.8",
+    "netlify-cli": "^2.21.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.1"
+  }
+}

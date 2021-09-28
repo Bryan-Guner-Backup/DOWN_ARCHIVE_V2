@@ -1,0 +1,35 @@
+.work-order-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.work-order-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.work-order-form label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-order-form input{
+    padding: 0.35rem;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 3px;
+    border: 2px solid grey;
+}
+
+.work-order-form textarea{
+    height: 200px;
+    resize: none;
+    margin-bottom: 20px;
+}

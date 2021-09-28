@@ -1,0 +1,60 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "apidoc": {
+    "name":"voicer-be",
+    "version": "1.0.0",
+    "description": "Back end for Voicer",
+    "title": "Voicer",
+    "url": "https://voicer-lambda-app.herokuapp.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=test jest --coverage --watch",
+    "coverage": "CI=true yarn test --coverage --watchAll=false || true",
+    "doc": "apidoc -i apidocs -o apidoc-out && apidoc-markdown -p apidoc-out -o README.md && rm -rf apidoc-out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voicer-Rebuild/Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voicer-Rebuild/Backend/issues"
+  },
+  "homepage": "https://github.com/Voicer-Rebuild/Backend#readme",
+  "dependencies": {
+    "aws-sdk": "^2.674.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jest": "^23.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.13",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/migrations/**",
+      "!**/node_modules/**",
+      "!**/*.spec.{js,jsx}",
+      "!**/coverage/**"
+    ]
+  }
+}

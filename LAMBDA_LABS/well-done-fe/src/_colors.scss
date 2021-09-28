@@ -1,0 +1,105 @@
+/// all colors in FIGMA
+$coolBlue: #accdff;
+$periwinkle: #bfc2ff;
+$vLBlue: #6562ff;
+$green: #01c000;
+$red: #fa0707;
+$duke: #090c9b;
+$navy: #000066;
+$oxford: #000048;
+$black: #202020;
+$orange: #ffad34;
+$mainBackground: #e5e5e5;
+$iconBackground: #aedffc;
+$buttonBlue: #082b84;
+$wellDoneBlue: #0db4e9;
+//changes all input fields accross all modals
+@mixin globalInputStyle {
+  display: inline-block;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 5px;
+
+}
+// changes background color for entire app
+@mixin body-background {
+  background-color: $mainBackground;
+}
+//changes background color for all grids on dashboard
+@mixin grid-background {
+  background-color: $coolBlue;
+}
+
+// changes border settings on all grids on dashboard
+@mixin grid-border {
+  border: 2px solid $coolBlue;
+}
+
+// changes all text colors on grids on dashboard
+@mixin header-text {
+  color: $black;
+  font-size: 2.8rem;
+  padding-right: 1.1rem;
+  padding-left: 1rem;
+  margin-top: 0.5%;
+}
+
+// changes color of view buttons on all grids on dashboard
+@mixin view-onGrid {
+  color: $duke;
+}
+
+//changes all ++buttons on grid on dashboard
+@mixin gridBtn-bg {
+  background-color: $coolBlue;
+  border: $coolBlue;
+  color: white;
+}
+
+//NAV bar
+//nav bar color
+@mixin navbar-bg {
+  background-color: white;
+}
+
+//drop down menu color
+@mixin dropDown-Bgclr {
+  background-color: $iconBackground;
+  color: $black;
+}
+
+//MAP
+//map filter menu color
+@mixin mapfilter-clr {
+  background-color: $wellDoneBlue;
+}
+
+///Banner
+@mixin banner-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 350;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+//buttons on modals
+@mixin saveButton {
+  border: 2px solid $wellDoneBlue;
+  background: $wellDoneBlue;
+  color: white;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+@mixin closeBtn {
+  border: none;
+  background: none;
+  font-size: medium;
+  color: $navy;
+  margin-right: 6%;
+  font-weight: 700;
+}

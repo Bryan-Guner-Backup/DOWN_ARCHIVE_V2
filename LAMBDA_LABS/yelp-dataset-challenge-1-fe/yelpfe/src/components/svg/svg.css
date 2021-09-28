@@ -1,0 +1,45 @@
+@keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  svg {
+    height:200px;
+    width: 200px;
+  }
+  .circle-chart {
+    height: 150px;
+    width: 150px;
+  }
+  .circle-chart-circle {
+    animation: circle-chart-fill 4s reverse;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  .gpa-text {
+    fill: #000;
+    -moz-transform: translateY(0.25em);
+    -ms-transform: translateY(0.25em);
+    -webkit-transform: translateY(0.25em);
+    transform: translateY(0.25em);
+  }
+  .chart-number {
+    font-size: 0.6em;
+    color: hsl(0, 72%, 48%);
+    line-height: 1;
+    text-anchor: middle;
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+  }
+  .chart-label {
+    font-size: 0.2em;
+    color: hsl(0, 72%, 48%);
+    /* text-transform: uppercase; */
+    text-anchor: middle;
+    -moz-transform: translateY(0.7em);
+    -ms-transform: translateY(0.7em);
+    -webkit-transform: translateY(0.7em);
+    transform: translateY(0.7em);
+  }
+  

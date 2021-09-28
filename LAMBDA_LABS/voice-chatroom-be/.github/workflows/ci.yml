@@ -1,0 +1,27 @@
+name: build
+"on":
+   pull_request: null
+   push:
+      branches:
+         - master
+jobs:
+   coverage:
+      name: Test and publish test coverage
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@master
+         - uses: actions/setup-node@master
+           with:
+              node-version: "12"
+         - run: npm install
+         - uses: paambaati/codeclimate-action@v2.4.0
+           env:
+              CC_TEST_REPORTER_ID: "${{ secrets.TEST_REPORTER_ID }}"
+              OKTA_API_TOKEN: "${{secrets.OKTA_API_TOKEN}}"
+              OKTA_ORG_URL: "${{secrets.OKTA_ORG_URL}}"
+              DB_URL: "${{secrets.DB_URL}}"
+              TEST_URL: "${{secrets.TEST_URL}}"
+           with:
+              coverageCommand: npm run coverage
+              coverageLocations: "./coverage/clover.xml:clover"
+              debug: true

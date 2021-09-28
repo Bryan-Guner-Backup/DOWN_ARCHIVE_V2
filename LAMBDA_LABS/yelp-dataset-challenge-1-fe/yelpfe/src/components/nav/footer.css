@@ -1,0 +1,25 @@
+.footer {
+    height: 150px;
+}
+
+.footer-bar {
+    background-color: #33333323;
+    padding:10px;
+}
+
+.footer-links {
+    padding:10px;
+    width:100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    margin: 5px;
+    color:#0073bb;
+    display: inline;
+    font-weight: 700;
+    gap: normal;
+    line-height: 21px;
+    text-align: left;
+}

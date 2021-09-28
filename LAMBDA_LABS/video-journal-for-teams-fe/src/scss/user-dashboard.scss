@@ -1,0 +1,30 @@
+.userDashList {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 20px 30px;
+}
+.ant-menu-item {
+	background-color: #6954ea;
+	max-width: 90%;
+
+	.ant-menu-item-selected {
+		background-color: #6954ea;
+	}
+}
+.ant-menu-inline {
+	border-right: none;
+}
+
+.logo {
+	width: 80%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-left: 10%;
+
+	img{
+		max-width: 100%;
+		object-fit: contain;
+	}
+}

@@ -1,0 +1,32 @@
+.form-wrapper {
+    margin: 10px;
+    box-shadow: 6px 9px 5px -3px rgba(0,0,0,0.16);
+}
+
+.form {
+    padding: 10px;
+}
+
+.field {
+    padding: 10px;
+}
+
+.label {
+    color:#0073bb;
+    display: inline;
+    font-weight: 700;
+    gap: normal;
+    line-height: 21px;
+    text-align: left;
+}
+.project-name {
+    padding: 10px;
+}
+
+.input-text {
+    margin: 10px;
+    width: 80%;
+    min-height: 100px;
+    text-align: start;
+    
+}

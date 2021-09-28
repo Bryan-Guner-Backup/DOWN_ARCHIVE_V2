@@ -1,0 +1,24 @@
+* {
+    font-size: 16.5% * 1em;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background-color: #F6F7F8 !important;
+    color: #34393D !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
