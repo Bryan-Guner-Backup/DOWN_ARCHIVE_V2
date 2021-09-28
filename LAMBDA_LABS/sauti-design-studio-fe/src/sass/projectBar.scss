@@ -1,0 +1,14 @@
+div.project-bar{
+    display: flex;
+    justify-content: space-between;
+
+    .breadcrumbs{
+        justify-self: flex-start;
+        margin-left: 2.5%;
+        a{
+          font-size: 1.4rem;  
+        }
+        
+    }
+
+}

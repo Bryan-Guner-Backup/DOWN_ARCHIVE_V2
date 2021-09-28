@@ -1,0 +1,7 @@
+.ant-menu-horizontal {
+    display: flex;
+}
+
+.logo { 
+    flex-grow: 2;
+}

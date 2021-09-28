@@ -1,0 +1,62 @@
+@import "../variables.scss";
+
+.sort-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 45px;
+
+  padding: 0 15px;
+
+  font-family: $font-body;
+  font-size: 1.4em;
+  color: #323232;
+
+  background: $theme-color-secondary;
+  border-bottom: 1px solid rgba(213, 209, 198, 0.5);
+
+  z-index: 998;
+
+  label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 240px;
+    height: 100%;
+
+    select {
+      width: 185px;
+
+      font-family: $font-body;
+      font-size: 16px;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      background: $theme-color-secondary;
+      background-image: url("../../images/icons/Arrow_Active.svg");
+      background-size: 10px;
+      background-position: 167px;
+      background-repeat: no-repeat;
+
+      border: 1px solid #323232;
+      border-radius: 5px;
+      outline: none;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.dark-mode {
+  .sort-bar {
+    background-color: $theme-color-primary;
+    color: white;
+  }
+}

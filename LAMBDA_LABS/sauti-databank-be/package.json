@@ -1,0 +1,51 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env DB_ENV=staging jest --watch --verbose",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauti-databank/back-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sauti-databank/back-end/issues"
+  },
+  "homepage": "https://github.com/sauti-databank/back-end#readme",
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "apollo-server-express": "^2.10.1",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.5",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "nodemailer": "^6.4.6",
+    "php-unserialize": "^0.0.1",
+    "qs": "^6.9.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,81 @@
+
+html {
+  font-size: 10px;
+}
+body {
+  background-color: ivory;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.App {
+  text-align: center;
+}
+
+.map {
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+}
+.description {
+  width: 80%;
+  margin: 0 auto;
+}
+button{
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+button:hover{
+  background-color: white;
+  color: peru;
+}
+
+.nav{
+   width: 30%;
+   /* padding:15px; */
+   /* background-color: wheat; */
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+ }
+ .navie{
+   border: 2px solid black;
+   text-decoration: none;
+   background-color: wheat;
+   color: black;
+   padding: 1% 2%;
+   font-size: 2rem;
+   border-radius: 5px;
+   /* margin: 10px; */
+ }
+
+ .navie:hover{
+   background-color: white;
+   color: peru;
+ }
+ .small-nav{
+   color: wheat;
+ }
+
+ .epi{
+   font-size: 40px;
+   color: black;
+ }
+
+  .footer{
+    color: black;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding:10px;
+  }

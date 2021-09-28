@@ -1,0 +1,184 @@
+:root {
+  --blue-one: #003a8c;
+  --blue-two: #0050b3;
+  --blue-three: #096dd9;
+  --blue-four: #1890ff;
+  --blue-five: #69c0ff;
+
+  --black-one: #202124;
+  --black-two: #191919;
+  --black-three: #3c4043;
+  --black-four: #4c4c4c;
+  --black-five: #666666;
+
+  --white-one: #fafafa;
+  --white-two: #f6f6f6;
+  --white-three: #f1f1f1;
+  --white-four: #ededed;
+  --white-five: #f9f9f9;
+
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+
+.nav-a {
+  margin-left: 2rem;
+}
+
+.login {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  width: 4rem;
+  height: 1.6rem;
+}
+
+.reg {
+  color: var(--white-one);
+  border: 1px solid var(--blue-three);
+  background: var(--blue-three);
+  border-radius: 4px;
+  padding: 2px;
+  width: 4rem;
+  height: 1.6rem;
+}
+
+p,
+li {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6em 0.4em;
+  margin: 2px;
+  font-size: 1.2rem;
+}
+
+.button-primary {
+  padding: 0.6em 0.4em;
+  font-size: 1.2rem;
+  width: 20%;
+  margin-top: 2px;
+  border-color: 1px solid var(--black-two);
+  border-radius: 0.8rem;
+  background: var(--blue-three);
+}
+
+.active {
+  font-weight: bold;
+}
+
+.logo {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 6rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+.userprof-ellipse {
+  height: 3rem;
+  margin-top: 0.3rem;
+  width: 3rem;
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info-container {
+  background: var(--blue-three);
+  width: 20%;
+  align-self: flex-start;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.resume-card {
+  background: white;
+  border: 3px solid #3f51b5;
+  width: 14rem;
+  height: 16rem;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+/* styling for nav bar */
+
+.styled-button {
+  border: none;
+  background: none;
+  color: #404040;
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.styled-button:hover {
+  color: #ffffff;
+  background: #096dd9;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.wrapper-div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-around;
+}

@@ -1,0 +1,226 @@
+@import "../variables.scss";
+
+// ----- Begin Initial Info Card -----
+.activity-card-container-open {
+  height: 300px;
+}
+.activity-card-container-closed {
+  height: 100px;
+}
+.activity-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+
+  width: 100%;
+  transition: 0.3s ease-in-out;
+
+  border-bottom: 1px solid #d5d1c680;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  %activity-color {
+    width: 14px;
+    height: 100%;
+  }
+  .magnitude-1 {
+    @extend %activity-color;
+    background: $mag-1;
+  }
+  .magnitude-3 {
+    @extend %activity-color;
+    background: $mag-2;
+  }
+  .magnitude-4 {
+    @extend %activity-color;
+    background: $mag-3;
+  }
+  .magnitude-6 {
+    @extend %activity-color;
+    background: $mag-4;
+  }
+  .magnitude-7 {
+    @extend %activity-color;
+    background: $mag-5;
+  }
+  .magnitude-9 {
+    @extend %activity-color;
+    background: $mag-6;
+  }
+
+  .activity-info-container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: calc(100% - 15px);
+    height: 100%;
+
+    background-color: $theme-color-secondary;
+
+    font-family: $font-body;
+    line-height: 3em;
+
+    overflow: hidden;
+  }
+
+  .activity-info-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    align-self: top;
+    height: 100px;
+    z-index: 996;
+
+    -webkit-box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.75);
+
+    background-color: $theme-color-secondary;
+
+    .magnitude-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 25%;
+      max-width: 100px;
+
+      aside {
+        font-family: $font-body;
+        font-size: 4.2em;
+        font-weight: 700;
+        width: calc(100% - 15px);
+        text-align: center;
+      }
+    }
+
+    .place-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      font-size: 1.8em;
+      width: calc(75% - 25px);
+      padding: 0;
+    }
+
+    .city {
+      font-weight: 600;
+    }
+
+    %dropdown-arrow {
+      display: inline-block;
+      max-height: 25px;
+      max-width: 25px;
+      transition: 0.3s ease-in-out;
+      margin-right: 5%;
+      pointer-events: none;
+    }
+
+    .dropdown-arrow-clicked {
+      @extend %dropdown-arrow;
+      transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+    }
+
+    .dropdown-arrow-not-clicked {
+      @extend %dropdown-arrow;
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+  }
+
+  .activity-info-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 995;
+
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+
+    background: $neutral-2;
+
+    -webkit-box-shadow: inset 0px -32px 21px -46px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px -32px 21px -46px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px -32px 21px -46px rgba(0, 0, 0, 1);
+
+    font-family: $font-body;
+    font-size: 1.6em;
+
+    .detail-item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid #ffffff62;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background: $theme-color-primary;
+      color: $theme-color-secondary;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .button-combo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+
+      button {
+        margin: 0;
+        height: 30px;
+      }
+      a {
+        margin: 0;
+        line-height: 1.4;
+        padding: 5px 10px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background: $theme-color-primary;
+        color: $theme-color-secondary;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// ----- End Initial Info Card -----
+
+// ----- Begin Details Dropdown Card -----
+
+.dark-mode {
+  background: $dark-theme;
+  .activity-info-primary {
+    background-color: #323232;
+    color: $font-color-white;
+    .dropdown-arrow-not-clicked,
+    .dropdown-arrow-clicked {
+      filter: invert(1);
+    }
+  }
+  .activity-info-secondary {
+    background: $neutral-3;
+    color: $font-color-white;
+  }
+}
+
+// ----- End Details Dropdown Card -----

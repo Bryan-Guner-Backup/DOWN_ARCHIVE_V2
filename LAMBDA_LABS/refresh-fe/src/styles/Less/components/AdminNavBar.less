@@ -1,0 +1,103 @@
+// Main Navagation Animation
+.navBar{
+    position: fixed;
+	background-color:black;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	width: 85px;
+	height: 100vh;
+    justify-content: space-between;
+    .header{
+        font-size: 25px;
+        letter-spacing: 3px;
+        font-family: "gopher", sans-serif;
+        text-align: center;
+        visibility: hidden;
+        color: white;
+        opacity: 0;
+        transition: visibility .5s, opacity .5s linear;
+    }
+
+    a{
+        color:white !important;
+    }
+}
+.navBar:hover{
+        background-color:black;
+        width: 300px;
+        align-items:flex-start;
+        transition: 0.5s ease-in-out; 
+    }
+.navBar:not(:hover){
+        transition: 0.5s;
+        align-items:flex-star;  
+    }
+.navBar .img{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            opacity: 100%;
+            max-width: 30px;
+            max-height: 30px;
+            margin-left: 7.5px;
+            margin-right:15px;
+            margin-bottom: 2vh;
+    }
+.navBar:hover .header{
+        visibility: visible;
+        opacity: 1;
+        }
+        
+// Containers
+.iconcontainer{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-top:15px;
+    margin-right:10px;
+}
+.logoutcontainer{
+    margin-bottom:25px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+//Images
+.usersimg{
+    height: 55px;
+    margin: 0px 16px;
+    color: white;
+}
+.leaderboardimg{
+    height: 55px;
+    margin: 0px 16px;
+    color: white;
+}
+.logoutimage{
+    height: 55px;
+    margin: 0px 16px;
+    color: white;
+}
+// Header Text
+.logoutheader{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: "gopher", sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.Modal{
+    border-radius: 0px !important;
+}
+
+
+// Nav Base
+.nav-base{
+    width: 75px;
+    height: 100vh;
+}
+

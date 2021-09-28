@@ -1,0 +1,24 @@
+@import '~antd/dist/antd.css';
+
+.right-header-section {
+  justify-content: flex-end;
+}
+
+.map-header,
+.right-header-section,
+.left-header-section {
+  display: flex;
+}
+
+.header-section {
+    width: 50%;
+}
+.left-header-section,
+.right-header-section {
+  width: 25%;
+  align-items: center;
+}
+
+.dashboard-button {
+  font-weight: bold;
+}

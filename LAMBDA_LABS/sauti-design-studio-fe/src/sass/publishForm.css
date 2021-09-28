@@ -1,0 +1,115 @@
+#container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container .header .titleSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container .header .titleSection .fa_custom {
+  color: orange;
+  width: 10%;
+}
+
+#container .header .titleSection #form-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #container .header .titleSection #form-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+#container .header #description {
+  font-weight: bold;
+  margin: 0 10%;
+}
+
+@media (max-width: 600px) {
+  #container .header #description {
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+}
+
+#container #survey-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10%;
+}
+
+#container #survey-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2% 0;
+  width: 47%;
+  font-size: 1.4rem;
+}
+
+#container #survey-form .form-control {
+  border: solid lightgrey 1px;
+  padding: 1.5% 0.5%;
+}
+
+#container #survey-form .input-textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid lightgrey;
+}
+
+#container .submitbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 10%;
+}
+
+#container .submitbutton .cancel {
+  border: 1px solid #CB3D2F;
+  border-radius: 15px;
+  padding: 0.75rem;
+  width: 25%;
+  background: white;
+}
+
+#container .submitbutton .submit {
+  background-color: #CB3D2F;
+  padding: 0.75rem;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  width: 25%;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  #container .submitbutton .submit {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=publishForm.css.map */

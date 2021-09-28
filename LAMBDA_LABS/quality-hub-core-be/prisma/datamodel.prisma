@@ -1,0 +1,56 @@
+type User @key(fields: "authId") {
+  id: ID! @id
+  authId: String! @unique
+  stripeId: String @unique
+  stripeCusId: String @unique
+  first_name: String!
+  last_name: String!
+  email: String! @unique
+  password: String!
+  city: String!
+  state: String!
+  gender: String
+  bio: String
+  image_url: String
+  portfolio_url: String
+  linkedin_url: String
+  github_url: String
+  personal_url: String
+  blog_url: String
+  twitter_url: String
+  activated_stripe: Boolean
+  fn_lc: String
+  ln_lc: String
+  city_lc: String
+  state_lc: String
+  chatActive: Boolean @default(value: false)
+  reviewsReceived: [Review!] @relation(name: "ReviewCoach")
+  reviewsGiven: [Review!] @relation(name:"ReviewSeeker")
+}
+
+type Review {
+  id: ID! @id
+  coach: User! @relation(name:"ReviewCoach")
+  seeker: User! @relation(name:"ReviewSeeker")
+  job: String! @unique
+  rating: Int!
+  review: String
+  createdAt: DateTime! @createdAt
+  lastUpdated: DateTime! @updatedAt
+  response: Response @relation(link: INLINE)
+  microservice: Microservice!
+}
+
+type Response {
+  id: ID! @id
+  review: Review! @unique
+  text: String!
+  createdAt: DateTime! @createdAt
+  lastUpdated: DateTime! @updatedAt
+}
+
+# MicroServices can be added as more microservices are builtout. The enum is used to differentiate what service a review is left in
+enum Microservice {
+  INTERVIEWQ
+  RESUMEQ
+}

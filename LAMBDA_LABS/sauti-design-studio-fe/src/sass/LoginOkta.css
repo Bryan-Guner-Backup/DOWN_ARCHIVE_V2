@@ -1,0 +1,155 @@
+.loginHero {
+  background-image: url("../images/sauti2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #818181;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.loginHero .oktaForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  padding: 2%;
+  margin: 5%;
+  background-color: rgba(17, 25, 33, 0.8);
+  border-radius: 5px;
+}
+
+.loginHero .oktaForm .password-reqs {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.loginHero .oktaForm .password-reqs .emphasize {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.loginHero .oktaForm .oktaTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 3.6rem;
+  width: 100%;
+}
+
+.loginHero .oktaForm .oktaSubtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.loginHero .oktaForm .oktaLabel {
+  margin: auto;
+  font-size: 2rem;
+  padding: 1%;
+  color: white;
+}
+
+.loginHero .oktaForm .oktaInput {
+  padding: 2%;
+}
+
+.loginHero .oktaForm .inputLabelSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 60%;
+}
+
+.loginHero .oktaForm .inputLabelSpan .oktaLoginInput {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.5% 0.5%;
+}
+
+.loginHero .oktaForm .inputLabelSpan .inputLabel {
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  margin-top: 2%;
+}
+
+.loginHero .oktaForm .oktaSubmit {
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  width: 60%;
+  padding: 1.5%;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.loginHero .oktaForm .oktaSubmit:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #818181;
+}
+
+.loginHero .oktaForm .oktaSignUp {
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.loginHero .oktaForm .oktaEntry {
+  margin: auto;
+  font-size: 1.8rem;
+  padding: 1.5%;
+  margin-top: 1.5% !important;
+}
+
+.loginHero .oktaForm .oktaError {
+  color: rgba(253, 82, 110, 0.8);
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.loginHero .oktaForm2 {
+  margin: 10.7% 2%;
+}
+/*# sourceMappingURL=LoginOkta.css.map */

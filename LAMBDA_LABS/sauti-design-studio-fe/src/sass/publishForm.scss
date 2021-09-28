@@ -1,0 +1,92 @@
+#container{
+    .header{
+        display: flex;
+        flex-direction: column;
+        .titleSection{
+            display: flex;
+            
+            .fa_custom {
+                color:orange;
+                width: 10%;
+            }
+
+            #form-title{
+                font-size: 3.2rem;
+                font-weight: bold;
+                @media (max-width: 600px) {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+        #description{
+        font-weight: bold;
+        margin: 0 10%;
+        @media (max-width: 600px) {
+            font-weight: normal;
+            font-size: 1.4rem;
+            }
+        }
+    }
+
+    #survey-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 10%;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin: 2% 0;
+            width: 47%;
+            font-size: 1.4rem;
+            label{
+                margin: 1% 0;
+            }
+          }
+        
+        .form-control {
+            border: solid lightgrey 1px;
+            padding: 1.5% 0.5%;
+        }
+        
+        .input-textarea {
+            width: 100%;
+            padding: 0.625rem;
+            border: 1px solid lightgrey;
+        }
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        margin: 5% 10% 0 0;
+        .button{
+            padding: 1% 2%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .cancel {
+            border: 1px solid lightgrey;
+            background-color: white;
+
+            &:hover{
+                transition: 0.2s;
+                background-color: rgb(243, 243, 243)
+            }
+        }
+    
+        .submit {
+            background-color: $accent;
+            color: white;
+            margin-left: 2%;
+            border: none;
+
+            &:hover{
+                transition: 0.2s;
+                color: #818181;
+            }
+        }   
+    } 
+}

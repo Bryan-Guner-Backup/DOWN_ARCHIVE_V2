@@ -1,0 +1,15 @@
+{
+  "short_name": "FaultLine",
+  "name": "FaultLine - Epicentral",
+  "icons": [
+    {
+      "src": "logo-152px.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#247249",
+  "background_color": "#247249"
+}

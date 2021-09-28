@@ -1,0 +1,29 @@
+.searchFormWrapper {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.react-geocoder {
+    width: 80%;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+input {
+    width: 80%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 0.5px solid lightgray;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid gray;;
+}
+
+.react-geocoder {
+    width: 500px;
+    text-align: center;
+}

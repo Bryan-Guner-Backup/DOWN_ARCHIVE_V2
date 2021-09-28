@@ -1,0 +1,8 @@
+.modal-dialog{
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border: 1px solid #3078bcce;
+}

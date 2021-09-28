@@ -1,0 +1,58 @@
+.toggleDateContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1000px;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  @media screen and(max-width: 1000px) {
+    width: 50%;
+  }
+  .monthBtnOn {
+    transition-timing-function: ease-in;
+    transition: 1s;
+    color: #9f1c0f;
+    margin-right: 3rem;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .monthBtnOff {
+    border: none;
+    color: grey;
+    margin-right: 3rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.buttonReset {
+  margin-left: 5%;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+}
+
+label {
+  font-size: 2.2rem;
+  margin: 0.5% 1%;
+}
+
+.choro-map-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

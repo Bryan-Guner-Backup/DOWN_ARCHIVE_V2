@@ -1,0 +1,1 @@
+web: yarn run postinstall && yarn run server

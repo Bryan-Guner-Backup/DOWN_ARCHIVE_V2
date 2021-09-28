@@ -1,0 +1,47 @@
+{
+  "name": "quake-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --detectOpenHandles --forceExit",
+    "coverage": "cross-env DB_ENV=testing jest --coverage --detectOpenHandles --forceExit || true",
+    "refresh": "node ./activity/refresh-router.js",
+    "postinstall": "knex migrate:rollback && knex migrate:latest && knex seed:run"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__tests__/**"
+    ]
+  },
+  "repository": "https://github.com/Lambda-School-Labs/quake-be.git",
+  "license": "MIT",
+  "dependencies": {
+    "@turf/distance": "^6.0.1",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "gitignore": "^0.6.0",
+    "helmet": "^3.23.2",
+    "jest": "^26.1.0",
+    "knex": "^0.21.1",
+    "knex-cleaner": "^1.3.0",
+    "moment": "^2.27.0",
+    "node-cron": "^2.0.3",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.2",
+    "sqlite3": "^4.2.0",
+    "supertest": "^4.0.2",
+    "turf": "^3.0.14",
+    "twilio": "^3.48.1"
+  }
+}

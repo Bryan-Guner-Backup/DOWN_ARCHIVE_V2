@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+
+.details-pane {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: whitesmoke;
+  top: 0;
+  right: 0;
+  margin: 7px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 5px gray;
+}

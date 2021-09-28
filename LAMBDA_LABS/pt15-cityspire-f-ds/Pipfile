@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jupyter = "*"
+pytest = "*"
+
+[packages]
+fastapi = "*"
+sqlalchemy = "*"
+joblib = "==1.0.0"
+pandas = "*"
+cython = "*"
+gunicorn = "*"
+simplejson = "*"
+requests = "*"
+sklearn = "*"
+typing = "*"
+datetime = "*"
+plotly = "*"
+psycopg2-binary = "*"
+
+[requires]
+python_version = "3"
+
+[packages.uvicorn]
+extras = [ "standard",]
+version = "*"

@@ -1,0 +1,66 @@
+{
+  "name": "quake-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@turf/distance": "^6.0.1",
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^2.6.3",
+    "moment": "^2.26.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.0.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-map-gl": "^5.2.5",
+    "react-redux": "^7.2.0",
+    "react-responsive": "^8.0.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "twilio": "^3.48.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "yarn test --CI=true --coverage --watchAll=false || true"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__tests__/**",
+      "!**/src/serviceWorker.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest-extended": "^0.11.5",
+    "react-test-renderer": "^16.13.1",
+    "redux-mock-store": "^1.5.4"
+  }
+}

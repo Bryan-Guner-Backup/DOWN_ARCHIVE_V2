@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.map-container {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+}
+
+.mapboxgl-canvas {
+  height: 350px;
+}
+
+@media(min-width: 768px) {
+  .map-container {
+    padding: 10px;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+  }
+}

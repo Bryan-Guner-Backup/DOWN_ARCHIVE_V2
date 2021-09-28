@@ -1,0 +1,17 @@
+.homeTitle.ant-typography {
+    padding: 4rem 0 1rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.homeTitle > span {
+    text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+    .homeTitle.ant-typography {
+        padding: 6rem 0 1.5rem;
+        text-align: center;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,46 @@
+@import '~antd/dist/antd.css';
+
+/* These 2 layouts are from antD */
+.page {
+  margin: 5px;
+}
+
+.page-layout {
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.map-header {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.right-header-section {
+  justify-content: flex-end;
+}
+
+.map-header .right-header-section .left-header-section {
+  display: flex;
+}
+
+.left-header-section .right-header-section {
+  height: 100%;
+  width: 50%;
+}
+
+.dashboard-button {
+  font-weight: bold;
+}
+
+.algolia-places {
+  vertical-align: middle;
+  height: 40px;
+  width: 500px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,85 @@
+#bug-report {
+  font-family: $font-body;
+  font-style: normal;
+  font-weight: 500;
+  color: $neutral-3;
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+
+    .title {
+      font-size: 28px;
+      line-height: 46px;
+      color: $font-color-accent;
+      margin-top: 10px;
+
+      .icon {
+        margin-right: 13px;
+      }
+    }
+    .sub-text {
+      font-size: 14px;
+      line-height: 23px;
+      margin-top: 5px;
+    }
+    #myForm {
+      .col {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        .label {
+          font-size: 18px;
+          line-height: 30px;
+        }
+        .email,
+        .description {
+          max-width: 100%;
+          height: 48px;
+          background: #efefef;
+          border-radius: 2.57931px;
+          border: none;
+          padding: 10px;
+        }
+        .description {
+          height: 166px;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $font-color-accent;
+          opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: $font-color-accent;
+        }
+
+        ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: $font-color-accent;
+        }
+      }
+      .btn-container {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        .btn {
+          width: 100%;
+          height: 48px;
+          font-size: 22px;
+          border-radius: 2.57931px;
+          border: none;
+        }
+      }
+    } // end myForm
+  } // end contianer
+} // end bug-report
+
+.dark-mode {
+  #bug-report {
+    color: $font-color-white;
+  }
+}

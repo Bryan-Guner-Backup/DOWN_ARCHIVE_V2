@@ -1,0 +1,38 @@
+.container-fluid {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 768px) {
+    .container-fluid {
+        flex-direction: row;
+        margin-top: 100px;
+    }  
+}
+
+.resultWrapper {
+    width: 100%;
+}
+
+.mapWrapper {
+    width: 100%;
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    .resultWrapper, .mapWrapper {
+        width: 50%;
+        padding: 30px;
+    }   
+}
+
+.buttonWrapper {
+    margin-top: 50px;
+}
+
+.addButton {
+   width: 150px;
+}

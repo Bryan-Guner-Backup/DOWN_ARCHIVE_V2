@@ -1,0 +1,18 @@
+div.project-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.project-bar .breadcrumbs {
+  justify-self: flex-start;
+  margin-left: 2.5%;
+}
+
+div.project-bar .breadcrumbs a {
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=projectBar.css.map */
