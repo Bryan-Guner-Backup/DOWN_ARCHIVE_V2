@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.schedule-list-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.datepicker-container {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: #282c34;
+}
+
+@media screen and (max-width: 500px) {
+  .schedule-list-container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .makeStyles-root-154 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .division-list {
+    max-width: 500px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  #list-subheader {
+    position: relative;
+    margin: 0 auto;
+  }
+  .MuiListItem-root {
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .datepicker-container {
+    flex-direction: column;
+  }
+}
+.main-container {
+  background-image: url("http://getwallpapers.com/wallpaper/full/0/3/d/664458.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  width: 60%;
+  /* background-color: beige; */
+  background: rgba(255, 255, 255, 0.55);
+  margin: auto;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+.welcome_container {
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.banner {
+  width: 100%;
+}
+
+.heading {
+  position: absolute;
+  align-self: flex-start;
+  color: white;
+  text-shadow: 2px 2px 3px black, -2px -2px black, 2px 2px black;
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding-top: 25px;
+  /* font-style: italic; */
+  font-family: "Roboto";
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .button_container {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin: auto;
+  }
+}
+
+.following_header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 80%;
+  }
+}
+
+.delete {
+  padding-top: 3rem;
+  text-align: right;
+}
