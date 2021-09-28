@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+awsebcli = "*"
+geopy = "*"
+psycopg2-binary = "*"
+uvicorn = "*"
+fastapi = "*"
+gunicorn = "*"
+python-dotenv = "*"
+jinja2 = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.7"
