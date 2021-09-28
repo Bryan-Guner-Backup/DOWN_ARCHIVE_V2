@@ -1,0 +1,7 @@
+version: "2"
+exclude_patterns:
+  - "**/__tests__/"
+  - "*/webhook/*"
+  - "/plaid/"
+  - "**/*.spec.js"
+  - "/coverage"
