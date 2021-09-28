@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "camelcase": "off",
+    "no-case-declarations": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-did-update-set-state": "off",
+    "react/no-access-state-in-setstate": "off",
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "warn",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
