@@ -1,0 +1,30 @@
+query Events {
+    events(orderBy : start_ASC) {
+        id
+        title
+        description
+        start
+        end
+      	ticketPrice
+        creator{
+          profileImage
+          firstName
+        }
+        eventImages{
+          url
+        }
+        locations {
+          distanceFromUser
+          name
+          streetAddress
+          state
+          city
+          zipcode
+          latitude
+          longitude
+        }
+        tags{
+          title
+        }
+      }
+}

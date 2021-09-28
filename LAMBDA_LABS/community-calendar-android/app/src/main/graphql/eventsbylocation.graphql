@@ -1,0 +1,30 @@
+query EventsByLocation($latitude: Float!, $longitude: Float!) {
+    events {
+        id
+        title
+        description
+        start
+        end
+        ticketPrice
+        creator{
+          profileImage
+          firstName
+        }
+        eventImages{
+            url
+        }
+        locations(userLatitude: $latitude, userLongitude: $longitude) {
+            distanceFromUser
+            name
+            streetAddress
+            state
+            city
+            zipcode
+            latitude
+            longitude
+        }
+        tags{
+            title
+        }
+      }
+}

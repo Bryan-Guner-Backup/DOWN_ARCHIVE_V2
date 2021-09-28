@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/card_view"
+    app:cardElevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <!--    TODO: IMAGE VIEW IS SUPPOSE TO HAVE CORNER RADIUS OF 3DP-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_event"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/base_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/txt_event_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_community"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_light"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:text="@string/mission_district"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_event_name"
+            app:layout_constraintLeft_toRightOf="@id/img_event"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_event_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:maxLines="1"
+            android:text="@string/event_1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_event_time"
+            app:layout_constraintLeft_toRightOf="@id/img_event"
+            app:layout_constraintTop_toBottomOf="@id/txt_community" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/_6_00pm_10_00pm"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/img_event"
+            app:layout_constraintTop_toBottomOf="@id/txt_event_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_margin="28dp"
+            android:text="@string/view"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txt_event_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/home_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_featured_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/butler_bold"
+        android:text="@string/featured"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/featured_event_recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/see_all"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/featured_event_recycler"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/featured_event_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/txt_events_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_featured_title"
+        tools:listitem="@layout/featured_event_recycler_item" />
+
+    <ProgressBar
+        android:id="@+id/pb_featured_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/featured_event_recycler"
+        app:layout_constraintTop_toTopOf="@id/featured_event_recycler" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_no_featured_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/featured_event_recycler"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_events_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/butler_bold"
+        android:text="@string/events"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/layout_main_event_filters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured_event_recycler" />
+
+    <ImageView
+        android:id="@+id/btn_list"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="41dp"
+        android:fontFamily="@font/poppins_black"
+        android:src="@drawable/list_view_selected"
+        app:layout_constraintBottom_toTopOf="@id/layout_main_event_filters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured_event_recycler" />
+
+    <ImageView
+        android:id="@+id/center_bar"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/grid_and_list_divide"
+        app:layout_constraintBottom_toTopOf="@id/layout_main_event_filters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured_event_recycler" />
+
+    <ImageView
+        android:id="@+id/btn_grid"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_black"
+        android:src="@drawable/grid_view_unselected"
+        app:layout_constraintBottom_toTopOf="@id/layout_main_event_filters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured_event_recycler" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_main_event_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/txt_event_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_events_title">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_events_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/today"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@id/txt_events_tomorrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_events_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/tomorrow"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@id/txt_events_this_weekend"
+            app:layout_constraintStart_toEndOf="@id/txt_events_today"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_events_this_weekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/this_weekend"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@id/txt_events_all_upcoming"
+            app:layout_constraintStart_toEndOf="@id/txt_events_tomorrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_events_all_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/all_upcoming"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@id/txt_events_this_weekend"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/main_event_recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_main_event_filters" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_event_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_event_date"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/event_recycler_item_list" />
+
+    <ProgressBar
+        android:id="@+id/pb_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main_event_recycler"
+        app:layout_constraintTop_toTopOf="@id/main_event_recycler" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_no_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/main_event_recycler"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
