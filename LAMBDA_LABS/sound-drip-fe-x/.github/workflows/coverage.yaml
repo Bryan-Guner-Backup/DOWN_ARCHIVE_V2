@@ -1,0 +1,20 @@
+name: build
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest]
+        node: [12,10]
+    name: Test ${{ matrix.os}}/${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn 
+      - run: yarn build --if-present
+      - run: yarn test
+        env:
+          CI: true

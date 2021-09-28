@@ -1,0 +1,52 @@
+.dashboardgrid{
+    width: 100%;
+}
+
+
+
+.business-results{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 20;
+    margin-bottom: 5%;
+
+    .card{
+       justify-content: center;
+       align-items: center;
+        height: 20vh;
+        cursor: pointer;
+        width: 15vw;
+        background-color: #d7e2eb;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 80%;
+        border-radius: 10%;
+    }
+}
+.competitors-results{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 20;
+    margin-bottom: 5%;
+}
+.h2dashboard{
+    color: black;
+    margin-left: 3vh;
+} 

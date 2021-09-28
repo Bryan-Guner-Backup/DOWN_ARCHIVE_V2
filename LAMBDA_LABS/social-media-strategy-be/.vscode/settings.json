@@ -1,0 +1,22 @@
+{
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "javascript"
+    ],
+    "cSpell.words": [
+        "krahs",
+        "lengthcheck",
+        "newuser",
+        "screenname",
+        "tokenuser",
+        "twitaccess"
+    ],
+    "cSpell.ignoreWords": [
+        "oktainfo"
+    ]
+}

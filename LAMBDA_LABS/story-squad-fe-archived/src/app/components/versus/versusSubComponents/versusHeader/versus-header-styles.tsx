@@ -1,0 +1,112 @@
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import cityscape from '../../../../pages/child-dashboard/icons/cityscape.png';
+export const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        // header styles
+        h2Styling: {
+            'fontFamily': 'Bangers',
+            'color': '#FFFFFF',
+            'fontSize': '70px',
+            'fontWeight': 'bold',
+            '-webkit-text-stroke-width': '1px',
+            '-webkit-text-stroke-color': '#000000',
+        },
+        h3Styling: {
+            'fontFamily': 'Bangers',
+            'color': '#FFFFFF',
+            'fontSize': '35px',
+            'fontWeight': 'bold',
+            '-webkit-text-stroke-width': '1px',
+            '-webkit-text-stroke-color': '#000000',
+        },
+        h4Styling: {
+            'fontFamily': 'Bangers',
+            'color': '#FFFFFF',
+            'fontSize': '48px',
+            'lineHeight': '51px',
+            'fontWeight': 'bold',
+            '-webkit-text-stroke-width': '1px',
+            '-webkit-text-stroke-color': '#000000',
+            'marginTop': '1%',
+            'display': 'flex',
+        },
+        teamInfo: {
+            display: 'flex',
+            flexDirection: 'row',
+            width: '100%',
+        },
+        teamName: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-evenly',
+            alignItems: 'center',
+            width: '100%',
+        },
+        bottomRow: {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            width: '80%',
+        },
+        appBar: {
+            height: '26vh',
+            width: '100%',
+            backgroundColor: '#6CEAE6',
+            backgroundImage: `url(${cityscape})`,
+            backgroundRepeat: 'no-repeat',
+            border: '7px solid #000000',
+            backgroundSize: 'cover',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+        },
+        logoutButton: {
+            'marginLeft': '780px',
+            'marginBottom': '105px',
+            'backgroundColor': '#FF6B35',
+            'fontSize': '24px',
+            'fontWeight': 'bold',
+            'borderRadius': '10px',
+            'color': 'white',
+            'width': '100px',
+            'border': '3px solid #292929',
+            'textTransform': 'capitalize',
+            'fontFamily': 'nunito',
+            '&:hover': {
+                backgroundColor: '#FF6B35',
+            },
+        },
+        logoutMenu: {
+            'backgroundColor': '#FF6B35',
+            'fontSize': '24px',
+            'fontWeight': 'bold',
+            'color': 'white',
+            'width': '100px',
+            'textTransform': 'capitalize',
+            'border': '2px solid #292929',
+            'fontFamily': 'nunito',
+            '&:hover': {
+                backgroundColor: '#FF6B35',
+            },
+        },
+        headerMenuDiv: {
+            display: 'flex',
+            flexFlow: 'wrap no-wrap',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+        },
+        upperTitleDiv: {
+            display: 'flex',
+            justifyContent: 'flex-end',
+            width: '57.5%',
+        },
+        upperHeaderButtonDiv: {
+            display: 'flex',
+            justifyContent: 'flex-end',
+            width: '20%',
+            marginBottom: '30px',
+            marginRight: '-105px',
+            marginLeft: '160px',
+        },
+    })
+);

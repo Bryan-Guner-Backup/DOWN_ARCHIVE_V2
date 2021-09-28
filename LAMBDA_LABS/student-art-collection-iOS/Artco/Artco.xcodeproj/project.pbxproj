@@ -1,0 +1,1227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3808A87B23C7E8E700592FF0 /* CheckoutArtworkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808A87A23C7E8E700592FF0 /* CheckoutArtworkCollectionViewCell.swift */; };
+		3808A87D23C7EEF400592FF0 /* NotificationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808A87C23C7EEF400592FF0 /* NotificationKeys.swift */; };
+		38528D0123E144C5002C9E5E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38528D0023E144C5002C9E5E /* FilterViewController.swift */; };
+		3865DE9923C3F11E00B548F6 /* Student+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865DE9823C3F11E00B548F6 /* Student+Convenience.swift */; };
+		3865DE9B23C3F39200B548F6 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865DE9A23C3F39200B548F6 /* StudentController.swift */; };
+		3875135123C5336E0004B31D /* Artco.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3875135023C5336E0004B31D /* Artco.xcdatamodel */; };
+		3875135323C533F00004B31D /* SchoolFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3875135223C533F00004B31D /* SchoolFlow.storyboard */; };
+		387DD18923AC70940041BC00 /* SSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD18823AC70940041BC00 /* SSettingsViewController.swift */; };
+		387DD18B23AC70EC0041BC00 /* SArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD18A23AC70EC0041BC00 /* SArtDetailViewController.swift */; };
+		387DD19323AC784D0041BC00 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19223AC784D0041BC00 /* CartViewController.swift */; };
+		387DD19623AC78760041BC00 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19523AC78760041BC00 /* CheckoutViewController.swift */; };
+		387DD19823AC789F0041BC00 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19723AC789F0041BC00 /* NameViewController.swift */; };
+		387DD19A23AC78A90041BC00 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19923AC78A90041BC00 /* EmailViewController.swift */; };
+		387DD19C23AC78B10041BC00 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19B23AC78B10041BC00 /* MessageViewController.swift */; };
+		387DD19E23AC78CA0041BC00 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19D23AC78CA0041BC00 /* GalleryCollectionViewController.swift */; };
+		387DD1A023AC78E50041BC00 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD19F23AC78E50041BC00 /* ArtDetailViewController.swift */; };
+		387DD1A223AD37450041BC00 /* SEditArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD1A123AD37450041BC00 /* SEditArtViewController.swift */; };
+		387DD1A423AD3A500041BC00 /* EditArtProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD1A323AD3A500041BC00 /* EditArtProtocol.swift */; };
+		38A9927C23AB0413003E5105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A9927B23AB0413003E5105 /* Main.storyboard */; };
+		38A9928223AB1706003E5105 /* BuyerFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A9928123AB1706003E5105 /* BuyerFlow.storyboard */; };
+		38EBDD8A23CE69440051BC30 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EBDD8923CE69440051BC30 /* UIController.swift */; };
+		38EBDD8C23CE72930051BC30 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EBDD8B23CE72930051BC30 /* CartTableViewCell.swift */; };
+		6E0A331B23AC11690073FA2F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A331A23AC11690073FA2F /* Category.swift */; };
+		6E0A331F23AC151E0073FA2F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A331E23AC151E0073FA2F /* CoreDataStack.swift */; };
+		6E0A332123AC178D0073FA2F /* SGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332023AC178D0073FA2F /* SGalleryTableViewController.swift */; };
+		6E0A332523AC18320073FA2F /* SchoolGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332423AC18320073FA2F /* SchoolGalleryTableViewCell.swift */; };
+		6E0A332823AC186B0073FA2F /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332723AC186B0073FA2F /* ListingController.swift */; };
+		6E0A332A23AC18BE0073FA2F /* Listing+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332923AC18BE0073FA2F /* Listing+Convenience.swift */; };
+		6E0A332C23AC22670073FA2F /* SAddArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332B23AC22670073FA2F /* SAddArtViewController.swift */; };
+		6E0A332E23AC32020073FA2F /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A332D23AC32020073FA2F /* CameraPreviewView.swift */; };
+		6E0A333223AC58DC0073FA2F /* String+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A333123AC58DC0073FA2F /* String+CurrencyFormatter.swift */; };
+		6E86EC0023D267E9007FD1FC /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6E86EBFF23D267E9007FD1FC /* Apollo */; };
+		6E86EC0223D267E9007FD1FC /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6E86EC0123D267E9007FD1FC /* ApolloWebSocket */; };
+		6E86EC0723D26AD4007FD1FC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E86EC0623D26AD4007FD1FC /* API.swift */; };
+		6EA5B40A23A9648C007DD6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B40923A9648C007DD6AE /* AppDelegate.swift */; };
+		6EA5B40C23A9648C007DD6AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B40B23A9648C007DD6AE /* SceneDelegate.swift */; };
+		6EA5B41323A96490007DD6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA5B41223A96490007DD6AE /* Assets.xcassets */; };
+		6EA5B41623A96490007DD6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EA5B41423A96490007DD6AE /* LaunchScreen.storyboard */; };
+		6EA5B42123A96490007DD6AE /* ArtcoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B42023A96490007DD6AE /* ArtcoTests.swift */; };
+		6EA5B42C23A96490007DD6AE /* ArtcoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B42B23A96490007DD6AE /* ArtcoUITests.swift */; };
+		6EA5B43A23A9664F007DD6AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EA5B43923A9664F007DD6AE /* GoogleService-Info.plist */; };
+		6EA5B43C23A977F1007DD6AE /* SchoolLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B43B23A977F1007DD6AE /* SchoolLoginViewController.swift */; };
+		6EA5B44523A98B83007DD6AE /* SchoolSignUp1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B44423A98B83007DD6AE /* SchoolSignUp1ViewController.swift */; };
+		6EA5B44723A98F2C007DD6AE /* AuthErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA5B44623A98F2C007DD6AE /* AuthErrorCodes.swift */; };
+		6EC75B6523AC85D500BFAF44 /* Date+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B6423AC85D500BFAF44 /* Date+DateFormatter.swift */; };
+		6EC75B6723AC8A9400BFAF44 /* Float+CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B6623AC8A9400BFAF44 /* Float+CurrencyFormatter.swift */; };
+		6EC75B7A23C5499300BFAF44 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B7923C5499300BFAF44 /* Network.swift */; };
+		6EC75B7D23C550AD00BFAF44 /* ListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B7C23C550AD00BFAF44 /* ListingCollectionViewCell.swift */; };
+		6EC75B7F23C6A31E00BFAF44 /* UserRedirectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B7E23C6A31E00BFAF44 /* UserRedirectViewController.swift */; };
+		6EC75B8123C7DD0F00BFAF44 /* BuyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75B8023C7DD0E00BFAF44 /* BuyerController.swift */; };
+		6ECC094B23DF7E9B0007D409 /* URL+Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC094A23DF7E9B0007D409 /* URL+Secure.swift */; };
+		6ECC094D23DF7EE00007D409 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC094C23DF7EE00007D409 /* ConcurrentOperation.swift */; };
+		6ECC094F23DF806D0007D409 /* UploadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC094E23DF806D0007D409 /* UploadImageOperation.swift */; };
+		6ECC095223DF9FA00007D409 /* FetchDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC095123DF9FA00007D409 /* FetchDetailOperation.swift */; };
+		6ECC095423DFDC420007D409 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC095323DFDC420007D409 /* Cache.swift */; };
+		6ECC095623DFE0060007D409 /* BuyerGalleryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC095523DFE0060007D409 /* BuyerGalleryOperation.swift */; };
+		6EE984C923CCFA15003D3777 /* SchoolSignUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE984C823CCFA15003D3777 /* SchoolSignUp2ViewController.swift */; };
+		6EE984CE23CD0077003D3777 /* School+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE984CD23CD0077003D3777 /* School+Convenience.swift */; };
+		6EE984D023CD0299003D3777 /* SchoolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE984CF23CD0299003D3777 /* SchoolController.swift */; };
+		6EE984D223CD1D1D003D3777 /* SchoolServerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE984D123CD1D1D003D3777 /* SchoolServerID.swift */; };
+		6EE984D423CD3865003D3777 /* Cloudinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE984D323CD3865003D3777 /* Cloudinary.swift */; };
+		B4C0D27AFFCADB1578B4B7B3 /* Pods_ArtcoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02735197BAC1273E709CC70 /* Pods_ArtcoTests.framework */; };
+		BCA3026B3680327F7DAD1EFA /* Pods_Artco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077209EEC2C0C4B15CACC952 /* Pods_Artco.framework */; };
+		C0C548427BCB2B4D72942A32 /* Pods_Artco_ArtcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273F717A0227D61BDE43F2E5 /* Pods_Artco_ArtcoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EA5B41D23A96490007DD6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA5B3FE23A9648C007DD6AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA5B40523A9648C007DD6AE;
+			remoteInfo = Artco;
+		};
+		6EA5B42823A96490007DD6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EA5B3FE23A9648C007DD6AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EA5B40523A9648C007DD6AE;
+			remoteInfo = Artco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		077209EEC2C0C4B15CACC952 /* Pods_Artco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF651B18516D9A5E15D98E9 /* Pods-ArtcoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtcoTests.debug.xcconfig"; path = "Target Support Files/Pods-ArtcoTests/Pods-ArtcoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		273F717A0227D61BDE43F2E5 /* Pods_Artco_ArtcoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artco_ArtcoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3808A87A23C7E8E700592FF0 /* CheckoutArtworkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutArtworkCollectionViewCell.swift; sourceTree = "<group>"; };
+		3808A87C23C7EEF400592FF0 /* NotificationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationKeys.swift; sourceTree = "<group>"; };
+		38528D0023E144C5002C9E5E /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		3865DE9823C3F11E00B548F6 /* Student+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+Convenience.swift"; sourceTree = "<group>"; };
+		3865DE9A23C3F39200B548F6 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
+		3875135023C5336E0004B31D /* Artco.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Artco.xcdatamodel; sourceTree = "<group>"; };
+		3875135223C533F00004B31D /* SchoolFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SchoolFlow.storyboard; sourceTree = "<group>"; };
+		387DD18823AC70940041BC00 /* SSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSettingsViewController.swift; sourceTree = "<group>"; };
+		387DD18A23AC70EC0041BC00 /* SArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SArtDetailViewController.swift; sourceTree = "<group>"; };
+		387DD19223AC784D0041BC00 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		387DD19523AC78760041BC00 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		387DD19723AC789F0041BC00 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		387DD19923AC78A90041BC00 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		387DD19B23AC78B10041BC00 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		387DD19D23AC78CA0041BC00 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		387DD19F23AC78E50041BC00 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
+		387DD1A123AD37450041BC00 /* SEditArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEditArtViewController.swift; sourceTree = "<group>"; };
+		387DD1A323AD3A500041BC00 /* EditArtProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditArtProtocol.swift; sourceTree = "<group>"; };
+		38A9927B23AB0413003E5105 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		38A9928123AB1706003E5105 /* BuyerFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BuyerFlow.storyboard; sourceTree = "<group>"; };
+		38EBDD8923CE69440051BC30 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
+		38EBDD8B23CE72930051BC30 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		55DAF4B749D270B94C786533 /* Pods-Artco-ArtcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artco-ArtcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6ACA54E5847B65BFC3B72AAF /* Pods-ArtcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtcoTests.release.xcconfig"; path = "Target Support Files/Pods-ArtcoTests/Pods-ArtcoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E0A331A23AC11690073FA2F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6E0A331E23AC151E0073FA2F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6E0A332023AC178D0073FA2F /* SGalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGalleryTableViewController.swift; sourceTree = "<group>"; };
+		6E0A332423AC18320073FA2F /* SchoolGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGalleryTableViewCell.swift; sourceTree = "<group>"; };
+		6E0A332723AC186B0073FA2F /* ListingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingController.swift; sourceTree = "<group>"; };
+		6E0A332923AC18BE0073FA2F /* Listing+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Listing+Convenience.swift"; sourceTree = "<group>"; };
+		6E0A332B23AC22670073FA2F /* SAddArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAddArtViewController.swift; sourceTree = "<group>"; };
+		6E0A332D23AC32020073FA2F /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		6E0A333123AC58DC0073FA2F /* String+CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CurrencyFormatter.swift"; sourceTree = "<group>"; };
+		6E86EC0423D26983007FD1FC /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = schema.json; path = Artco/schema.json; sourceTree = SOURCE_ROOT; };
+		6E86EC0523D269CA007FD1FC /* Artco.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Artco.graphql; sourceTree = "<group>"; };
+		6E86EC0623D26AD4007FD1FC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Artco/API.swift; sourceTree = SOURCE_ROOT; };
+		6EA5B40623A9648C007DD6AE /* Artco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA5B40923A9648C007DD6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EA5B40B23A9648C007DD6AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6EA5B41223A96490007DD6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EA5B41523A96490007DD6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EA5B41723A96490007DD6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA5B41C23A96490007DD6AE /* ArtcoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtcoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA5B42023A96490007DD6AE /* ArtcoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtcoTests.swift; sourceTree = "<group>"; };
+		6EA5B42223A96490007DD6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA5B42723A96490007DD6AE /* ArtcoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtcoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA5B42B23A96490007DD6AE /* ArtcoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtcoUITests.swift; sourceTree = "<group>"; };
+		6EA5B42D23A96490007DD6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA5B43923A9664F007DD6AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6EA5B43B23A977F1007DD6AE /* SchoolLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolLoginViewController.swift; sourceTree = "<group>"; };
+		6EA5B44423A98B83007DD6AE /* SchoolSignUp1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSignUp1ViewController.swift; sourceTree = "<group>"; };
+		6EA5B44623A98F2C007DD6AE /* AuthErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorCodes.swift; sourceTree = "<group>"; };
+		6EC75B6423AC85D500BFAF44 /* Date+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormatter.swift"; sourceTree = "<group>"; };
+		6EC75B6623AC8A9400BFAF44 /* Float+CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+CurrencyFormatter.swift"; sourceTree = "<group>"; };
+		6EC75B7923C5499300BFAF44 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		6EC75B7C23C550AD00BFAF44 /* ListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		6EC75B7E23C6A31E00BFAF44 /* UserRedirectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRedirectViewController.swift; sourceTree = "<group>"; };
+		6EC75B8023C7DD0E00BFAF44 /* BuyerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerController.swift; sourceTree = "<group>"; };
+		6ECC094A23DF7E9B0007D409 /* URL+Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Secure.swift"; sourceTree = "<group>"; };
+		6ECC094C23DF7EE00007D409 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		6ECC094E23DF806D0007D409 /* UploadImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageOperation.swift; sourceTree = "<group>"; };
+		6ECC095123DF9FA00007D409 /* FetchDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDetailOperation.swift; sourceTree = "<group>"; };
+		6ECC095323DFDC420007D409 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		6ECC095523DFE0060007D409 /* BuyerGalleryOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerGalleryOperation.swift; sourceTree = "<group>"; };
+		6EE984C823CCFA15003D3777 /* SchoolSignUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSignUp2ViewController.swift; sourceTree = "<group>"; };
+		6EE984CD23CD0077003D3777 /* School+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "School+Convenience.swift"; sourceTree = "<group>"; };
+		6EE984CF23CD0299003D3777 /* SchoolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolController.swift; sourceTree = "<group>"; };
+		6EE984D123CD1D1D003D3777 /* SchoolServerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolServerID.swift; sourceTree = "<group>"; };
+		6EE984D323CD3865003D3777 /* Cloudinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloudinary.swift; sourceTree = "<group>"; };
+		BAC82515F4E14CE9E7FCD865 /* Pods-Artco-ArtcoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artco-ArtcoUITests.release.xcconfig"; path = "Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E02735197BAC1273E709CC70 /* Pods_ArtcoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtcoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1FC660EE35C03D4A096F25 /* Pods-Artco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artco.debug.xcconfig"; path = "Target Support Files/Pods-Artco/Pods-Artco.debug.xcconfig"; sourceTree = "<group>"; };
+		F7388F9B192308C144D65962 /* Pods-Artco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artco.release.xcconfig"; path = "Target Support Files/Pods-Artco/Pods-Artco.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EA5B40323A9648C007DD6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA3026B3680327F7DAD1EFA /* Pods_Artco.framework in Frameworks */,
+				6E86EC0223D267E9007FD1FC /* ApolloWebSocket in Frameworks */,
+				6E86EC0023D267E9007FD1FC /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B41923A96490007DD6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C0D27AFFCADB1578B4B7B3 /* Pods_ArtcoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B42423A96490007DD6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C548427BCB2B4D72942A32 /* Pods_Artco_ArtcoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7423FA6DB5524AF471F169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				077209EEC2C0C4B15CACC952 /* Pods_Artco.framework */,
+				273F717A0227D61BDE43F2E5 /* Pods_Artco_ArtcoUITests.framework */,
+				E02735197BAC1273E709CC70 /* Pods_ArtcoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A764C4F408DCFC815ADF9CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE1FC660EE35C03D4A096F25 /* Pods-Artco.debug.xcconfig */,
+				F7388F9B192308C144D65962 /* Pods-Artco.release.xcconfig */,
+				55DAF4B749D270B94C786533 /* Pods-Artco-ArtcoUITests.debug.xcconfig */,
+				BAC82515F4E14CE9E7FCD865 /* Pods-Artco-ArtcoUITests.release.xcconfig */,
+				1CF651B18516D9A5E15D98E9 /* Pods-ArtcoTests.debug.xcconfig */,
+				6ACA54E5847B65BFC3B72AAF /* Pods-ArtcoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3865DE9623C3E90000B548F6 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332B23AC22670073FA2F /* SAddArtViewController.swift */,
+				387DD18A23AC70EC0041BC00 /* SArtDetailViewController.swift */,
+				387DD1A123AD37450041BC00 /* SEditArtViewController.swift */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		3865DE9723C3E91B00B548F6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332023AC178D0073FA2F /* SGalleryTableViewController.swift */,
+				387DD18823AC70940041BC00 /* SSettingsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		387DD19423AC78520041BC00 /* Buyer Flow View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75B8223C7DF0000BFAF44 /* Gallery */,
+				6EC75B8323C7DF0C00BFAF44 /* Cart */,
+			);
+			path = "Buyer Flow View Controllers";
+			sourceTree = "<group>";
+		};
+		6E0A331C23AC14EB0073FA2F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				3875135023C5336E0004B31D /* Artco.xcdatamodel */,
+				6E0A331E23AC151E0073FA2F /* CoreDataStack.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		6E0A331D23AC14F90073FA2F /* Model Representations */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332923AC18BE0073FA2F /* Listing+Convenience.swift */,
+				6EE984CD23CD0077003D3777 /* School+Convenience.swift */,
+				3865DE9823C3F11E00B548F6 /* Student+Convenience.swift */,
+			);
+			path = "Model Representations";
+			sourceTree = "<group>";
+		};
+		6E0A332223AC17940073FA2F /* Auth View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75B7E23C6A31E00BFAF44 /* UserRedirectViewController.swift */,
+				6EA5B43B23A977F1007DD6AE /* SchoolLoginViewController.swift */,
+				6EA5B44423A98B83007DD6AE /* SchoolSignUp1ViewController.swift */,
+				6EE984C823CCFA15003D3777 /* SchoolSignUp2ViewController.swift */,
+			);
+			path = "Auth View Controllers";
+			sourceTree = "<group>";
+		};
+		6E0A332323AC17A30073FA2F /* School Flow View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3865DE9723C3E91B00B548F6 /* General */,
+				3865DE9623C3E90000B548F6 /* Art */,
+			);
+			path = "School Flow View Controllers";
+			sourceTree = "<group>";
+		};
+		6E0A332623AC18360073FA2F /* School Flow Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332423AC18320073FA2F /* SchoolGalleryTableViewCell.swift */,
+			);
+			path = "School Flow Views";
+			sourceTree = "<group>";
+		};
+		6EA5B3FD23A9648C007DD6AE = {
+			isa = PBXGroup;
+			children = (
+				6EA5B40823A9648C007DD6AE /* Artco */,
+				6EA5B41F23A96490007DD6AE /* ArtcoTests */,
+				6EA5B42A23A96490007DD6AE /* ArtcoUITests */,
+				6EA5B40723A9648C007DD6AE /* Products */,
+				2A764C4F408DCFC815ADF9CC /* Pods */,
+				0E7423FA6DB5524AF471F169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EA5B40723A9648C007DD6AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EA5B40623A9648C007DD6AE /* Artco.app */,
+				6EA5B41C23A96490007DD6AE /* ArtcoTests.xctest */,
+				6EA5B42723A96490007DD6AE /* ArtcoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EA5B40823A9648C007DD6AE /* Artco */ = {
+			isa = PBXGroup;
+			children = (
+				6EA5B44223A9872F007DD6AE /* Model */,
+				6EA5B44123A98726007DD6AE /* Model Controller */,
+				6EA5B44023A9871F007DD6AE /* Views */,
+				6EA5B43D23A986F9007DD6AE /* View Controllers */,
+				6EA5B43E23A98704007DD6AE /* Storyboards */,
+				6EA5B44323A98738007DD6AE /* Helpers */,
+				6EA5B43F23A98716007DD6AE /* Resources */,
+			);
+			path = Artco;
+			sourceTree = "<group>";
+		};
+		6EA5B41F23A96490007DD6AE /* ArtcoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EA5B42023A96490007DD6AE /* ArtcoTests.swift */,
+				6EA5B42223A96490007DD6AE /* Info.plist */,
+			);
+			path = ArtcoTests;
+			sourceTree = "<group>";
+		};
+		6EA5B42A23A96490007DD6AE /* ArtcoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EA5B42B23A96490007DD6AE /* ArtcoUITests.swift */,
+				6EA5B42D23A96490007DD6AE /* Info.plist */,
+			);
+			path = ArtcoUITests;
+			sourceTree = "<group>";
+		};
+		6EA5B43D23A986F9007DD6AE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332223AC17940073FA2F /* Auth View Controllers */,
+				6E0A332323AC17A30073FA2F /* School Flow View Controllers */,
+				387DD19423AC78520041BC00 /* Buyer Flow View Controllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6EA5B43E23A98704007DD6AE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				38A9927B23AB0413003E5105 /* Main.storyboard */,
+				3875135223C533F00004B31D /* SchoolFlow.storyboard */,
+				38A9928123AB1706003E5105 /* BuyerFlow.storyboard */,
+				6EA5B41423A96490007DD6AE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6EA5B43F23A98716007DD6AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E86EC0523D269CA007FD1FC /* Artco.graphql */,
+				6E86EC0423D26983007FD1FC /* schema.json */,
+				6E86EC0623D26AD4007FD1FC /* API.swift */,
+				6EA5B41223A96490007DD6AE /* Assets.xcassets */,
+				6EA5B40923A9648C007DD6AE /* AppDelegate.swift */,
+				6EA5B40B23A9648C007DD6AE /* SceneDelegate.swift */,
+				6EA5B41723A96490007DD6AE /* Info.plist */,
+				6EA5B43923A9664F007DD6AE /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EA5B44023A9871F007DD6AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75B7B23C5506C00BFAF44 /* Buyer Flow Views */,
+				6E0A332623AC18360073FA2F /* School Flow Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EA5B44123A98726007DD6AE /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A332723AC186B0073FA2F /* ListingController.swift */,
+				6EE984CF23CD0299003D3777 /* SchoolController.swift */,
+				3865DE9A23C3F39200B548F6 /* StudentController.swift */,
+				6EC75B8023C7DD0E00BFAF44 /* BuyerController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		6EA5B44223A9872F007DD6AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A331D23AC14F90073FA2F /* Model Representations */,
+				6E0A331C23AC14EB0073FA2F /* Core Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6EA5B44323A98738007DD6AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6ECC096723E3A5B20007D409 /* Extensions */,
+				6ECC096823E3A6930007D409 /* Misc */,
+				6EC75B7823C5493500BFAF44 /* Networking */,
+				6ECC095023DF826D0007D409 /* Operations */,
+				6ECC096623E3A5910007D409 /* User Interface */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6EC75B7823C5493500BFAF44 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75B7923C5499300BFAF44 /* Network.swift */,
+				6EE984D323CD3865003D3777 /* Cloudinary.swift */,
+				6EE984D123CD1D1D003D3777 /* SchoolServerID.swift */,
+				6EA5B44623A98F2C007DD6AE /* AuthErrorCodes.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6EC75B7B23C5506C00BFAF44 /* Buyer Flow Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75B7C23C550AD00BFAF44 /* ListingCollectionViewCell.swift */,
+				3808A87A23C7E8E700592FF0 /* CheckoutArtworkCollectionViewCell.swift */,
+				38EBDD8B23CE72930051BC30 /* CartTableViewCell.swift */,
+			);
+			path = "Buyer Flow Views";
+			sourceTree = "<group>";
+		};
+		6EC75B8223C7DF0000BFAF44 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				387DD19D23AC78CA0041BC00 /* GalleryCollectionViewController.swift */,
+				387DD19F23AC78E50041BC00 /* ArtDetailViewController.swift */,
+				38528D0023E144C5002C9E5E /* FilterViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		6EC75B8323C7DF0C00BFAF44 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				387DD19223AC784D0041BC00 /* CartViewController.swift */,
+				387DD19523AC78760041BC00 /* CheckoutViewController.swift */,
+				387DD19723AC789F0041BC00 /* NameViewController.swift */,
+				387DD19923AC78A90041BC00 /* EmailViewController.swift */,
+				387DD19B23AC78B10041BC00 /* MessageViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		6ECC095023DF826D0007D409 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				6ECC094C23DF7EE00007D409 /* ConcurrentOperation.swift */,
+				6ECC095323DFDC420007D409 /* Cache.swift */,
+				6ECC094E23DF806D0007D409 /* UploadImageOperation.swift */,
+				6ECC095123DF9FA00007D409 /* FetchDetailOperation.swift */,
+				6ECC095523DFE0060007D409 /* BuyerGalleryOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		6ECC096623E3A5910007D409 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				38EBDD8923CE69440051BC30 /* UIController.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6ECC096723E3A5B20007D409 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A333123AC58DC0073FA2F /* String+CurrencyFormatter.swift */,
+				6EC75B6623AC8A9400BFAF44 /* Float+CurrencyFormatter.swift */,
+				6EC75B6423AC85D500BFAF44 /* Date+DateFormatter.swift */,
+				6ECC094A23DF7E9B0007D409 /* URL+Secure.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6ECC096823E3A6930007D409 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3808A87C23C7EEF400592FF0 /* NotificationKeys.swift */,
+				6E0A332D23AC32020073FA2F /* CameraPreviewView.swift */,
+				387DD1A323AD3A500041BC00 /* EditArtProtocol.swift */,
+				6E0A331A23AC11690073FA2F /* Category.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EA5B40523A9648C007DD6AE /* Artco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA5B43023A96490007DD6AE /* Build configuration list for PBXNativeTarget "Artco" */;
+			buildPhases = (
+				5527D49DAFC4F28A3DB4685C /* [CP] Check Pods Manifest.lock */,
+				6E86EC0323D26815007FD1FC /* Apollo CLI */,
+				6EA5B40223A9648C007DD6AE /* Sources */,
+				6EA5B40323A9648C007DD6AE /* Frameworks */,
+				6EA5B40423A9648C007DD6AE /* Resources */,
+				BC83E0FB45A8A70202013E19 /* [CP] Embed Pods Frameworks */,
+				4A7F3A746ABD257CA44FCBC5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artco;
+			packageProductDependencies = (
+				6E86EBFF23D267E9007FD1FC /* Apollo */,
+				6E86EC0123D267E9007FD1FC /* ApolloWebSocket */,
+			);
+			productName = Artco;
+			productReference = 6EA5B40623A9648C007DD6AE /* Artco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EA5B41B23A96490007DD6AE /* ArtcoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA5B43323A96490007DD6AE /* Build configuration list for PBXNativeTarget "ArtcoTests" */;
+			buildPhases = (
+				F3DB33D10A9273A935D6E8ED /* [CP] Check Pods Manifest.lock */,
+				6EA5B41823A96490007DD6AE /* Sources */,
+				6EA5B41923A96490007DD6AE /* Frameworks */,
+				6EA5B41A23A96490007DD6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA5B41E23A96490007DD6AE /* PBXTargetDependency */,
+			);
+			name = ArtcoTests;
+			productName = ArtcoTests;
+			productReference = 6EA5B41C23A96490007DD6AE /* ArtcoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EA5B42623A96490007DD6AE /* ArtcoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EA5B43623A96490007DD6AE /* Build configuration list for PBXNativeTarget "ArtcoUITests" */;
+			buildPhases = (
+				6BE769114C50BDD61851B66A /* [CP] Check Pods Manifest.lock */,
+				6EA5B42323A96490007DD6AE /* Sources */,
+				6EA5B42423A96490007DD6AE /* Frameworks */,
+				6EA5B42523A96490007DD6AE /* Resources */,
+				CABC8561E5890194919C11EB /* [CP] Embed Pods Frameworks */,
+				BB9FC367E53232B04169AF91 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA5B42923A96490007DD6AE /* PBXTargetDependency */,
+			);
+			name = ArtcoUITests;
+			productName = ArtcoUITests;
+			productReference = 6EA5B42723A96490007DD6AE /* ArtcoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EA5B3FE23A9648C007DD6AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mitchell Budge";
+				TargetAttributes = {
+					6EA5B40523A9648C007DD6AE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					6EA5B41B23A96490007DD6AE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6EA5B40523A9648C007DD6AE;
+					};
+					6EA5B42623A96490007DD6AE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6EA5B40523A9648C007DD6AE;
+					};
+				};
+			};
+			buildConfigurationList = 6EA5B40123A9648C007DD6AE /* Build configuration list for PBXProject "Artco" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EA5B3FD23A9648C007DD6AE;
+			packageReferences = (
+				6E86EBFE23D267E9007FD1FC /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 6EA5B40723A9648C007DD6AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EA5B40523A9648C007DD6AE /* Artco */,
+				6EA5B41B23A96490007DD6AE /* ArtcoTests */,
+				6EA5B42623A96490007DD6AE /* ArtcoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EA5B40423A9648C007DD6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9927C23AB0413003E5105 /* Main.storyboard in Resources */,
+				6EA5B41623A96490007DD6AE /* LaunchScreen.storyboard in Resources */,
+				6EA5B43A23A9664F007DD6AE /* GoogleService-Info.plist in Resources */,
+				6EA5B41323A96490007DD6AE /* Assets.xcassets in Resources */,
+				3875135323C533F00004B31D /* SchoolFlow.storyboard in Resources */,
+				38A9928223AB1706003E5105 /* BuyerFlow.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B41A23A96490007DD6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B42523A96490007DD6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A7F3A746ABD257CA44FCBC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5527D49DAFC4F28A3DB4685C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE769114C50BDD61851B66A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artco-ArtcoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E86EC0323D26815007FD1FC /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://student-artco-staging.herokuapp.com/graphql\"\n";
+		};
+		BB9FC367E53232B04169AF91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC83E0FB45A8A70202013E19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artco/Pods-Artco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABC8561E5890194919C11EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artco-ArtcoUITests/Pods-Artco-ArtcoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DB33D10A9273A935D6E8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtcoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EA5B40223A9648C007DD6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECC094B23DF7E9B0007D409 /* URL+Secure.swift in Sources */,
+				3808A87D23C7EEF400592FF0 /* NotificationKeys.swift in Sources */,
+				6EC75B7A23C5499300BFAF44 /* Network.swift in Sources */,
+				38528D0123E144C5002C9E5E /* FilterViewController.swift in Sources */,
+				6EA5B44723A98F2C007DD6AE /* AuthErrorCodes.swift in Sources */,
+				3865DE9923C3F11E00B548F6 /* Student+Convenience.swift in Sources */,
+				6EC75B8123C7DD0F00BFAF44 /* BuyerController.swift in Sources */,
+				6EA5B43C23A977F1007DD6AE /* SchoolLoginViewController.swift in Sources */,
+				6ECC095223DF9FA00007D409 /* FetchDetailOperation.swift in Sources */,
+				6ECC094D23DF7EE00007D409 /* ConcurrentOperation.swift in Sources */,
+				6EA5B40A23A9648C007DD6AE /* AppDelegate.swift in Sources */,
+				387DD18923AC70940041BC00 /* SSettingsViewController.swift in Sources */,
+				6EC75B7F23C6A31E00BFAF44 /* UserRedirectViewController.swift in Sources */,
+				6E0A332C23AC22670073FA2F /* SAddArtViewController.swift in Sources */,
+				387DD19E23AC78CA0041BC00 /* GalleryCollectionViewController.swift in Sources */,
+				6EA5B44523A98B83007DD6AE /* SchoolSignUp1ViewController.swift in Sources */,
+				3875135123C5336E0004B31D /* Artco.xcdatamodel in Sources */,
+				387DD1A023AC78E50041BC00 /* ArtDetailViewController.swift in Sources */,
+				6E0A332823AC186B0073FA2F /* ListingController.swift in Sources */,
+				6E0A332123AC178D0073FA2F /* SGalleryTableViewController.swift in Sources */,
+				387DD1A223AD37450041BC00 /* SEditArtViewController.swift in Sources */,
+				6EE984D423CD3865003D3777 /* Cloudinary.swift in Sources */,
+				387DD19823AC789F0041BC00 /* NameViewController.swift in Sources */,
+				3808A87B23C7E8E700592FF0 /* CheckoutArtworkCollectionViewCell.swift in Sources */,
+				387DD1A423AD3A500041BC00 /* EditArtProtocol.swift in Sources */,
+				6E0A332523AC18320073FA2F /* SchoolGalleryTableViewCell.swift in Sources */,
+				387DD19623AC78760041BC00 /* CheckoutViewController.swift in Sources */,
+				387DD19C23AC78B10041BC00 /* MessageViewController.swift in Sources */,
+				6EE984D023CD0299003D3777 /* SchoolController.swift in Sources */,
+				6ECC094F23DF806D0007D409 /* UploadImageOperation.swift in Sources */,
+				6EC75B6523AC85D500BFAF44 /* Date+DateFormatter.swift in Sources */,
+				6EE984D223CD1D1D003D3777 /* SchoolServerID.swift in Sources */,
+				387DD18B23AC70EC0041BC00 /* SArtDetailViewController.swift in Sources */,
+				3865DE9B23C3F39200B548F6 /* StudentController.swift in Sources */,
+				6E0A333223AC58DC0073FA2F /* String+CurrencyFormatter.swift in Sources */,
+				6EA5B40C23A9648C007DD6AE /* SceneDelegate.swift in Sources */,
+				387DD19A23AC78A90041BC00 /* EmailViewController.swift in Sources */,
+				6E0A332E23AC32020073FA2F /* CameraPreviewView.swift in Sources */,
+				387DD19323AC784D0041BC00 /* CartViewController.swift in Sources */,
+				6ECC095423DFDC420007D409 /* Cache.swift in Sources */,
+				6E0A331B23AC11690073FA2F /* Category.swift in Sources */,
+				6E0A332A23AC18BE0073FA2F /* Listing+Convenience.swift in Sources */,
+				6EC75B6723AC8A9400BFAF44 /* Float+CurrencyFormatter.swift in Sources */,
+				38EBDD8C23CE72930051BC30 /* CartTableViewCell.swift in Sources */,
+				6EE984C923CCFA15003D3777 /* SchoolSignUp2ViewController.swift in Sources */,
+				6ECC095623DFE0060007D409 /* BuyerGalleryOperation.swift in Sources */,
+				6EC75B7D23C550AD00BFAF44 /* ListingCollectionViewCell.swift in Sources */,
+				6E0A331F23AC151E0073FA2F /* CoreDataStack.swift in Sources */,
+				6EE984CE23CD0077003D3777 /* School+Convenience.swift in Sources */,
+				38EBDD8A23CE69440051BC30 /* UIController.swift in Sources */,
+				6E86EC0723D26AD4007FD1FC /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B41823A96490007DD6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA5B42123A96490007DD6AE /* ArtcoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA5B42323A96490007DD6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA5B42C23A96490007DD6AE /* ArtcoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EA5B41E23A96490007DD6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA5B40523A9648C007DD6AE /* Artco */;
+			targetProxy = 6EA5B41D23A96490007DD6AE /* PBXContainerItemProxy */;
+		};
+		6EA5B42923A96490007DD6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EA5B40523A9648C007DD6AE /* Artco */;
+			targetProxy = 6EA5B42823A96490007DD6AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EA5B41423A96490007DD6AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EA5B41523A96490007DD6AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EA5B42E23A96490007DD6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EA5B42F23A96490007DD6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EA5B43123A96490007DD6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1FC660EE35C03D4A096F25 /* Pods-Artco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = Artco/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdalabs.studentArtco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EA5B43223A96490007DD6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7388F9B192308C144D65962 /* Pods-Artco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = Artco/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdalabs.studentArtco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EA5B43423A96490007DD6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF651B18516D9A5E15D98E9 /* Pods-ArtcoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3F959XXFV;
+				INFOPLIST_FILE = ArtcoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtcoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artco.app/Artco";
+			};
+			name = Debug;
+		};
+		6EA5B43523A96490007DD6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ACA54E5847B65BFC3B72AAF /* Pods-ArtcoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3F959XXFV;
+				INFOPLIST_FILE = ArtcoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtcoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artco.app/Artco";
+			};
+			name = Release;
+		};
+		6EA5B43723A96490007DD6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DAF4B749D270B94C786533 /* Pods-Artco-ArtcoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3F959XXFV;
+				INFOPLIST_FILE = ArtcoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtcoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artco;
+			};
+			name = Debug;
+		};
+		6EA5B43823A96490007DD6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC82515F4E14CE9E7FCD865 /* Pods-Artco-ArtcoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3F959XXFV;
+				INFOPLIST_FILE = ArtcoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtcoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EA5B40123A9648C007DD6AE /* Build configuration list for PBXProject "Artco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA5B42E23A96490007DD6AE /* Debug */,
+				6EA5B42F23A96490007DD6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA5B43023A96490007DD6AE /* Build configuration list for PBXNativeTarget "Artco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA5B43123A96490007DD6AE /* Debug */,
+				6EA5B43223A96490007DD6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA5B43323A96490007DD6AE /* Build configuration list for PBXNativeTarget "ArtcoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA5B43423A96490007DD6AE /* Debug */,
+				6EA5B43523A96490007DD6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EA5B43623A96490007DD6AE /* Build configuration list for PBXNativeTarget "ArtcoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA5B43723A96490007DD6AE /* Debug */,
+				6EA5B43823A96490007DD6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E86EBFE23D267E9007FD1FC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E86EBFF23D267E9007FD1FC /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E86EBFE23D267E9007FD1FC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		6E86EC0123D267E9007FD1FC /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E86EBFE23D267E9007FD1FC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6EA5B3FE23A9648C007DD6AE /* Project object */;
+}

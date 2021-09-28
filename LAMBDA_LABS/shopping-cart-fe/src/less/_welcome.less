@@ -1,0 +1,157 @@
+.welcomeForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 30rem;
+    margin: 2rem auto;
+  }
+  h1 {
+    font-size: 4.5rem;
+    color: black;
+    font-weight: bold;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+
+  h2 {
+    color: grey;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .formContainer {
+    background: white;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+
+    .sectionContainer {
+      display: flex;
+      flex-direction: column;
+      
+
+      .firstSection {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+   
+        .business {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          padding-right: 1rem;
+        }
+        .rest {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .firstHalf {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-right: 2rem;
+        }
+
+        .secondHalf {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+          width: 95%;
+        }
+      }
+
+      .secondSection {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        @media (max-width: 600px) {
+          width: 95%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        width: 95%;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .field {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 2rem ;
+    margin-right: 2rem;
+    border-radius: 4px;
+    background-color: white;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: 0.3s box-shadow;
+    font-weight: bold;
+    
+
+    cursor: pointer;
+    @media (max-width: 600px) {
+      width: 95%;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+
+  .field:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .field:focus {
+    background-color: whitesmoke;
+    border-color: #000;
+  }
+
+  .label {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+  }
+
+  .submitButton {
+    background: #25a558;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    margin: 2rem auto;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+  }
+
+  .submitButton:hover {
+    background: white;
+    color: #25a558;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .error {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #dc143c;
+    @media (max-width: 600px) {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

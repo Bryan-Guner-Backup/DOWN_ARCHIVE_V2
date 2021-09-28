@@ -1,0 +1,50 @@
+:root {
+  color-scheme: dark;
+}
+body {
+    background-color: #2b2b2b;
+}
+p {
+    color: #aaaaaa;
+}
+strong, b {
+    color: #cca76e;
+}
+em, i {
+    color: #cca76e;
+}
+a, a:link, a:visited {
+    color: #8888c6;
+}
+a:active, a:hover {
+
+}
+header h1 a:link, header h1 a:visited,
+header h1 a:hover, header h1 a:active {
+    color: #cca76e;
+}
+nav {
+    background-color: #252525;
+}
+nav a, nav a:link, nav a:visited {
+    color: #aaaaaa;
+}
+nav a:hover, nav a:active {
+    color: #eeeeee;
+}
+h1 {
+    color: #eeeeee;
+}
+h2, h3, h4, h5 {
+    color: #cccccc;
+}
+ul li, ol li {
+    color: #aaaaaa;
+}
+footer {
+    background-color: #252525;
+
+}
+footer p {
+    color: #777777;
+}

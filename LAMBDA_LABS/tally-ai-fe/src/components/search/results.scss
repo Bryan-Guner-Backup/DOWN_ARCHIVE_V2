@@ -1,0 +1,12 @@
+img{
+    align-self: center;
+    height: 100%;
+    width: 33%;
+    object-fit: cover;
+}
+.result-text{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    cursor: pointer;
+}

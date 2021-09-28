@@ -1,0 +1,64 @@
+body {
+    background-color: #c0f0f7;
+}
+
+/* Tags stlystylinging */
+.paper {
+    border: solid .5px grey;
+    width: 70%;
+    margin: 70px auto;
+    padding: 30px;
+}
+
+.paper h1 {
+    padding: 40px;
+}
+
+.paper button {
+    margin: 50px auto;
+    display: block;
+
+}
+
+/* End of Tags styling */
+
+.container {
+    border: 2px solid lightgrey;
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container button {
+    margin: 50px auto;
+    display: block;
+}
+
+.form-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-welcome input {
+    max-width: 600px;
+    width: 300px;
+    padding: 20px;
+    border: 10px;
+}
+
+.drop-down {
+    width: 343px;
+}
+
+
+/* table.string('telephone'),
+    "user_type": "0",
+  table.string('department', 100),
+  table.string('organization_name', 100),
+  table.string('address_one', 100),
+  table.string('address_two', 100),
+  table.string('zip_code', 11), */

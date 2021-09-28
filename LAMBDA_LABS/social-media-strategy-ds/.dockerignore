@@ -1,0 +1,12 @@
+# Elastic Beanstalk Files
+
+.elasticbeanstalk/*
+
+.git
+
+.gitignore
+
+.python_notebooks/*
+
+Pipfile
+Pipfile.lock

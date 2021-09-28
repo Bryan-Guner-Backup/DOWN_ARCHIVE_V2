@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Contact Page</h1>
+    <form action="{{ url_for('contact') }}" method="post">
+        <p>
+            <label>Name:
+                <input type="text" name="Name" placeholder="Enter Your Name">
+            </label>
+        </p>
+        <p>
+            <label>Email:
+                <input type="text" name="Email" placeholder="Enter Your Email">
+            </label>
+        </p>
+        <p>
+            <label>Favorite:
+                <select name="Favorite">
+                    <option>Google</option>
+                    <option>YouTube</option>
+                    <option>Twitter</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>Message:
+                <textarea name="Message"
+                          placeholder="Enter Your Message"></textarea>
+            </label>
+        </p>
+        <p><label>Do you surf?
+            <input type="radio" name="Surf" id="yes" value="True">
+            <label for="yes">Yes</label>
+            <input type="radio" name="Surf" id="no" value="False">
+            <label for="no">No</label>
+        </label>
+        </p>
+        <p>
+            <label>Contact me about anything!
+                <input type="checkbox" name="Permission" checked="checked"
+                       value="True">
+            </label>
+        </p>
+        <p>
+            <button type="submit" id="submit" name="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}

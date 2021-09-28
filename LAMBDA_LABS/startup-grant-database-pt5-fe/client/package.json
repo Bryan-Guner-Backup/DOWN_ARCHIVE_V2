@@ -1,0 +1,51 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.51",
+    "axios": "^0.19.2",
+    "clsx": "^1.1.0",
+    "firebase": "^7.14.2",
+    "firebaseui": "^4.5.0",
+    "material-ui": "^0.20.2",
+    "material-ui-dropzone": "^2.5.0",
+    "moment": "^2.24.0",
+    "qs": "^6.9.3",
+    "react": "^16.13.1",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.13.1",
+    "react-moment": "^0.9.7",
+    "react-multiselect-checkboxes": "^0.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "use-global-hook": "^0.1.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "run:cypress": "$(npm bin)/cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "^3.8.3"
+  }
+}

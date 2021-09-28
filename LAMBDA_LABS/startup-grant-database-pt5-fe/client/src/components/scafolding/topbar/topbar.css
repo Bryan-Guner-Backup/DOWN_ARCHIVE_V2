@@ -1,0 +1,52 @@
+/* App Top Bar */
+/* @font-face {
+    font-family: 'Lato';
+    src: local('MyFont'), url(./../../.) format('woff');
+  } */
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  background-color: #ffffff;
+  margin: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  padding-right: 5%;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0px 2%;
+  color: #000000;
+  width: 30%;
+  font-size: 16px;
+  vertical-align: middle;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  color: #2a87af;
+}
+
+.logout {
+  border: 1px solid #2a87af;
+  border-radius: 5px;
+  height: 30px;
+  width: 40px;
+}
+
+a.logout {
+  color: #00a8a8;
+  text-decoration: none;
+}
