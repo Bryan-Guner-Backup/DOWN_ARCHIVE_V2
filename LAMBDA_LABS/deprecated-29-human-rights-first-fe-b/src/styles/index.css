@@ -1,0 +1,72 @@
+/* Map component styling and general App styling*/
+/* We didn't implement CSS reset, if you choose to, prepare to deal with styling inconsistencies. */
+
+.map-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4ebe1;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.map-container img {
+  width: 60%;
+  margin: 2% 0;
+  border-radius: 5px;
+}
+#map {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+.map-tab-text {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #003767;
+  color: #fff8fb;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5%;
+}
+
+.map-tab-text div {
+  width: 60%;
+  margin: 0 auto;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #fff8fb;
+  font-weight: bold;
+  padding: 1% 0;
+}
+
+.mapboxgl-map {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+}
+
+#disappear {
+  background-color: white;
+}
+
+.apple-popup .mapboxgl-popup-content {
+  padding-top: 4%;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.4);
+}
+
+.apple-popup .mapboxgl-popup-close-button {
+  font-size: 1rem;
+  background: rgb(74, 168, 255, 0.3);
+}
+
+#assignBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-footer {
+  text-align: center;
+}
