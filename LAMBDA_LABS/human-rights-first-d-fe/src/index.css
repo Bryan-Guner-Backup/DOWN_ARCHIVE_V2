@@ -1,0 +1,63 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+.nav {
+  text-align: left;
+  font-size: 3rem;
+}
+img {
+  height: 200px;
+  margin: 5%;
+}
+
+.site-layout-content {
+  min-height: 500px;
+  padding: 24px;
+  background: #fff;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 20px 0;
+}
+
+.company-info img {
+  width: 50px;
+}
+
+.user-nav {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  /* width: 8%;
+  justify-content: space-between;
+  align-items: center; */
+  /* margin: 20px 20px; */
+}
+
+.company-info h2 {
+  margin: 0;
+  color: #f4ebe1;
+  font-size: 2rem;
+  padding-left: 12px;
+  letter-spacing: 1.1px;
+}
+
+.layout {
+  min-height: 100vh;
+}
+button {
+  color: white;
+  margin: 30px;
+  padding: 10px;
+  background-color: #1890ff;
+  border-radius: 15px;
+  border: 0;
+  outline: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
