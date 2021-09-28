@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/marketingFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lambda.mnemecards.overview.HomeFragment"
+        android:label="@string/mNeme"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="photoUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user"
+            app:argType="com.lambda.mnemecards.network.User"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_marketingFragment"
+            app:destination="@id/marketingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.lambda.mnemecards.settings.SettingsFragment"
+        android:label="@string/mNeme"
+        tools:layout="@layout/fragment_settings" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="photoUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="userPreference"
+            app:argType="com.lambda.mnemecards.network.User"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_marketingFragment"
+            app:destination="@id/marketingFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.lambda.mnemecards.cards.CardsFragment"
+        android:label="@string/mNeme" >
+        <argument
+            android:name="deck"
+            app:argType="com.lambda.mnemecards.network.Deck" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketingFragment"
+        android:name="com.lambda.mnemecards.marketing.marketingFragment"
+        android:label="@string/mNeme"
+        tools:layout="@layout/fragment_marketing">
+        <action
+            android:id="@+id/action_marketingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.lambda.mnemecards.create.CreateFragment"
+        android:label="@string/mNeme">
+        <argument
+            android:name="deckList"
+            app:argType="com.lambda.mnemecards.network.Deck[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.lambda.mnemecards.edit.EditFragment"
+        android:label="@string/mNeme">
+        <argument
+            android:name="deck"
+            app:argType="com.lambda.mnemecards.network.Deck" />
+    </fragment>
+</navigation>

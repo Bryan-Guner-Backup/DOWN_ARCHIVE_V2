@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.lambda.mnemecards.cards.CardsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".overview.HomeFragment">
+
+        <FrameLayout
+            android:id="@+id/fl_cards"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_create_deck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="@{viewModel.displayDeckName}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Spanish" />
+
+                <TextView
+                    android:id="@+id/tv_cards_card_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="@{Integer.toString(viewModel.displayDeckCardAmount)}"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_cards_cards"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="12" />
+
+                <TextView
+                    android:id="@+id/tv_cards_mastered_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="1"
+                    android:textColor="#44FFFFFF"
+                    android:textSize="88sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    tools:text="8" />
+
+                <TextView
+                    android:id="@+id/tv_cards_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="@string/cards"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_create_total_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="@string/mastered"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_cards_display_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/cardFront"
+            android:onClick="@{(view) -> viewModel.changeDisplay(view)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_cards"
+            app:layout_constraintWidth_percent=".85">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_cards_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@{viewModel.displayCard}"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="38sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Leche" />
+
+                <ImageView
+                    android:id="@+id/iv_cards_display_how_well"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/happy_emoji"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cards_tap_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/tap_card_to_flip"
+            android:textColor="#453C38"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_cards_display_card" />
+
+        <ImageView
+            android:id="@+id/iv_cards_flip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/tap_to_flip"
+            android:text="@string/flip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cards_tap_instruction" />
+
+        <TextView
+            android:id="@+id/tv_cards_how_well"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/how_well_did_you_know_this_card"
+            android:textSize="21sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_cards_display_card" />
+
+
+        <ImageView
+            android:id="@+id/iv_cards_shock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:alpha=".5"
+            android:onClick="@{(view) -> viewModel.changeDisplayOnEmojiClick(view)}"
+            android:src="@drawable/shocked_emoji"
+            android:visibility="invisible"
+            android:tag="shockEmoji"
+            app:layout_constraintEnd_toStartOf="@+id/iv_cards_happy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cards_how_well"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <ImageView
+            android:id="@+id/iv_cards_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:alpha=".5"
+            android:onClick="@{(view) -> viewModel.changeDisplayOnEmojiClick(view)}"
+            android:src="@drawable/happy_emoji"
+            android:visibility="invisible"
+            android:tag="happyEmoji"
+            app:layout_constraintEnd_toStartOf="@+id/iv_cards_cool"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_cards_shock"
+            app:layout_constraintTop_toBottomOf="@id/tv_cards_how_well"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <ImageView
+            android:id="@+id/iv_cards_cool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:alpha=".5"
+            android:onClick="@{(view) -> viewModel.changeDisplayOnEmojiClick(view)}"
+            android:tag="coolEmoji"
+            android:src="@drawable/cool_emoji"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_cards_happy"
+            app:layout_constraintTop_toBottomOf="@id/tv_cards_how_well"
+            tools:layout_editor_absoluteY="511dp" />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btn_cards_try_again"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#FFFFFF"-->
+<!--            android:fontFamily="@font/roboto_condensed_bold"-->
+<!--            android:text="@string/try_again"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginTop="38dp"-->
+<!--            app:cornerRadius="23dp"-->
+<!--            app:rippleColor="@color/colorPrimary"-->
+<!--            app:strokeWidth="2dp"-->
+<!--            android:onClick="@{(view) -> viewModel.changeDisplay(view)}"-->
+<!--            android:visibility="invisible"-->
+<!--            android:tag="btnTryAgain"-->
+<!--            app:strokeColor="@color/colorPrimary"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/fl_cards_display_card"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/btn_cards_next"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:layout_editor_absoluteY="446dp" />-->
+
+        <TextView
+            android:id="@+id/tv_cards_emoji_to_text"
+            app:layout_constraintBottom_toTopOf="@id/btn_cards_next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:textSize="36sp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cards_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/next"
+            android:onClick="@{(view) -> viewModel.changeDisplay(view)}"
+            android:visibility="invisible"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:cornerRadius="23dp"
+            android:tag="btnNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".90"
+            app:layout_constraintTop_toBottomOf="@id/fl_cards_display_card"
+            app:rippleColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

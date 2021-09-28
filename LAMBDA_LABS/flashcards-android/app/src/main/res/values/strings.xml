@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Mneme Cards</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home Screen</string>
+    <string name="destination">Destination Screen</string>
+    <string name="testing">Testing123</string>
+
+    <string name="mNeme">mNeme</string>
+    <string name="facebook_application_id" translatable="false">599129000838159</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb599129000838159</string>
+    <string name="welcome_to_mneme_flashcards">Welcome to mNeme Flashcards!</string>
+    <string name="an_effective_fun_and_easy_to_use_flashcards_app">An effective, fun, and easy to use\nflashcards app</string>
+    <string name="email_email_com">Email@email.com</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_to_mneme_create_an_account">New to mNeme? Create an account</string>
+    <string name="here">here</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="lifetime">LifeTime</string>
+    <string name="studied">Studied</string>
+    <string name="mastered">Mastered</string>
+    <string name="_12_cards">12 cards</string>
+    <string name="spanish">Spanish</string>
+    <string name="mastery">Mastery</string>
+    <string name="create">Create</string>
+    <string name="recent_decks">Recent Decks</string>
+    <string name="all_decks">All Decks</string>
+    <string name="home_options">Home</string>
+    <string name="preferences">Preferences</string>
+    <string name="flashcards">Flashcards</string>
+    <string name="demodeck">Demo Deck</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="which_subjects_do_you_use_flashcards_for_most_often">Which subjects do you use flashcards for most often?</string>
+    <string name="mobile">Mobile</string>
+    <string name="do_you_prefer_to_do_most_of_your_studying_on_a_mobile_or_desktop_device">Do you prefer to do most of your studying on a mobile or desktop device?</string>
+    <string name="desktop">Desktop</string>
+    <string name="do_you_prefer_to_study_by">Do you prefer to study by</string>
+    <string name="how_frequently_do_you_want_to_study">How frequently do you want to study?</string>
+    <string name="how_often_would_you_like_to_receive_notifications">How often would you like to receive notifications?</string>
+    <string name="do_you_prefer_to_study_from_decks_that_are">Do you prefer to study from decks that are</string>
+    <string name="pre_made">Pre-Made</string>
+    <string name="custom">Custom</string>
+    <string name="save">Save</string>
+    <string name="cards">Cards</string>
+    <string name="flip">Flip</string>
+    <string name="tap_card_to_flip">Tap card to flip</string>
+    <string name="how_well_did_you_know_this_card">How well did you know this card?</string>
+    <string name="try_again">Try Again</string>
+    <string name="next">Next</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="mneme">mNeme</string>
+    <string name="nee_mee">[Nee-Mee]</string>
+    <string name="flashcard_decks">Flashcard decks</string>
+    <string name="create_new_deck">Create New Deck</string>
+    <string name="total_cards">Total Cards</string>
+    <string name="deck_name">Deck Name</string>
+    <string name="public_">Public</string>
+    <string name="private_">Private</string>
+    <string name="input_card_info">Input Card Info</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+    <string name="add_card">Add Card</string>
+    <string name="save_deck">Save Deck</string>
+    <string name="archive_deck">Archive Deck</string>
+    <string name="delete_deck">Delete Deck</string>
+    <string name="options_symbol">⋮</string>
+    <string name="edit_deck">Edit Deck</string>
+    <string name="deck_info">Deck Info</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="select_a_card_below_to_edit_card_content_or_add_a_new_card">Select a card below to edit card content or add a new card</string>
+    <string name="go_back"><![CDATA[<- Go back]]></string>
+    <string name="delete">Delete</string>
+    <string name="archive">Archive</string>
+    <string name="add">Add</string>
+    <string name="user_preferences">User preferences</string>
+    <string name="most_studied_subjects">Most studied subjects</string>
+
+    <!--    String arrays used for the spinner drop down menu-->
+    <string-array name="study_methods">
+        <item>Please Select One</item>
+        <item>Listening</item>
+        <item>Doing</item>
+        <item>Reading</item>
+        <item>Writing</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="study_frequency">
+        <item>Please Select One</item>
+        <item>Once a day</item>
+        <item>Twice a day</item>
+        <item>Once a week</item>
+        <item>Twice a week</item>
+        <item>Three times a week</item>
+        <item>Everyday</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--  Need the backslash (in my case japanese yen) for when working with Apostrophes  -->
+    <string-array name="study_notification_frequency">
+        <item>Please Select One</item>
+        <item>When I haven\'t met my goal in a day</item>
+        <item>When I haven\'t met my goal in a week</item>
+        <item>Everyday</item>
+        <item>Don\'t send me notifications</item>
+    </string-array>
+
+</resources>
