@@ -1,0 +1,86 @@
+{
+  "name": "city-data-comparison-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@animated-burgers/burger-squeeze": "^1.1.2",
+    "@brainhubeu/react-carousel": "^1.13.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@material-ui/core": "^4.9.14",
+    "@sentry/browser": "^5.12.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^7.1.2",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.19.0",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "chart.js": "^2.9.3",
+    "chartjs-plugin-annotation": "^0.5.7",
+    "classnames": "^2.2.6",
+    "formik": "^2.1.2",
+    "mapbox-gl": "^1.6.0",
+    "node-sass": "^4.14.0",
+    "query-string": "^6.11.1",
+    "react": "^16.12.0",
+    "react-avatar-edit": "^0.8.3",
+    "react-burger-menu": "^2.6.13",
+    "react-carousel": "^4.3.0",
+    "react-chartjs-2": "^2.8.0",
+    "react-collapse": "^5.0.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.12.0",
+    "react-ga": "^2.7.0",
+    "react-height": "^3.0.1",
+    "react-hook-form": "^4.7.2",
+    "react-loader-spinner": "^3.1.5",
+    "react-map-gl": "^5.1.3",
+    "react-motion": "^0.5.2",
+    "react-places-autocomplete": "^7.2.1",
+    "react-portal": "^4.2.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-scroll": "^1.7.16",
+    "react-scroll-collapse": "^1.3.1",
+    "react-skycons": "^0.7.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.4.1",
+    "styled-icons": "^9.3.0",
+    "tether-drop": "^1.4.2",
+    "yup": "^0.28.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.18.1",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "redux-mock-store": "^1.5.4"
+  }
+}

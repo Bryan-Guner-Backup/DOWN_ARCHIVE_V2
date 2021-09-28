@@ -1,0 +1,353 @@
+/* this is the map container */
+.map {
+  margin-top: 100px;
+}
+
+.main-map {
+  margin: 0 auto;
+  border: 2px solid darkgrey;
+  border: none;
+  width: 100%;
+  border-bottom: #ecf1f5;
+}
+
+/* this refers to the whole page (does not include navigation */
+
+.comparison-page-container {
+  background: #e9e8e9;
+  .footer-container {
+    width: 100%;
+  }
+}
+
+/* The data-browser is the area below the map */
+
+.comparison-page-content-container {
+  display: block;
+  position: relative;
+  max-width: 1200px;
+  margin: 1.4rem auto;
+  @media screen and (max-width: 1200px) {
+    margin: 1.4rem 0.7rem;
+  }
+  // This is the text that appears when no cities are selected.
+  .map-prompt {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #a33a00;
+    margin-bottom: 125px;
+  }
+
+  .data-category {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-gap: 1.4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .special-margins {
+    margin-bottom: 3%;
+  }
+
+  // Contains all city overview cards
+
+  // ** Industry styling
+
+  .commute-time-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    .commute-time-num {
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      width: 100%;
+      .commute-clock {
+        height: 18px;
+        margin-right: 10px;
+      }
+    }
+    #commute-label {
+      color: grey;
+      font-size: 1rem;
+      width: 100%;
+      margin-top: 3px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .unemployment-container {
+    width: auto;
+    .unemployment-title {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 800px) {
+        font-size: 1rem;
+      }
+    }
+
+    .unemployment-num {
+      font-size: 2rem;
+      font-weight: 400;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .archive {
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+    .unemployment-label {
+      color: grey;
+      font-size: 12px;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  //** Culture styling
+  .age-container {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.09);
+    background-color: white;
+  }
+
+  .birth-container {
+    width: 22%;
+    @media screen and (max-width: 800px) {
+      .birth-card-container-mobile {
+        display: flex;
+        justify-content: space-between;
+      }
+      width: 100%;
+    }
+
+    .birth-card-container {
+      padding: 15px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.09);
+      margin-bottom: 30px;
+      background-color: white;
+
+      @media screen and (max-width: 800px) {
+        width: 45%;
+      }
+
+      .birth-title {
+        font-size: 1.1rem;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .birth-num {
+        font-size: 2.1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+
+        .mothers-num {
+          width: 40%;
+          color: black;
+          text-align: right;
+        }
+
+        .birth-rate-label {
+          width: 60%;
+          color: black;
+          text-align: left;
+          font-size: 1vw;
+          margin-left: 15px;
+          @media screen and (max-width: 800px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      .birth-label {
+        color: grey;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .search-bar {
+    transition: color 0.2s;
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      transition: color 0.2s;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox */
+      transition: color 0.2s;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      transition: color 0.2s;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: white;
+    }
+
+    background-image: url("../index/assets/search.svg");
+    background-position: 10px 16px;
+    background-repeat: no-repeat;
+    padding: 16px 33px;
+    padding-left: 4.75%;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+    outline: none;
+    @media only screen and (max-width: 900px) {
+      padding-left: 6%;
+    }
+    @media only screen and (max-width: 675px) {
+      padding-left: 7%;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-left: 8%;
+    }
+    @media only screen and (max-width: 500px) {
+      padding-left: 9%;
+    }
+    @media only screen and (max-width: 414px) {
+      padding-left: 10%;
+    }
+    @media only screen and (max-width: 375px) {
+      padding-left: 11%;
+    }
+  }
+
+  .search-bar.active {
+    outline: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .autofill-container {
+    background-color: white;
+    padding: 0 1.5%;
+    z-index: 5;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 0.01rem;
+  }
+
+  .autofill-container.abso-width {
+    width: 28.4rem;
+
+    @media only screen and (max-width: 600px) {
+      width: 84.8%;
+    }
+    @media only screen and (max-width: 450px) {
+      width: 84.5%;
+    }
+  }
+
+  .autofill-option {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 1% 3%;
+    background: white;
+    color: black;
+    font-size: 0.9rem;
+    cursor: pointer;
+    @media only screen and (max-width: 1080px) {
+      margin: 1% 0;
+    }
+    @media only screen and (max-width: 900px) {
+      margin: 1.5% 0;
+    }
+    @media only screen and (max-width: 700px) {
+      margin: 2% 0;
+    }
+    @media only screen and (max-width: 550px) {
+      margin: 5% 0;
+    }
+    @media only screen and (max-width: 450px) {
+      margin: 7% 0;
+    }
+  }
+
+  .border-line {
+    margin: auto;
+    width: 100%;
+    border: 1px solid lightgrey;
+  }
+
+  // This contains the overview container, as well as a container for each category of data. overview-cards-container, housing, culture, and weather
+  .data-by-category {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.4rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 4.2rem;
+    margin-bottom: 75px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .charts {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media only screen and (max-width: 600px) {
+        padding: 0 5px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// This is the loader for the entire data comparison page, you'll see it at the beginning when you reload
+.loader-animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -30px;
+}
