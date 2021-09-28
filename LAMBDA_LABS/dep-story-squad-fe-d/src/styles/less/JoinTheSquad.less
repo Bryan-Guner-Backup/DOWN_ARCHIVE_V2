@@ -1,0 +1,122 @@
+@import '~antd/dist/antd.less';
+@import '~antd/lib/style/themes/default.less';
+
+.JoinSquadContainer {
+  height: 62.9vh;
+  display: flex;
+  @media @tablet {
+    flex-direction: column;
+  }
+
+  .joinSquad1, .joinSquad2 {
+    position: relative;
+    border: 5px solid #292929;
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+  }
+
+  .joinSquad1 {
+    background-color: #b5d33d;
+  }
+    
+  .joinSquad2 {
+    background-color: #fed23f;
+  }  
+    
+  .imgContain1, .imgContain2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @media @tablet {
+      padding-left: 5%;
+      padding-bottom: 0%;
+    }  
+  }    
+  
+  img {
+    max-width: 100%;
+  }        
+  
+  .text {
+    position: absolute;
+    z-index: 40;
+    margin-top: 17%;
+    margin-left: -5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  } 
+
+  .text2 {
+    position: absolute;
+    z-index: 80;
+    margin-top: 17%;
+    margin-left: 52%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  }
+
+  .wordBubble {
+    position: relative;
+    z-index: 30;
+    margin-left: -38%;            
+  }  
+
+  .wordBubble2 {
+    position: relative;
+    z-index: 30;
+    margin-left: 38%;
+  }
+
+  .star, .star2 {
+    position: relative; 
+    z-index: 50;
+    margin-top: -20%;
+  }
+
+  .avatar {
+    position: absolute;
+    z-index: 60;
+    margin-top: 45%;
+    margin-left: 23%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .avatar2 {
+    position: absolute;
+    z-index: 60;
+    margin-top: 45%;
+    margin-left: 28%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+footer {
+  height: 7.1vh;
+  background-color: @header-nero;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  .instructionsSharePoints {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: @white-smoke;
+    margin: 0;
+  }
+  
+  .sharePoints {
+    background: #eb7d5b;
+    border-color: #eb7d5b;
+
+    &:hover {
+      background-color: #eb7d5bbb;
+      border-color: #eb7d5bbb;
+    }
+  }
+}
+
+

@@ -1,0 +1,89 @@
+.matchup-container {
+  position: relative;
+
+  .ant-row {
+    [class^='ant-col'] {
+      height: 31.5vh;
+      border: 5px solid @header-nero;
+      display: flex;
+      .faceoff {
+        flex-grow: 1;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        .points {
+          position: absolute;
+          bottom: 0;
+          font-size: xx-large;
+          font-weight: bold;
+        }
+
+        & > img {
+          height: 80%;
+        }
+
+        .sub {
+          padding: 1.5vh;
+          max-width: 13.5vw;
+          flex-grow: 1;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          .child-info {
+            img {
+              max-height: 30px;
+              margin-right: 1.5vw;
+            }
+          }
+          .submission-preview {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .green-box {
+    background-color: @conifer;
+  }
+
+  .red-box {
+    background: @burnt-sienna;
+  }
+
+  .yellow-box {
+    background: @bright-sun;
+  }
+
+  .blue-box {
+    background: @boston-blue;
+  }
+
+  footer {
+    height: 7.1vh;
+    background: black;
+  
+    .back-button {
+      .orangeButtonStyle();
+      position: absolute;
+      left: 20vh;
+      bottom: 1vh;
+    }
+  
+    .vote-button {
+      .orangeButtonStyle();
+      position: absolute;
+      right: 20vh;
+      bottom: 1vh;
+    }
+  }
+}
+

@@ -1,0 +1,66 @@
+@import '~antd/dist/antd.less';
+@import '~antd/lib/style/themes/default.less';
+
+.point-share-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+
+  .team-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    .ant-col {
+      height: 100%;
+      .ant-row {
+        border: 5px solid @header-nero;
+        border-top-width: 0;
+        height: 50%;
+      }
+      &:first-of-type {
+        background: @conifer;
+        width: 35vh;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      &:last-of-type {
+        flex-grow: 1;
+        .teammate-one-points {
+          background-color: @burnt-sienna;
+        }
+        .teammate-two-points {
+          background-color: @bright-sun;
+        }
+        .ant-row {
+          border: 0 5px 5px 0 solid @header-nero;
+          border-left-width: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          padding: 2.5vh 5vw 50px;
+
+          .submission-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            justify-content: space-evenly;
+            img {
+              height: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .match-up {
+    .orangeButtonStyle();
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+}
