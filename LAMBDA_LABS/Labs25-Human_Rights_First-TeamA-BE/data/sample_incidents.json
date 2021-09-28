@@ -1,0 +1,1097 @@
+{
+  "data": [
+    {
+      "id": "81347fa0-eba1-11ea-8ca4-1364c4c557fa",
+      "pb_id": "dc-dc-34",
+      "state": "Washington DC",
+      "city": "DC",
+      "date": "2020-08-31T00:00:00.000000Z",
+      "title": "Police tear gas protesters",
+      "description": null,
+      "links": [
+        "https://www.youtube.com/watch?v=Kbp_xJDBcvs",
+        "https://twitter.com/rawsmedia/status/1300284688649588739",
+        "https://twitter.com/LizzieLouFerris/status/1300324311002210306"
+      ],
+      "data": null,
+      "tags": ["protester", "tear-gas"],
+      "geocoding": {
+        "lat": "38.9071923",
+        "long": "-77.0368707"
+      }
+    },
+    {
+      "id": "81377920-eba1-11ea-b0f9-cff9f6af7cf8",
+      "pb_id": "dc-dc-35",
+      "state": "Washington DC",
+      "city": "DC",
+      "date": "2020-08-31T00:00:00.000000Z",
+      "title": "Police shoot at protesters",
+      "description": null,
+      "links": ["https://twitter.com/ChuckModi1/status/1300308986428895240"],
+      "data": null,
+      "tags": ["protester", "shoot", "rubber-bullet"],
+      "geocoding": {
+        "lat": "38.9071923",
+        "long": "-77.0368707"
+      }
+    },
+    {
+      "id": "812adda0-eba1-11ea-ae64-459afe8b24a6",
+      "pb_id": "dc-dc-31",
+      "state": "Washington DC",
+      "city": "DC",
+      "date": "2020-08-29T00:00:00.000000Z",
+      "title": "Police arrest, tear gas, pepper spray, and shoot protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/wyattreed13/status/1299914900228235265",
+        "https://twitter.com/rawsmedia/status/1299876987813736448",
+        "https://twitter.com/rawsmedia/status/1299918596081102849",
+        "https://twitter.com/rawsmedia/status/1299911442427187200",
+        "https://twitter.com/rawsmedia/status/1299911726582976513",
+        "https://twitter.com/rawsmedia/status/1299911910427688962",
+        "https://twitter.com/rawsmedia/status/1299915828603781120",
+        "https://twitter.com/BareWithAyan/status/1299918588640464896"
+      ],
+      "data": null,
+      "tags": [
+        "protester",
+        "journalist",
+        "arrest",
+        "tear-gas",
+        "stun-grenade",
+        "shoot",
+        "rubber-bullet",
+        "pepper-spray",
+        "spray"
+      ],
+      "geocoding": {
+        "lat": "38.9071923",
+        "long": "-77.0368707"
+      }
+    },
+    {
+      "id": "8131d7a0-eba1-11ea-ac17-a5bacfc43952",
+      "pb_id": "dc-dc-32",
+      "state": "Washington DC",
+      "city": "DC",
+      "date": "2020-08-29T00:00:00.000000Z",
+      "title": "Police shove and pepper spray protesters",
+      "description": null,
+      "links": ["https://twitter.com/ChuckModi1/status/1299966217546067968"],
+      "data": null,
+      "tags": [""],
+      "geocoding": {
+        "lat": "38.9071923",
+        "long": "-77.0368707"
+      }
+    },
+    {
+      "id": "81332b90-eba1-11ea-ae71-897472df8ff9",
+      "pb_id": "dc-dc-33",
+      "state": "Washington DC",
+      "city": "DC",
+      "date": "2020-08-29T00:00:00.000000Z",
+      "title": "Police smash window and arrest Snack Van driver",
+      "description": null,
+      "links": [
+        "https://twitter.com/PotempkinBrain/status/1300267743057522689"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "property-destruction"],
+      "geocoding": {
+        "lat": "38.9071923",
+        "long": "-77.0368707"
+      }
+    },
+    {
+      "id": "8dc16af0-eb9f-11ea-99e9-03322290429e",
+      "pb_id": "tx-austin-18",
+      "state": "Texas",
+      "city": "Austin",
+      "date": "2020-08-29T00:00:00.000000Z",
+      "title": "Officer knocks phone out of filmer's hand",
+      "description": null,
+      "links": [
+        "https://twitter.com/C38412900/status/1299901391352344576",
+        "https://www.kvue.com/article/news/local/austin-jacob-blake-protests-arrests/269-9be9ef7d-8b21-48f2-9721-d8389d823d67"
+      ],
+      "data": null,
+      "tags": ["protester", "push", "shove", "property-destruction"],
+      "geocoding": {
+        "lat": "30.2671530",
+        "long": "-97.7430608"
+      }
+    },
+    {
+      "id": "b36d3020-eb9e-11ea-b877-8b6cc8ed3f69",
+      "pb_id": "ca-beverlyhills-2",
+      "state": "California",
+      "city": "Beverly Hills",
+      "date": "2020-08-29T00:00:00.000000Z",
+      "title": "Officer shoves then pepper sprays protester",
+      "description": null,
+      "links": ["https://twitter.com/SamBraslow/status/1299848702748536834"],
+      "data": null,
+      "tags": ["protester", "push", "shove", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "34.0736204",
+        "long": "-118.4003563"
+      }
+    },
+    {
+      "id": "e6ba3230-eb8f-11ea-af4c-1fb2fb2f5ede",
+      "pb_id": "or-portland-336",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-28T00:00:00.000000Z",
+      "title": "Police rip mask off detained protester and pepper spray them",
+      "description": null,
+      "links": [
+        "https://twitter.com/PDocumentarians/status/1299627259913891840",
+        "https://twitter.com/_WhatRiot/status/1299616269688209414"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e6bda3f0-eb8f-11ea-b597-2bc0ed69741f",
+      "pb_id": "or-portland-337",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-28T00:00:00.000000Z",
+      "title": "Police shove member of the press",
+      "description": null,
+      "links": [
+        "https://twitter.com/hungrybowtie/status/1299629458299609093",
+        "https://twitter.com/IwriteOK/status/1299622638222860289"
+      ],
+      "data": null,
+      "tags": ["journalist", "push", "shove"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e6c09e70-eb8f-11ea-b3d0-274fb867ee15",
+      "pb_id": "or-portland-338",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-28T00:00:00.000000Z",
+      "title": "Police arrest protester on sidewalk",
+      "description": null,
+      "links": [
+        "https://twitter.com/R3volutionDaddy/status/1299661351845945344"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "abuse-of-power"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "556f1980-e8eb-11ea-9a28-d787429db16b",
+      "pb_id": "mn-minneapolis-31",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Officer pepper sprays protester",
+      "description": null,
+      "links": [
+        "https://twitter.com/EvryDayEvryWay/status/1298794226033938432"
+      ],
+      "data": null,
+      "tags": ["protester", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "44.9777530",
+        "long": "-93.2650108"
+      }
+    },
+    {
+      "id": "55711740-e8eb-11ea-b7a7-cbc4a45d4905",
+      "pb_id": "mn-minneapolis-32",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Officer shoots at fleeing protester",
+      "description": null,
+      "links": [
+        "https://twitter.com/GriffinMalone6/status/1298835525479014400"
+      ],
+      "data": null,
+      "tags": ["protester", "shoot", "projectile"],
+      "geocoding": {
+        "lat": "44.9777530",
+        "long": "-93.2650108"
+      }
+    },
+    {
+      "id": "5642ad60-e8eb-11ea-9cbd-2b81eb2eabd2",
+      "pb_id": "ca-losangeles-50",
+      "state": "California",
+      "city": "Los Angeles",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Officers trap protesters under bridge and shoot them",
+      "description": null,
+      "links": [
+        "https://twitter.com/cogeian/status/1298864638411431938",
+        "https://twitter.com/cogeian/status/1298867138547994629",
+        "https://twitter.com/DjMontecito/status/1298868748074405888",
+        "https://twitter.com/teegeez123/status/1299006192526585857",
+        "https://twitter.com/missippigurl/status/1299061628051156992",
+        "https://www.instagram.com/p/CEY5r64AEip/"
+      ],
+      "data": null,
+      "tags": ["protester", "shoot", "projectile", "abuse-of-power"],
+      "geocoding": {
+        "lat": "34.0522342",
+        "long": "-118.2436849"
+      }
+    },
+    {
+      "id": "5808f9c0-e8eb-11ea-9109-6fb626540e55",
+      "pb_id": "or-portland-335",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Federal officers shoot tear gas and impact munitions at protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/MrOlmos/status/1298893333025062914",
+        "https://twitter.com/Cascadianphotog/status/1298859911195930624",
+        "https://twitter.com/Cascadianphotog/status/1298890983791198210",
+        "https://twitter.com/suzettesmith/status/1298868131750797313",
+        "https://twitter.com/suzettesmith/status/1298861598551883776",
+        "https://twitter.com/R3volutionDaddy/status/1298861286193684480",
+        "https://twitter.com/BaghdadBrian/status/1298898340587999233",
+        "https://twitter.com/BaghdadBrian/status/1298874889407836160",
+        "https://twitter.com/gravemorgan/status/1298860424301965312",
+        "https://twitter.com/gravemorgan/status/1298862814321229824",
+        "https://twitter.com/gravemorgan/status/1298862979690053633"
+      ],
+      "data": null,
+      "tags": ["protester", "shoot", "projectile", "tear-gas"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "5a735330-e8eb-11ea-8488-4f2d4284b8c8",
+      "pb_id": "wa-seattle-61",
+      "state": "Washington",
+      "city": "Seattle",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Police shove member of the press",
+      "description": null,
+      "links": [
+        "https://www.facebook.com/RebellionBaby/videos/1072754053140660/",
+        "https://twitter.com/ACABSea/status/1299043810798780419",
+        "https://twitter.com/ACABSea/status/1299044335183228930"
+      ],
+      "data": null,
+      "tags": ["journalist", "shove", "property-destruction"],
+      "geocoding": {
+        "lat": "47.6062095",
+        "long": "-122.3320708"
+      }
+    },
+    {
+      "id": "770f26c0-e867-11ea-ad0a-75d1175bd4a9",
+      "pb_id": "co-denver-27",
+      "state": "Colorado",
+      "city": "Denver",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Denver police arrest protester outside homeless encampment, fire impact munitions at others",
+      "description": null,
+      "links": [
+        "https://www.youtube.com/watch?v=LPgsnF1Pxzc",
+        "https://twitter.com/wallofmomsden/status/1298655891131179020"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "shoot", "projectile", "tackle"],
+      "geocoding": {
+        "lat": "39.7392358",
+        "long": "-104.9902510"
+      }
+    },
+    {
+      "id": "e62c7c40-e9a9-11ea-9495-476f8efa57f1",
+      "pb_id": "wa-seattle-62",
+      "state": "Washington",
+      "city": "Seattle",
+      "date": "2020-08-26T00:00:00.000000Z",
+      "title": "Police shove protesters, mace journalist, arrest drivers and damage cars",
+      "description": null,
+      "links": [
+        "https://www.facebook.com/WWConverge/videos/355310738820842/",
+        "https://twitter.com/TheBageler7/status/1298884403746099205",
+        "https://twitter.com/TheBageler7/status/1299003806928105480"
+      ],
+      "data": null,
+      "tags": [
+        "journalist",
+        "protester",
+        "push",
+        "shove",
+        "baton",
+        "pepper-spray",
+        "spray",
+        "arrest",
+        "property-destruction"
+      ],
+      "geocoding": {
+        "lat": "47.6062095",
+        "long": "-122.3320708"
+      }
+    },
+    {
+      "id": "79888230-e867-11ea-b330-67536b3f3791",
+      "pb_id": "ca-losangeles-49",
+      "state": "California",
+      "city": "Los Angeles",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "LA Sheriffs tear gas protesters",
+      "description": null,
+      "links": ["https://www.instagram.com/tv/CEV-cnggrvj/"],
+      "data": null,
+      "tags": ["protester", "shoot", "projectile", "tear-gas"],
+      "geocoding": {
+        "lat": "34.0522342",
+        "long": "-118.2436849"
+      }
+    },
+    {
+      "id": "79f60f70-e867-11ea-b650-493a43d2c07e",
+      "pb_id": "ky-louisville-21",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Protester hit by police car",
+      "description": null,
+      "links": [
+        "https://www.facebook.com/maxwellamitchell/videos/10219351963573439/"
+      ],
+      "data": null,
+      "tags": ["protester", "vehicle"],
+      "geocoding": {
+        "lat": "38.2526647",
+        "long": "-85.7584557"
+      }
+    },
+    {
+      "id": "d46efd30-e7c5-11ea-ac5f-2deca5bb475f",
+      "pb_id": "or-portland-330",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Police charge protesters with shields",
+      "description": null,
+      "links": [
+        "https://twitter.com/MrOlmos/status/1298491010280910848",
+        "https://twitter.com/MrOlmos/status/1298491684678799360",
+        "https://twitter.com/MasonLakePhoto/status/1298563063365267459",
+        "https://twitter.com/PDocumentarians/status/1298492395386834948"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "strike", "baton", "beat"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "d473ddc0-e7c5-11ea-a573-1563db30133e",
+      "pb_id": "or-portland-331",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Police arrest woman yelling at them",
+      "description": null,
+      "links": [
+        "https://twitter.com/suzettesmith/status/1298537076149772288",
+        "https://twitter.com/MrOlmos/status/1298532939072851968"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "abuse-of-power"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "d4769d90-e7c5-11ea-adbd-957b54406e42",
+      "pb_id": "or-portland-332",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Officer throws stun grenade at protesters on sidewalk",
+      "description": null,
+      "links": [
+        "https://twitter.com/suzettesmith/status/1298512270809395202",
+        "https://twitter.com/BrayanMorgan6/status/1298530372012187649"
+      ],
+      "data": null,
+      "tags": ["protester", "stun-grenade"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "d4795280-e7c5-11ea-b211-d3bfe1e8c7ad",
+      "pb_id": "or-portland-333",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Police puncture tires of multiple cars",
+      "description": null,
+      "links": [
+        "https://twitter.com/MasonLakePhoto/status/1298573907595730949",
+        "https://twitter.com/PDocumentarians/status/1298515002198908931"
+      ],
+      "data": null,
+      "tags": ["property-destruction"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "d47bf5d0-e7c5-11ea-ad57-9dc6f8a604e7",
+      "pb_id": "or-portland-334",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Police shoot at protesters in street",
+      "description": null,
+      "links": ["https://twitter.com/MegaphonePdx/status/1298661361551945729"],
+      "data": null,
+      "tags": ["protester", "shoot", "projectile", "foam-bullet"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "d5548490-e7c5-11ea-8a25-69d4b92e8214",
+      "pb_id": "wi-kenosha-4",
+      "state": "Wisconsin",
+      "city": "Kenosha",
+      "date": "2020-08-25T00:00:00.000000Z",
+      "title": "Police and National Guard use tear gas and LRAD to disperse protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/TheRealCoryElia/status/1298446600264507393",
+        "https://twitter.com/TheRealCoryElia/status/1298446600264507393",
+        "https://twitter.com/TheRealCoryElia/status/1298446600264507393",
+        "https://twitter.com/TheRealCoryElia/status/1298446600264507393",
+        "https://www.facebook.com/cjtv.io/videos/636700277255679/",
+        "https://twitter.com/Julio_Rosas11/status/1298458923855478784",
+        "https://www.youtube.com/watch?v=uSxQAw39smU",
+        "https://twitter.com/RicoReporting/status/1298489186367012865",
+        "https://twitter.com/blackzebrapro/status/1298652150835351554",
+        "https://twitter.com/blackzebrapro/status/1298652286261039106"
+      ],
+      "data": null,
+      "tags": ["protester", "tear-gas", "lrad"],
+      "geocoding": {
+        "lat": "42.5847425",
+        "long": "-87.8211854"
+      }
+    },
+    {
+      "id": "24922f40-e63d-11ea-9f58-a5790f7442b1",
+      "pb_id": "nc-charlotte-7",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police pepper spray kettled protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/queencitynerve/status/1297757281359208450"
+      ],
+      "data": null,
+      "tags": ["protester", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "35.2270869",
+        "long": "-80.8431267"
+      }
+    },
+    {
+      "id": "6b077c80-e727-11ea-901e-23b0bacb3cc6",
+      "pb_id": "nc-charlotte-8",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police charge protesters with bikes, discharge pepper spray",
+      "description": null,
+      "links": [
+        "https://twitter.com/queencitynerve/status/1298081346137530370",
+        "https://twitter.com/queencitynerve/status/1298088325681750016",
+        "https://twitter.com/jefftaylorhuman/status/1298114422754414592",
+        "https://twitter.com/jefftaylorhuman/status/1298114422754414592",
+        "https://twitter.com/jefftaylorhuman/status/1298114422754414592",
+        "https://www.charlotteobserver.com/news/politics-government/rnc-2020/article245198720.html"
+      ],
+      "data": null,
+      "tags": [
+        "protester",
+        "bike",
+        "pepper-spray",
+        "spray",
+        "push",
+        "shove",
+        "politician"
+      ],
+      "geocoding": {
+        "lat": "35.2270869",
+        "long": "-80.8431267"
+      }
+    },
+    {
+      "id": "b7f266c0-e726-11ea-9c9b-d1294b5448eb",
+      "pb_id": "wi-kenosha-2",
+      "state": "Wisconsin",
+      "city": "Kenosha",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police tear gas protesters a second night",
+      "description": null,
+      "links": [
+        "https://twitter.com/ToolFree2point0/status/1298093859537408002",
+        "https://twitter.com/SVNewsAlerts/status/1298094278086987776",
+        "https://twitter.com/SVNewsAlerts/status/1298098250453483520",
+        "https://twitter.com/delvecchiograce/status/1298085959922266114",
+        "https://twitter.com/OmarJimenez/status/1298097739235024896",
+        "https://twitter.com/themariague/status/1298102173490917378",
+        "https://twitter.com/RicoReporting/status/1298078303518183425",
+        "https://twitter.com/johnhendren/status/1298086706042871808",
+        "https://twitter.com/lauren_linder/status/1298074911244722177",
+        "https://twitter.com/VenturaReport/status/1298077434475151361",
+        "https://www.facebook.com/wisn12/videos/1022146548224032/",
+        "https://twitter.com/lauren_linder/status/1298077570622197764",
+        "https://twitter.com/Julio_Rosas11/status/1298072456066994176",
+        "https://twitter.com/jameststein/status/1298072246704119810",
+        "https://twitter.com/mattsmith_news/status/1298071296627154944",
+        "https://twitter.com/JohnKeilman/status/1298082510191104000",
+        "https://twitter.com/tbettack10/status/1298088265640284163",
+        "https://twitter.com/hgflores_/status/1298096911115857922",
+        "https://twitter.com/RichieMcGinniss/status/1298101016995549185"
+      ],
+      "data": null,
+      "tags": [
+        "protester",
+        "shoot",
+        "projectile",
+        "lrad",
+        "tear-gas",
+        "tear-gas-canister",
+        "journalist"
+      ],
+      "geocoding": {
+        "lat": "42.5847425",
+        "long": "-87.8211854"
+      }
+    },
+    {
+      "id": "b80d05f0-e726-11ea-8238-cf7de28a77fe",
+      "pb_id": "wi-kenosha-3",
+      "state": "Wisconsin",
+      "city": "Kenosha",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police fire tear gas, pepper spray and impact munitions at protesters on the sidewalk",
+      "description": null,
+      "links": ["https://twitter.com/ehamer7/status/1298135090682265601"],
+      "data": null,
+      "tags": [
+        "protester",
+        "shoot",
+        "projectile",
+        "tear-gas",
+        "pepper-spray",
+        "spray"
+      ],
+      "geocoding": {
+        "lat": "42.5847425",
+        "long": "-87.8211854"
+      }
+    },
+    {
+      "id": "b810bfb0-e726-11ea-9bda-f70f0d9c3e5a",
+      "pb_id": "wi-madison-3",
+      "state": "Wisconsin",
+      "city": "Madison",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police pepper spray protester with megaphone",
+      "description": null,
+      "links": ["https://twitter.com/isthmus/status/1298324422336688130"],
+      "data": null,
+      "tags": ["protester", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "43.0730517",
+        "long": "-89.4012302"
+      }
+    },
+    {
+      "id": "b8127210-e726-11ea-ae4a-9522bc9d8cf7",
+      "pb_id": "wi-madison-4",
+      "state": "Wisconsin",
+      "city": "Madison",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police pepper spray and tear gas protester",
+      "description": null,
+      "links": [
+        "https://twitter.com/bethabeyer/status/1298145824971673603",
+        "https://twitter.com/bethabeyer/status/1298146285929758720"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest", "pepper-spray", "spray", "tear-gas"],
+      "geocoding": {
+        "lat": "43.0730517",
+        "long": "-89.4012302"
+      }
+    },
+    {
+      "id": "b8151cb0-e726-11ea-8050-3d4bff4f1d99",
+      "pb_id": "wi-madison-5",
+      "state": "Wisconsin",
+      "city": "Madison",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Homeless bystander caught in tear gas",
+      "description": null,
+      "links": ["https://twitter.com/isthmus/status/1298145645665099776"],
+      "data": null,
+      "tags": ["bystander", "homeless", "tear-gas"],
+      "geocoding": {
+        "lat": "43.0730517",
+        "long": "-89.4012302"
+      }
+    },
+    {
+      "id": "e02287a0-e725-11ea-a9fa-77b11bb6b71e",
+      "pb_id": "or-portland-321",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police throw stun grenades and tear gas canisters from rooftop",
+      "description": null,
+      "links": [
+        "https://twitter.com/R3volutionDaddy/status/1297978901012963328",
+        "https://twitter.com/R3volutionDaddy/status/1297979906626789376"
+      ],
+      "data": null,
+      "tags": ["protester", "stun-grenade", "tear-gas", "tear-gas-canister"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e0253c20-e725-11ea-adf2-1193aa32db21",
+      "pb_id": "or-portland-322",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police throw stun grenade at independent journalist",
+      "description": null,
+      "links": [
+        "https://twitter.com/R3volutionDaddy/status/1297981782084612096"
+      ],
+      "data": null,
+      "tags": ["journalist", "stun-grenade"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e026dce0-e725-11ea-980e-e707848faaa9",
+      "pb_id": "or-portland-323",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police beat and arrest multiple protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/garbagefilth/status/1298129381747957760",
+        "https://twitter.com/GriffinMalone6/status/1298126550273945600",
+        "https://twitter.com/ByMikeBaker/status/1298127258268266499"
+      ],
+      "data": null,
+      "tags": [
+        "protester",
+        "beat",
+        "strike",
+        "shove",
+        "push",
+        "arrest",
+        "tackle"
+      ],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e02aa440-e725-11ea-8eb6-21e2b3c05896",
+      "pb_id": "or-portland-324",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police tear gas protesters and make violent arrest",
+      "description": null,
+      "links": [
+        "https://twitter.com/GriffinMalone6/status/1298144639405367296",
+        "https://twitter.com/GriffinMalone6/status/1298124938285465600",
+        "https://twitter.com/tehandy121/status/1298125192451907584"
+      ],
+      "data": null,
+      "tags": ["protester", "tackle", "arrest", "tear-gas"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e02fced0-e725-11ea-9ee5-e3df9197f2a3",
+      "pb_id": "or-portland-325",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Officer bludgeons protester with pepper spray can, then sprays crowd",
+      "description": null,
+      "links": [
+        "https://twitter.com/1misanthrophile/status/1298272827087306753",
+        "https://twitter.com/marisaforBLM/status/1298314312008626179"
+      ],
+      "data": null,
+      "tags": ["protester", "beat", "strike", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e0344d70-e725-11ea-ad24-1f70e62d87b6",
+      "pb_id": "or-portland-326",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Officer gropes and shoves woman, arrests protester trying to intervene",
+      "description": null,
+      "links": [
+        "https://www.reddit.com/r/PublicFreakout/comments/ighh02/portland_police_grabs_womans_chest_then_arrest/"
+      ],
+      "data": null,
+      "tags": ["protester", "sexual-assault", "push", "shove", "arrest"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e036cf50-e725-11ea-b5d6-3d5f228c9f2b",
+      "pb_id": "or-portland-327",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police shove independent journalist",
+      "description": null,
+      "links": [
+        "https://twitter.com/MrOlmos/status/1298145800287993856",
+        "https://twitter.com/R3volutionDaddy/status/1298333903308984320",
+        "https://clips.twitch.tv/CoweringColdDonkeyRaccAttack"
+      ],
+      "data": null,
+      "tags": ["push", "shove", "journalist"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e03c76b0-e725-11ea-968f-013808eb1cff",
+      "pb_id": "or-portland-328",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police charge across the street, tackle, beat and arrest protester",
+      "description": null,
+      "links": [
+        "https://twitter.com/PDocumentarians/status/1298162855808839681"
+      ],
+      "data": null,
+      "tags": ["protester", "tackle", "arrest", "strike", "punch", "beat"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "e03efde0-e725-11ea-a57d-e3c960d6bced",
+      "pb_id": "or-portland-329",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-24T00:00:00.000000Z",
+      "title": "Police throw gas canister at press, hit journalist in shin",
+      "description": null,
+      "links": [
+        "https://twitter.com/MathieuLRolland/status/1298347083368284160",
+        "https://twitter.com/R3volutionDaddy/status/1298344703486697472"
+      ],
+      "data": null,
+      "tags": ["journalist", "tear-gas-canister"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "248faf40-e63d-11ea-bea4-e5a07c8ac00f",
+      "pb_id": "nc-charlotte-6",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Police arrest protester without warning or clear justification",
+      "description": null,
+      "links": [
+        "https://twitter.com/queencitynerve/status/1297389564693295105"
+      ],
+      "data": null,
+      "tags": ["protester", "arrest"],
+      "geocoding": {
+        "lat": "35.2270869",
+        "long": "-80.8431267"
+      }
+    },
+    {
+      "id": "4cb916a0-e63c-11ea-83f0-057c821c860e",
+      "pb_id": "or-portland-312",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Officers shove and pepper spray protesters on sidewalk",
+      "description": null,
+      "links": ["https://twitter.com/MrOlmos/status/1297443641993003008"],
+      "data": null,
+      "tags": ["protester", "push", "shove", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "4cbae6a0-e63c-11ea-988b-df7eb33c1074",
+      "pb_id": "or-portland-313",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Police shove protesters on sidewalk",
+      "description": null,
+      "links": [
+        "https://twitter.com/1misanthrophile/status/1297438973166415873"
+      ],
+      "data": null,
+      "tags": ["protester", "push", "shove"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "4cbcef80-e63c-11ea-a131-bb626abc1b67",
+      "pb_id": "or-portland-319",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Police respond to vandalism and fireworks with tear gas",
+      "description": null,
+      "links": [
+        "https://twitter.com/hungrybowtie/status/1297781412427309056",
+        "https://twitter.com/hungrybowtie/status/1297781900598099968",
+        "https://twitter.com/hungrybowtie/status/1297782235798450176",
+        "https://twitter.com/hungrybowtie/status/1297786356194668544",
+        "https://twitter.com/BGOnTheScene/status/1297788853500035072",
+        "https://twitter.com/audreytweil/status/1297785301134270464",
+        "https://twitter.com/SacActivists/status/1297945967509954566"
+      ],
+      "data": null,
+      "tags": ["protester", "tear-gas", "stun-grenade", "arrest"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "b7ec1250-e726-11ea-894e-eb554b9f34a9",
+      "pb_id": "wi-kenosha-1",
+      "state": "Wisconsin",
+      "city": "Kenosha",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Police fire tear gas and impact munitions at protesters outside a precinct",
+      "description": null,
+      "links": [
+        "https://twitter.com/ABC/status/1297822172556165121",
+        "https://twitter.com/Rosemvmt/status/1297743591947874304",
+        "https://twitter.com/AFriendlyDad/status/1297747684455936003",
+        "https://twitter.com/lauren_linder/status/1297772465020600321",
+        "https://twitter.com/lauren_linder/status/1297775472055640065"
+      ],
+      "data": null,
+      "tags": ["protester", "tear-gas", "shoot", "projectile"],
+      "geocoding": {
+        "lat": "42.5847425",
+        "long": "-87.8211854"
+      }
+    },
+    {
+      "id": "e01f7440-e725-11ea-9363-155f1d1f07ad",
+      "pb_id": "or-portland-320",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-23T00:00:00.000000Z",
+      "title": "Police confiscate speaker, then pepper spray owner",
+      "description": null,
+      "links": [
+        "https://twitter.com/MathieuLRolland/status/1297970388412981249",
+        "https://twitter.com/MasonLakePhoto/status/1297977922301521920"
+      ],
+      "data": null,
+      "tags": ["protester", "abuse-of-power", "pepper-spray", "spray"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "2436be30-e63d-11ea-8e80-7f552f928151",
+      "pb_id": "mi-detroit-12",
+      "state": "Michigan",
+      "city": "Detroit",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Police tear gas protesters",
+      "description": null,
+      "links": [
+        "https://twitter.com/Kayleighmw/status/1297410211049811968",
+        "https://twitter.com/Kayleighmw/status/1297410211049811968",
+        "https://twitter.com/YoDCox/status/1297398241617760257",
+        "https://twitter.com/MCmuckraker/status/1297856193176776705",
+        "https://twitter.com/Kitty_Garrison/status/1297586120503496705",
+        "https://twitter.com/ohnoitslydia/status/1297396456593264640",
+        "https://twitter.com/ohnoitslydia/status/1297396456593264640",
+        "https://twitter.com/ohnoitslydia/status/1297399986120949765"
+      ],
+      "data": null,
+      "tags": ["protester", "tear-gas", "strike", "baton", "shield", "arrest"],
+      "geocoding": {
+        "lat": "42.3314270",
+        "long": "-83.0457538"
+      }
+    },
+    {
+      "id": "469eb9f0-e54d-11ea-9d01-f3ac50432507",
+      "pb_id": "or-portland-309",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Police shove protesters on the sidewalk",
+      "description": null,
+      "links": ["https://twitter.com/MrOlmos/status/1297113434299830272"],
+      "data": null,
+      "tags": ["protester", "push", "shove"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "46a07390-e54d-11ea-974d-99c6da7481d0",
+      "pb_id": "or-portland-310",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Police officer strikes journalist who insults him",
+      "description": null,
+      "links": [
+        "https://twitter.com/RisePDX/status/1297084976668667905",
+        "https://clips.twitch.tv/AuspiciousSmoggyDiscHeyGuys",
+        "https://twitter.com/RisePDX/status/1297086033696178176",
+        "https://clips.twitch.tv/FragileSullenConsoleRiPepperonis"
+      ],
+      "data": null,
+      "tags": ["journalist", "property-destruction", "strike"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "4caa6f50-e63c-11ea-9d92-b365d8360fad",
+      "pb_id": "or-portland-311",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Officer shoots protester at point blank range",
+      "description": null,
+      "links": ["https://twitter.com/IwriteOK/status/1297292316256870400"],
+      "data": null,
+      "tags": ["protester", "push", "shove", "shoot", "projectile"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "4cac3080-e63c-11ea-8075-d50d762fe1fc",
+      "pb_id": "or-portland-314",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Officers shove protesters and legal observer",
+      "description": null,
+      "links": [
+        "https://twitter.com/1misanthrophile/status/1297434041411493890",
+        "https://twitter.com/1misanthrophile/status/1297434755017789440"
+      ],
+      "data": null,
+      "tags": [
+        "protester",
+        "legal-observer",
+        "push",
+        "shove",
+        "strike",
+        "baton"
+      ],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    },
+    {
+      "id": "4cafd740-e63c-11ea-a752-67fb33f67b5c",
+      "pb_id": "or-portland-315",
+      "state": "Oregon",
+      "city": "Portland",
+      "date": "2020-08-22T00:00:00.000000Z",
+      "title": "Police drag protester, begin to arrest him, then release him",
+      "description": null,
+      "links": [
+        "https://twitter.com/PDocumentarians/status/1297435863719145472",
+        "https://twitter.com/gravemorgan/status/1297426266887303170"
+      ],
+      "data": null,
+      "tags": ["protester", "grab", "abuse-of-power", "knee"],
+      "geocoding": {
+        "lat": "45.5051064",
+        "long": "-122.6750261"
+      }
+    }
+  ]
+}
