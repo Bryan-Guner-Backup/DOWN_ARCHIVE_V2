@@ -1,0 +1,62 @@
+h2 {
+  padding-left: 12px;
+}
+
+.sms-form {
+  text-align: left;
+  padding: 1em;
+}
+
+.sms-form label {
+  display: block;
+  font-size: 1.5em;
+}
+
+.sms-form input {
+  font-size: 1.3em;
+  width: 85%;
+  height: 35px;
+  margin-bottom: 8px;
+  border-radius: 3.5px;
+  box-sizing: border-box;
+}
+
+.sms-form textarea {
+  font-size: 1.3em;
+  width: 85%;
+  height: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sms-form div {
+  margin-bottom: 0.5em;
+}
+
+.sms-form button {
+  font-size: 1.4em;
+  background-color: #e8833a;
+  border: 1px solid #e8833a;
+  border-radius: 4px;
+  color: black;
+}
+
+.validate-form {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.catch-error {
+  background-color: #ffb7b7;
+  color: red;
+  border: solid 1px #f39595;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #f8a66c;
+  border: 1px solid #f8a66c;
+  border-radius: 4px;
+  color: black;
+  transition-duration: 500ms;
+} 
