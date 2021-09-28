@@ -1,0 +1,45 @@
+{
+	"name": "lambdaalumninetwork",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"server": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/viewee/backend"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/viewee/backend/issues"
+	},
+	"homepage": "https://github.com/viewee/backend#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cloudinary": "^1.25.1",
+		"cloudinary-core": "^2.11.4",
+		"connect-session-knex": "^1.6.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.0",
+		"helmet": "^3.21.3",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.21.1",
+		"passport": "^0.4.1",
+		"passport-linkedin-oauth2": "^2.0.0",
+		"pg": "^8.5.1"
+	},
+	"devDependencies": {
+		"eslint": "^7.19.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-react": "^7.22.0",
+		"minimist": ">=0.2.1",
+		"nodemon": "^2.0.2",
+		"prettier": "^2.2.1"
+	}
+}

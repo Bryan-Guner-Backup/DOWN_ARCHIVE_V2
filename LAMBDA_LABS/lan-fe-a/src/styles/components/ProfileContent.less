@@ -1,0 +1,90 @@
+//Profile Content Styles
+//TODO make all of these styles responsive
+
+.profile-container {
+  min-height: 100vh;
+
+  .profile-content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+
+      //Profile Image
+      img {
+        border-radius: 50%;
+        margin-right: 15px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .user-info-and-buttons {
+        padding: 0 3%;
+        width: 25%;
+
+        .user-name-and-badge {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          #user-name {
+            font-size: 1.2rem;
+            padding-right: 1rem;
+          }
+
+          // Get this ant Badge working so we can remove the styling from ProfileContent.js
+          Badge {
+            background-color: grey;
+            offset: 25, 0;
+          }
+        }
+
+        .posts-and-comments {
+          display: flex;
+          justify-content: space-between;
+
+          .posts-and-comments-font {
+            margin-right: 15px;
+          }
+        }
+
+        #bio-font {
+          // font-size: 22rem;
+        }
+
+        .button-container {
+          display: flex;
+
+          #follow-button {
+            margin-right: 7%;
+          }
+
+          Button {
+            width: 125px;
+          }
+        }
+      }
+    }
+    //TODO get this ant design component to respond to this ⬇ styling so the inline styling can be removed from the ProfileContent component
+    // Tabs {
+    //   TabPane {
+    //     Card {
+    //       width: 500px;
+    //       cursor: pointer;
+    //       margin: 3%;
+
+    //       .cardText {
+    //         font-size: 0.5rem;
+    //         margin-bottom: 0;
+    //       }
+    //       .momentText {
+    //         font-size: 3rem;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

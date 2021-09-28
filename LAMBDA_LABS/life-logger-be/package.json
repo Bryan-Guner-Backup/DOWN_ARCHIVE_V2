@@ -1,0 +1,68 @@
+{
+  "name": "life-logger-be",
+  "version": "1.0.0",
+  "engines": {
+    "node": "13.9.0"
+  },
+  "description": "🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --coverage --watch",
+    "start": "node index.js",
+    "coverage": "jest --coverage --detectOpenHandles --forceExit || true",
+    "heroku-postbuild": "knex migrate:latest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ],
+    "*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lambda-School-Labs/life-logger-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lambda-School-Labs/life-logger-be/issues"
+  },
+  "homepage": "https://github.com/Lambda-School-Labs/life-logger-be#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "codeclimate-test-reporter": "^0.5.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "husky": "^4.2.5",
+    "jest": "^25.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.9",
+    "knex-cleaner": "^1.3.0",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.2",
+    "pg": "^8.2.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3"
+  }
+}

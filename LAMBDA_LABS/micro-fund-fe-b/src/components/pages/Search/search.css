@@ -1,0 +1,57 @@
+.search-page{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.all-short-apps {
+    width: 100%;
+    margin: auto;
+}
+
+.short-apps-header{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border: 2px solid  rgba(0, 0, 0, 0.603);
+    font-weight: bold;
+}
+
+.apps-container {
+    width: 60%;
+    margin: auto;
+}
+
+.short-app {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    color: black;
+    background-color: #ffffff;
+    display: inline-grid;
+    grid-template-columns: 40% 45% 15%;
+}
+
+.app-name {
+    text-align: left;
+}
+
+.app-org {
+    text-align: left;
+}
+
+.app-status {
+    text-align: right;
+}
