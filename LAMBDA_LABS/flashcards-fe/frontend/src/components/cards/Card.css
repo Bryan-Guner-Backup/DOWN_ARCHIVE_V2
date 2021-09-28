@@ -1,0 +1,25 @@
+/* 
+
+.card {
+  
+    transition: transform 0.5s;
+}
+
+
+
+.card__face--front {
+    background: orange;
+    width: 20%;
+}
+*/
+
+/* 
+
+
+.card.is-flipped {
+    transform: rotateY( 180deg );
+} */
+
+button:disabled {
+    opacity: 0.3;
+}

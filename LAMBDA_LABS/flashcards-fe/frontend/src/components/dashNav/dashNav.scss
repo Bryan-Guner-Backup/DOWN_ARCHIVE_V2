@@ -1,0 +1,88 @@
+.dashNav {
+  color: #fafafa;
+  background: #f66e00;
+  padding: 15px 25px 35px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: default;
+
+  @media screen and (min-width: 767px) {
+    min-height: 100px;
+  }
+
+  @media only screen and (min-width: 1365px){
+    padding: 0;
+    min-height: 83px;
+  }
+
+  .publicSearch {
+    color: white;
+    margin-top: 1%;
+    height: 2rem;
+    margin-right: 12%;
+
+    @media(min-width: 1365px) {
+      margin-right: 5%;
+    }
+  }
+
+  .mNeme {
+
+    margin-right: auto;
+
+    @media screen and (min-width: 1365px) {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+    .m {
+      font-size: 0.8rem;
+      @media only screen and (min-width: 1000px) {
+        font-size: 1.85rem;
+      }
+    }
+    .neme {
+      font-weight: bold;
+      font-size: 1.2rem;
+      @media only screen and (min-width: 1000px) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+  .desk-dash-pic {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+    margin-top: -25px;
+
+    @media only screen and (max-width: 1000px){
+      display: none;
+    }
+
+    @media screen and (min-width: 1365px) {
+      margin-top: .45%;
+      margin-right: 5%;
+    }
+  }
+
+  .bzPxxW {
+    @media screen and (min-width: 1365px) {
+      padding: 20px;
+    }
+  }
+}
+
+.rightNav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.rightNav-wrapper {
+  a,
+  a:hover,
+  a:visited {
+    color: #fafafa;
+  }
+}

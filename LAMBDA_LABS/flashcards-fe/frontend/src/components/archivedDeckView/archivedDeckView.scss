@@ -1,0 +1,33 @@
+.back {
+  margin-left: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header {
+  background-color: #f66e00;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: -.1%;
+  .deck-name {
+    color: #fafafa;
+    margin-bottom: .2%;
+    margin-left: 10px;
+    cursor: pointer;
+
+    @media screen and (min-width: 767px) {
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+}
+
+.card-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}

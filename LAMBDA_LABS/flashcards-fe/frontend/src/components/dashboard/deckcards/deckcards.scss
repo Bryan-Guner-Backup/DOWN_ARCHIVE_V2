@@ -1,0 +1,113 @@
+.deck-card {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  .deck-info {
+    margin: 1rem 1rem;
+
+    .deck-name {
+      margin-bottom: 0px;
+    }
+
+    .deck-length {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: rgb(181, 173, 170);
+    }
+  }
+
+  .example-card {
+    width: 45%;
+    height: 6rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 1rem 1rem;
+    border-radius: 3px;
+    border: 0.5px solid #f66e00;
+  }
+}
+
+.deck {
+  border: 0.5px solid rgba(106, 92, 85, 0.3);
+  border-radius: 4px;
+  margin: 40px auto;
+  margin-top: 0px;
+  max-width: 400px;
+
+  @media (min-width: 1919px) {
+    max-width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mastery {
+  width: 93%;
+  display: block;
+  margin: auto;
+  padding-bottom: 1rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: rgb(181, 173, 170);
+  }
+}
+
+.menu-button {
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-right: 5px;
+  position: relative;
+}
+
+.fa-ellipsis-h {
+  font-size: 1.5rem;
+  position: absolute;
+  top: -1.5rem;
+  color: #f66e00;
+}
+
+.deckcard-div {
+  max-width: 400px;
+  margin: 0 5px;
+
+  @media screen and (min-width: 600px) {
+    width: 300px;
+  }
+
+  @media (min-width: 1919px) {
+    max-width: 100%;
+    height: 20rem;
+  }
+}
+
+.decks-section {
+  width: 80%;
+  margin: 30px auto;
+  span {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .decks-selectors {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
