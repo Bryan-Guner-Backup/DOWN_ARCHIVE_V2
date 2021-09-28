@@ -1,0 +1,27 @@
+{
+  "name": "mockdb",
+  "version": "1.0.0",
+  "description": "Mock API Data for Labs VBB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "json-server-auth db.json -r routes.json",
+    "genData": "node dataGenerator.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "forever start server.js"
+  },
+  "author": "Matthew Mulford",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "faker": "5.1.0",
+    "json-server-relationship": "0.14.5",
+    "jsonfile": "6.1.0",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.0.2",
+    "nodemon": "2.0.7"
+  }
+}

@@ -1,0 +1,88 @@
+.profile-modal {
+  .ant-modal-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .ant-modal-content {
+    width: 40vw;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    .button-list {
+      display: flex;
+      flex-flow: row wrap;
+      font-size: 1.2rem;
+
+      .childLoginBtn {
+        background: #fff;
+        border: 1px solid #bfbfbf;
+        border-radius: 5px;
+        color: #272727;
+        font-size: 1rem;
+        height: auto;
+        width: 28%;
+        margin: 2%;
+        transition: 200ms;
+      }
+
+      .childLoginBtn:hover {
+        box-shadow: 0 0 8px 2px #cacaca;
+        border: none;
+        transition: 200ms;
+      }
+
+      .childLoginAvatar {
+        width: 25%;
+      }
+
+      .childLoginName {
+        background: #007aff;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 3%;
+        width: auto;
+      }
+    }
+
+    button:not(:last-child) {
+      margin-bottom: 2.5vh;
+    }
+
+    form {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      .pin {
+        letter-spacing: 15px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+      }
+
+      [class$='explain'] {
+        margin-top: 1vh;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      button:not(.back) {
+        margin-top: 2vh;
+      }
+    }
+
+    .back {
+      position: absolute;
+      top: 0.5vh;
+      left: 0.5vh;
+    }
+  }
+}
