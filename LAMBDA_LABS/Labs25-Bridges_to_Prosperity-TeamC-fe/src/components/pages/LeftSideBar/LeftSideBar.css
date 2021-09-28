@@ -1,0 +1,67 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: bold;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Domine', serif;
+  font-weight: 400;
+}
+
+.Section {
+  margin-top: 20vh;
+}
+
+.b2pLogo {
+  width: 240px;
+}
+
+.SideButton {
+  background-color: #008a44;
+  color: black;
+  margin-top: 21px;
+  transition: 0.3s ease;
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* border: 1px solid red; */
+}
+
+.SideButton img {
+  width: 15px;
+  height: 15px;
+}
+
+.SideButton:hover {
+  color: black;
+}
+
+.iconGroup {
+  position: absolute;
+  margin-right: 3vh;
+  bottom: 1vh;
+  z-index: 5001;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.icons {
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+.icons:hover {
+  background-color: #d3d3d3;
+}
