@@ -1,0 +1,59 @@
+exports.up = function(knex) {
+  return knex.schema.createTable('application', tbl => {
+    tbl.increments('id')
+    tbl
+      .integer('app_q1_a_id')
+      .unsigned()
+      .references('app_q1_a.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl.text('app_q1_b')
+    tbl
+      .integer('app_q2_id')
+      .unsigned()
+      .references('app_q2.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl
+      .integer('app_q3_id')
+      .unsigned()
+      .references('app_q3.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl
+      .integer('app_q4_id')
+      .unsigned()
+      .references('app_q4.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl.text('app_q5')
+    tbl
+      .integer('app_q6_a_id')
+      .unsigned()
+      .references('app_q6_a.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl
+      .integer('app_q6_b_id')
+      .unsigned()
+      .references('app_q6_b.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl
+      .integer('app_approved_id')
+      .unsigned()
+      .references('app_approved.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+    tbl
+      .integer('member_id')
+      .unsigned()
+      .references('members.id')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
+  })
+}
+
+exports.down = function(knex) {
+  return knex.schema.dropTableIfExists('application')
+}
