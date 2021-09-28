@@ -1,0 +1,1 @@
+export { axiosAuth } from './axiosAuth';
