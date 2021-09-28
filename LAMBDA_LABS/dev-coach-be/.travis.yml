@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 'stable'
+install: npm install
+cache:
+  directories:
+    - 'node_modules'
+env:
+  global:
+    - DB_ENV=testing
+    - EMAIL_KEY='kjnkj'
+    - EMAIL_DOMAIN='igöl'
+    - PUSHER_INSTANCE=v1:us1:02d03086-c977-4990-bbb8-d915c9090f74
+    - PUSHER_CHAT_KEY=99c25bda-a15a-4247-8a6c-5c152975240e:IIvhll4k19DorTpn6MYuo3YlNI3qGQjKQuX5F9WX7N4=
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database qualityhub_test;' -U postgres
+  - psql -c "CREATE USER quality WITH PASSWORD 'root';" -U postgres
+script: npm test
