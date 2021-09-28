@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/ic_baseline_person_outline_24"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="20dp"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/register_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_register_white_24dp"
+                android:drawableLeft="@drawable/ic_register_white_24dp"
+                android:drawablePadding="20dp"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login"
+                android:text="Register" />
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cogwheel"
+                android:drawableLeft="@drawable/ic_cogwheel"
+                android:drawablePadding="20dp"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_tv"
+                android:text="Settings" />
+
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+       />
+
+    <com.example.wildfire_fixed_imports.view.bottom_sheet.BottomSheetLayout
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_background"
+        style="@style/Widget.AppCompat.Button.Colored"
+        app:collapsedHeight="80dp">
+
+        <include
+            android:id="@+id/bottom_include"
+            layout="@layout/bottom_sheet" />
+
+    </com.example.wildfire_fixed_imports.view.bottom_sheet.BottomSheetLayout>
+
+    <include
+        android:id="@+id/aqi_bar_include"
+        layout="@layout/aqi_bar"
+        android:layout_marginTop="100dp"
+        android:layout_width="85sp"
+        android:layout_height="250sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:id="@+id/img_appbar_aqi_gauge"
+        android:layout_width="40sp"
+        android:layout_height="85sp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="343dp"
+        android:layout_marginTop="83dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/meter_clipart" />
+
+</RelativeLayout>

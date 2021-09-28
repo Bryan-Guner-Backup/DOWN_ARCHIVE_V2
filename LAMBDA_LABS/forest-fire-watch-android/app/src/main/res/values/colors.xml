@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20709B</color>
+    <color name="colorPrimaryDark">#20333C</color>
+    <color name="colorAccent">#C3C3C3</color>
+    <color name="splashTextColor">#20333C</color>
+	<color name="aqiColorBegin">#FF0000</color>
+    <color name="aqiColorMiddle">#00FF00</color>
+    <color name="aqiColorEnd">#0000FF</color>
+	<color name="aqiColorOne">#99CC00</color>
+    <color name="aqiColorTwo">#00CC99</color>
+    <color name="aqiColorThree">#992299</color>
+    <color name="designed_color_background">#FFFFFF</color>
+    <color name="aqi0Green">#00FF00</color>
+    <color name="aqi1Yellow">#FFFF00</color>
+    <color name="yellowFireBackground">#FFFF00</color>
+    <color name="aqi2Orange">#FFA500</color>
+    <color name="aqi3red">#FF0000</color>
+    <color name="aqi4purple">#924CAF</color>
+    <color name="aqi5brown">#AC5E3A</color>
+    <color name="drawerIconColorStyle">#20709B</color>
+    <color name="buttonTextPrimary">#FFFFFF</color>
+    <color name="textPrimary">#20709B</color>
+    <color name="textSecondary">#555555</color>
+
+</resources>
