@@ -1,0 +1,36 @@
+.desktopView {
+	display: flex;
+
+	.leftContainer {
+		width: 50%;
+		font-size: 1.5rem;
+		padding: 5rem 7.5rem;
+		background: transparentize($color: #044fbd, $amount: 0);
+
+		.calcContainer {
+			background: transparentize($color: #ffffff, $amount: 0);
+			padding: 1.5rem;
+			border-radius: 3rem;
+		}
+
+		.calc-banner2 {
+			color: transparentize($color: #ffffff, $amount: 0);
+			background: transparentize($color: #044fbd, $amount: 0);
+			font-size: 5rem;
+			padding-bottom: 3.5rem;
+		}
+	}
+
+	.rightContainer {
+		width: 50%;
+		font-size: 1.5rem;
+		padding: 15.5rem 7.5rem;
+		background: transparentize($color: #4f4f4f, $amount: 0.75);
+
+		.registerContainer {
+			background: transparentize($color: #ffffff, $amount: 0);
+			padding: 4rem 1.95rem 14.7rem;
+			border-radius: 3rem;
+		}
+	}
+}

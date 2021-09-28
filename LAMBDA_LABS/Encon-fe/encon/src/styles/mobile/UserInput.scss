@@ -1,0 +1,180 @@
+@import "./variables.scss";
+
+.user-input {
+  .device-container {
+    margin: 5%;
+    @media (min-width: $breakpt-desktop) {
+      margin: 10% 20%;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    border-bottom: $grey-border;
+  }
+
+  // h2 {
+  //   border-bottom: $grey-border;
+  //   margin: 5%;
+  //   padding-bottom: 5%;
+  // }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: -4%;
+  }
+
+  .dishH3 {
+    margin-right: 4%;
+    @media (min-width: $breakpt-desktop) {
+      margin-right: 20%;
+    }
+  }
+  .washH3 {
+    margin-left: 11%;
+    @media (min-width: $breakpt-desktop) {
+      margin-right: 27%;
+    }
+  }
+  .clothesH3 {
+    margin-left: 2%;
+    @media (min-width: $breakpt-desktop) {
+      margin-right: 21%;
+    }
+  }
+  .pcH3 {
+    margin-right: 4%;
+    @media (min-width: $breakpt-desktop) {
+      margin-right: 21%;
+    }
+  }
+  .tvH3 {
+    margin-right: 8%;
+    @media (min-width: $breakpt-desktop) {
+      margin-right: 22%;
+    }
+  }
+  .calendar {
+    border-bottom: $grey-border;
+    padding: 5% 0;
+    margin: 5%;
+  }
+
+  .device-section {
+    border-bottom: $grey-border;
+    padding: 5% 0;
+  }
+  .device-section:first-child {
+    border-top: $grey-border;
+  }
+
+  .inputHrs {
+    border-right: $grey-border;
+    // border-collapse: separate;
+    margin: 5% 0;
+  }
+
+  .inputDays {
+    margin: 5% 0;
+  }
+
+  .device-fields {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 5% 5% 35%;
+    border: $grey-border;
+    width: 65%;
+    border-radius: 0.5rem;
+  }
+  input {
+    position: static;
+    padding: 5% 1%;
+    // margin: 5%;
+    font-size: 1.4rem;
+    width: 85%;
+    border: 0;
+  }
+
+  .device-container img {
+    width: 20%;
+    margin-right: 65%;
+    margin-bottom: -25%;
+    @media (min-width: $breakpt-desktop) {
+      width: 10%;
+      margin-bottom: -10%;
+    }
+  }
+  .datepicker-link {
+    // border-bottom: $grey-border;
+    // margin: 10% 10% 5% 0%;
+    // h2 {
+    //   margin: -25% 0 0 10%;
+
+    //   background-color: #044fbd;
+    //   color: #ffffff;
+    //   border-radius: 1.25rem;
+    //   border: #044fbd solid;
+    //   padding: 3%;
+    // }
+
+    .calPNG {
+      width: 5%;
+      margin: 2% 85% 3% 0;
+      @media (min-width: $breakpt-desktop) {
+        width: 2%;
+        margin-left: 30%;
+      }
+    }
+  }
+  .todaysDate {
+    background-color: #044fbd;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    border: #044fbd solid;
+    padding: 3%;
+    margin: 0 20%;
+
+    @media (min-width: $breakpt-desktop) {
+      padding: 2%;
+      margin: -5% 35%;
+    }
+  }
+
+  .app-buttons-input {
+    font-size: 2.5rem;
+    margin: 3%;
+    width: 90%;
+    background-color: #044fbd;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    border: #044fbd solid;
+    padding: 3%;
+    @media (min-width: $breakpt-desktop) {
+      width: 30%;
+      margin-top: -10%;
+      padding: 1% 10%;
+    }
+  }
+
+  .app-buttons-input-dashlink {
+    font-size: 2.5rem;
+    margin: 3%;
+    width: 90%;
+    background-color: #ffffff;
+    color: #044fbd;
+    border-radius: 1.25rem;
+    border: 1px #010307 solid;
+    padding: 3%;
+    @media (min-width: $breakpt-desktop) {
+      width: 30%;
+      margin-top: -1%;
+      padding: 0% 10%;
+    }
+  }
+  .calDiv {
+    margin: 0 9% 0 0%;
+    @media (min-width: $breakpt-desktop) {
+      margin: 8% 0 -8% 37%;
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.energyLocation {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  .locationContainer {
+    border-top: 2px #bdbdbd solid;
+    width: 100%;
+  }
+  h2,
+  h5 {
+    margin-left: 5%;
+  }
+  a {
+    color: #044fbd;
+  }
+}

@@ -1,0 +1,25 @@
+.desktop-nav-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 8rem 2.5rem;
+
+	.desktop-nav-link-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.desktop-encon-logo {
+		margin-top: 2.25rem;
+	}
+
+	.desktop-nav-link {
+		font-size: 2.5rem;
+		font-weight: 500;
+		margin: 3.75rem 2.75rem;
+		color: transparentize($color: #000000, $amount: 0);
+	}
+
+	@media (max-width: 1025px) {
+		display: none;
+	}
+}

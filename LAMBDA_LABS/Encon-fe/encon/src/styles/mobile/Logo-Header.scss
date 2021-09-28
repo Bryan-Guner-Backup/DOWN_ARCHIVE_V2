@@ -1,0 +1,21 @@
+.logo-container-main {
+	width: 10rem;
+	@media (min-width: 1025px) {
+		display: none;
+	}
+}
+
+.logo-header-main {
+	padding: 2rem;
+	margin-bottom: 1.25rem;
+	background: transparentize($color: #4f4f4f, $amount: 0);
+	@media (min-width: 1025px) {
+		display: none;
+	}
+}
+
+.encon-logo-main {
+	display: flex;
+	margin: 0 1.75rem;
+
+}

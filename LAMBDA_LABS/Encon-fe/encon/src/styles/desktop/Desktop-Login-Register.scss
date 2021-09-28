@@ -1,0 +1,16 @@
+.registerContainer {
+	padding: 4rem !important;
+}
+
+.desktop-register-tab,
+.desktop-login-tab {
+	padding: 1rem;
+	font-size: 2.75rem;
+
+	.desktop-register-card,
+	.desktop-login-card {
+		border-radius: 1.25rem;
+		transition: 1s ease-in-out;
+		border: none;
+	}
+}

@@ -1,0 +1,15 @@
+.graphContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  .energyGraph {
+    border-bottom: 1px solid #bdbdbd;
+  }
+
+  * {
+    margin: 1%;
+  }
+}

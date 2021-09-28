@@ -1,0 +1,54 @@
+.applianceContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3%;
+  border-bottom: solid 2px #bdbdbd;
+  .applianceTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    @media (min-width: 1025px) {
+      text-align: left;
+      margin-left: 2%;
+    }
+  }
+  .imageContainer {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+    @media (min-width: 1025px) {
+      width: 15%;
+    }
+  }
+  .applianceInfo {
+    padding: 3%;
+  }
+  .outputContainer {
+    display: flex;
+    justify-content: space-evenly;
+    .estCost,
+    .energyOutput {
+      font-size: 1.2rem;
+      padding: 3%;
+      @media (min-width: 1025px) {
+        display: flex;
+        text-align: left;
+        * {
+          margin: 4%;
+        }
+      }
+    }
+
+    .estCost {
+      border-right: 1px #bdbdbd solid;
+    }
+  }
+  @media (min-width: 1025px) {
+    margin: 1% 4%;
+  }
+}

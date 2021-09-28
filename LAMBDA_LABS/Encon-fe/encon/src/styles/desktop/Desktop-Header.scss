@@ -1,0 +1,22 @@
+.desktop-header-container {
+	text-align: left;
+	margin-left: 5rem;
+
+	.desktop-main-header {
+		padding: 2.75rem 0 0 3rem;
+		font-size: 4.7rem;
+		font-weight: 500;
+		line-height: 5.25rem;
+	}
+
+	.desktop-main-title {
+		padding: 0.5rem 0 5rem 3.25rem;
+		font-size: 2rem;
+		font-weight: 500;
+		letter-spacing: 0.05rem;
+		line-height: 3.5rem;
+	}
+	@media (max-width: 1025px) {
+		display: none;
+	}
+}

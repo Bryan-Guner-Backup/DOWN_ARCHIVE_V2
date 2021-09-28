@@ -1,0 +1,24 @@
+.welcomeHeader {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6%;
+  .userName {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #044fbd;
+    margin: 1%;
+  }
+  .notUser {
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+  .newAccount {
+    color: #044fbd;
+  }
+  @media (min-width: 1025px) {
+    margin-top: 0;
+    justify-content: flex-start;
+    margin-left: 5%;
+  }
+}

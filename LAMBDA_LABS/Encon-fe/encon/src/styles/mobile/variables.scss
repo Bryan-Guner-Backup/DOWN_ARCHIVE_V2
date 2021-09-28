@@ -1,0 +1,7 @@
+$grey-border: 0.1rem solid
+  transparentize(
+    $color: #4f4f4f,
+    $amount: 0.75,
+  );
+
+$breakpt-desktop: 1025px;

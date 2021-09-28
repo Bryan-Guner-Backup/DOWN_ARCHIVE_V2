@@ -1,0 +1,32 @@
+.applianceTracker {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 1% 2%;
+  .left {
+    width: 50%;
+    border-right: #bdbdbd 1px solid;
+  }
+  .right {
+    width: 50%;
+  }
+  .left,
+  .right {
+    @media (min-width: 1025px) {
+      width: 10%;
+    }
+  }
+
+  .leftButton,
+  .rightButton {
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    padding: 2% 7%;
+    border: none;
+    &:hover {
+      color: white;
+      background-color: #044fbd;
+    }
+  }
+}
