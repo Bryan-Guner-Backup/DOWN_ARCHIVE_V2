@@ -1,0 +1,177 @@
+@import '~antd/dist/antd.css';
+
+:root {
+  --blue: #003767;
+  --orange: #bc541e;
+  --light-blue: #7f9bb3;
+}
+
+.incidents-container {
+  min-height: calc(100vh - (60px + 77px + 32px + 4vh));
+}
+
+.incidents-page {
+  max-width: 1200px;
+  margin: 32px auto 0;
+}
+
+.incidents-page header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 19px;
+}
+
+.incidents-page header .user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.incidents-page section ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ant-card-body {
+  padding: 20px;
+}
+
+.ant-card-body .incident-desc {
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ant-card-body:hover .incident-desc {
+  overflow: initial;
+  white-space: pre-wrap;
+  text-overflow: initial;
+}
+
+.tag-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40px;
+}
+
+.ant-tag {
+  margin: 3px;
+}
+
+.incident-title {
+  margin: 0 auto;
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+}
+
+.card-box {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  margin: 24px 16px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-box h3 {
+  margin-top: 1rem;
+}
+
+.card-box .card-metadata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.card-force {
+  margin: 1rem 0 0.5rem;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1081px) {
+  .incidents-page header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card-box {
+    width: 80%;
+    margin: 1.5rem auto;
+    max-width: 500px;
+  }
+
+  .ant-card-body {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .incidents-page header .user-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .incidents-page header .user-input .ant-select {
+    width: 100% !important;
+  }
+
+  .card-box .card-metadata {
+    flex-direction: column;
+  }
+
+  .incident-title {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-menu.active .incidents-page {
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=Incidents.css.map */
