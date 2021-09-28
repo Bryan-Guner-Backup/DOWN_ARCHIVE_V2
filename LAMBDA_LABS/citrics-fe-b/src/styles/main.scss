@@ -1,0 +1,132 @@
+//pages
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+//layouts
+.title {
+ margin: 0 auto;
+ display: flex; 
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 25px;
+ h1{
+   color: var(--color-green);
+   font-size: 5rem;
+   line-height: 5rem;
+ }
+
+}
+
+.city-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+//components
+
+.city-card {
+  color: var(--color-off-white);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin: 15px;
+  position: relative;
+  height: 180px;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  
+
+  .city-card-header {
+    background-color: var(--color-primary-blue);
+    width: inherit;
+    padding: 5px 20px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--color-off-white);
+    }
+
+    .favorite-heart {
+        background-color: var(--color-off-white);
+    }
+  }
+
+  .city-attributes {
+    padding: 5px 20px;
+    color: var(--color-off-white);
+    background-color: rgba(128, 128, 128, 0.20);
+    width: inherit;
+    height: inherit;
+
+    .attribute{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #21476dd2;
+      padding: 0 10px;
+      border-radius: 5px;
+      margin: 3px;
+
+      .attribute-title{
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.card-button {
+  position: absolute;
+
+  color: var(--color-off-white);
+  top: -15px;
+  left: -15px;
+  border-radius: 50%;
+  padding: 7.5px;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  &:focus, &:active {
+    outline: none
+  }
+}
+
+.toggleFavorite {
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+.add{
+  background: var(--color-green);
+}
+
+.remove{
+  background: red;
+}
