@@ -1,0 +1,16 @@
+import axios from "axios";
+
+interface AttendanceObject {
+  field1: string;
+  // TODO: fill this in with the required fields
+  // we need to collect from the form.
+}
+
+const createAttendanceReport = (data: AttendanceObject, url: string) => {
+  axios.post(url, data);
+  // TODO: we will return this as a promise
+  // handle promise here or inside component?
+  return data;
+};
+
+module.exports = { createAttendanceReport };
