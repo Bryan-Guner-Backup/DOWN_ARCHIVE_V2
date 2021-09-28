@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	outline: 0;
+	scrollbar-color: #e7e7e7 transparent;
+	scrollbar-width: thin;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#App,
+#root,
+#App > div {
+	min-height: 100%;
+	background: $color-white;
+}
+
+.time {
+	font-size: 1.2rem;
+	color: $color-gray-light;
+}

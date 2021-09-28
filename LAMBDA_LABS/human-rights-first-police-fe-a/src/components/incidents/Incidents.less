@@ -1,0 +1,234 @@
+@import '~antd/dist/antd.css';
+.incident-reports-page {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 1550px;
+}
+
+.incident-reports-page h1 {
+  font-size: 1.5rem;
+  text-align: flex-start;
+}
+
+.incidents-container {
+  width: 98%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.header-top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.incidents-collapse {
+  border: 0 !important;
+  .panel {
+    background: white;
+    & > .ant-collapse-content {
+      background: #c1d2e9;
+    }
+  }
+}
+
+#title-text {
+  font-size: 1rem;
+  color: #000;
+}
+.incidents-page header .user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.extra {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  flex: 0 0 50%;
+  margin-left: 10%;
+  text-align: left;
+  justify-content: space-between;
+}
+.incident-location {
+  font-size: 0.9rem;
+  color: #003767;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 25%
+}
+.pagination {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 2.5vh;
+}
+span.ant-tag.ant-tag-checkable:hover {
+  color: #003767;
+}
+.ant-tag-checkable-checked {
+  background-color: #003767;
+}
+span.ant-tag.ant-tag-checkable-checked:hover {
+  color: #ffffff;
+}
+.ant-pagination-item a:hover {
+  color: #003767;
+  border-color: #003767;
+}
+.ant-pagination-item-active a {
+  color: #003767;
+  border-color: #003767;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.header-top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.incidents-container {
+  width: 98%;
+  margin: auto;
+  padding: 0.5rem;
+  display:flex;
+  flex-direction:column;
+}
+
+.header-checkbox{
+  display: flex;
+  align-items: center;
+}
+.form-container{
+  width: 98%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.export-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.labels {
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+
+.buttonbutton {
+  display: flex;
+  justify-content: left;
+  flex-flow: column;
+}
+
+.title-container{
+  width: 35%;
+}
+.rank-select{
+  width: 35%;
+}
+.state-search{
+  width: 35%;
+}
+.location{
+  display: block;
+}
+.category-select{
+  width: 35%;
+}
+.category{
+  display: block;
+}
+.date-select{
+  width: 35%;
+}
+.export-button{
+  width: 35%;
+}
+.additional-list{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clear-button{
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px){
+  .title-container{
+    width: 50%;
+  }
+  .rank-select{
+    width: 50%;
+  }
+  .state-search{
+    width: 50%;
+  }
+  .category-select{
+    width: 50%;
+  }
+  .date-select{
+    width: 50%;
+  }
+  .export-button{
+    width: 50%;
+  }
+  .additional-list{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .title-container{
+    width: 75%;
+  }
+  .rank-select{
+    width: 75%;
+  }
+  .state-search{
+    width: 75%;
+  }
+  .category-select{
+    width: 75%;
+  }
+  .date-select{
+    width: 75%;
+  }
+  .export-button{
+    width: 75%;
+  }
+  .additional-list{
+    width: 75%;
+  }
+}
+ 
+@media only screen and (max-width: 720px){
+ 
+  .extra{
+    margin-left: 0px;
+  }
+  .header-top{
+    flex-direction: column;
+  }
+  .title-container{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+ 

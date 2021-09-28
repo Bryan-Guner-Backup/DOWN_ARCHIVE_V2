@@ -1,0 +1,20 @@
+pandas
+arrow
+beautifulsoup4
+boto3
+elasticsearch
+requests
+requests-aws4auth
+flatten-dict
+fastapi
+psycopg2
+uvicorn
+gunicorn
+starlette
+
+
+# test requirements
+pytest
+snapshottest
+pytest-sugar
+pytest-cov

@@ -1,0 +1,144 @@
+// layout of the profile and peer profile page
+.container-entire-profile {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: $color-white;
+	color: $color-black;
+	padding: 2rem 0;
+	height: 100vh;
+	margin: 0 8rem;
+
+	@media (max-width: 720px) {
+		width: 75%;
+	}
+
+	.my-team-members {
+		width: 100%;
+		min-height: 30rem;
+		margin: 0;
+
+		.teams-dashboard {
+			margin: 0;
+		}
+	}
+
+	.main-container-badges {
+		width: 45%;
+		height: 50%;
+		margin-left: 3rem;
+
+		@media (max-width: 720px) {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.badges-title-container {
+			display: flex;
+			color: $color-primary;
+
+			h1 {
+				font-size: 3.4rem;
+				margin-left: 2rem;
+				font-weight: normal;
+			}
+			h2 {
+				font-size: 2rem;
+				margin-left: 2rem;
+				padding: 0.8rem;
+				@include boxshadow();
+				border-radius: 229px;
+				width: 5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		.profile-badges {
+			width: 100%;
+			ul {
+				display: flex;
+				width: 100%;
+				padding: 2rem 0;
+				flex-wrap: wrap;
+
+				height: 36rem;
+				overflow-y: scroll;
+			}
+		}
+	}
+}
+
+.container-entire-profile {
+	.activity-card {
+		width: 45%;
+		height: 60rem;
+
+		@media (max-width: 720px) {
+			width: 100%;
+		}
+	}
+	.title-activity-card {
+		font-weight: normal;
+		font-size: 3.4rem;
+		color: $color-primary;
+	}
+	#profile-activity-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 90%;
+		overflow-x: hidden;
+		overflow: auto;
+		margin-top: 2rem;
+
+		.rec-info {
+			p {
+				color: $color-primary-nav;
+				font-size: 1.6rem;
+
+				.rec-info-name {
+					color: $color-primary !important;
+					font-size: 1.6rem !important;
+				}
+			}
+		}
+	}
+}
+
+#root
+	.container-entire-profile
+	.activity-card
+	#profile-activity-card
+	.profile-activity {
+	width: 100%;
+}
+
+.profile-main {
+	display: flex;
+	width: 100%;
+	margin-top: 2rem;
+	justify-content: space-between;
+}
+
+.badges-and-activity {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 720px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.teams-dashboard-title {
+	color: $color-primary-nav;
+	font-size: 3.4rem !important;
+	font-weight: normal;
+}

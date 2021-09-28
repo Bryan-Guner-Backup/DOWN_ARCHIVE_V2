@@ -1,0 +1,68 @@
+{
+  "name": "juxta-city-data-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.44",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^10.4.5",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "jest-dom": "^4.0.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-enzyme": "^7.1.2",
+    "jwt-decode": "^2.2.0",
+    "node-modules": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.12.0",
+    "react-anime": "^3.0.3",
+    "react-animejs": "^0.5.4",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.3",
+    "react-test-renderer": "^16.13.1",
+    "recharts": "^1.8.5",
+    "semantic-ui-react": "^1.1.1",
+    "styled-components": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test  --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject",
+    "coverage": "CI=true react-scripts test --coverage --watchAll=false || true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**",
+      "!**/src/*",
+      "!**/auth/**"
+    ]
+  },
+  "devDependencies": {
+    "nock": "^13.0.4"
+  }
+}

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+.link:hover {
+  font-weight: 700;
+}
+
+a:link {
+  color: darkslategray;
+  cursor: pointer;
+}
+
+a:visited {
+  color: darkslategray;
+}
+
+a:hover {
+  color: darkslategray;
+  font-weight: 700;
+}
+
+a:active {
+  color: darkslategray;
+}
+
+

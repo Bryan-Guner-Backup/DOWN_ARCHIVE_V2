@@ -1,0 +1,42 @@
+.complete-incident {
+  text-align: left;
+  border: solid #e3e8ee 1px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.complete-incident button {
+  margin: auto 1%;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+}
+
+.complete-incident-dropdown {
+  padding: 1rem 1.5rem;
+}
+
+#dropdown-edit-button {
+  margin-left: 0px;
+}
+
+.dropdown-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.complete-incident-dropdown-titles-bold {
+  font-weight: bold;
+  margin-right: 0.3%;
+}
+
+.location-dropdown-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=CompleteIncident.css.map */

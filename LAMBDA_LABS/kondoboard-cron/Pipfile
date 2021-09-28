@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+arrow = "*"
+beautifulsoup4 = "*"
+boto3 = "*"
+elasticsearch = "*"
+requests = "*"
+requests-aws4auth = "*"
+flatten-dict = "*"
+pytest = "*"
+snapshottest = "*"
+pytest-sugar = "*"
+pytest-cov = "*"
+fastapi = "*"
+uvicorn = "*"
+gunicorn = "*"
+psycopg2 = "*"
+starlette = "*"
+
+[requires]
+python_version = "3.7"
