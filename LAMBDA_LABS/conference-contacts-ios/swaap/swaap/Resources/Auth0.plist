@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ClientId</key>
+	<string>hrYC413DOYYljvgIx2zKfQhqFhH0VCLA</string>
+	<key>Domain</key>
+	<string>dev-1lez5gah.auth0.com</string>
+	<key>ClientSecret</key>
+	<string>OpqTXcGHZVwbtDlvXIs32hkmfpqmnOZZDJiYMIJsHgu2UziqAWYQjDAB3jwx90eH</string>
+</dict>
+</plist>
