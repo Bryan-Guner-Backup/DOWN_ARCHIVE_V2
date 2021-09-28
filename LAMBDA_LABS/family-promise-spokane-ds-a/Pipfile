@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+pydantic = "*"
+sqlalchemy = "*"
+scikit-learn = "==0.22.2.post1"
+pandas = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
+numpy = "*"
+joblib = "*"
+gunicorn = "*"
+typing-extensions = "*"
+category-encoders = "*"
+plotly = "*"
+
+[requires]
+python_version = "3.8"
